@@ -1,3 +1,7 @@
+*{
+    background-color: #0072ab;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -42,6 +46,12 @@ body {
     display: block;
     justify-content: center;
     align-items: center;
+    background-color: aliceblue;
+}
+
+div{
+    width: 85%;
+    margin: auto;
 }
 
 h1 {
@@ -50,11 +60,59 @@ h1 {
     margin-bottom: 20px;
     background-color: lightblue;
 }
-table{
-    width: 80%;
-}
-p {
-    text-align: justify;
-    line-height: 1.5em;
-    width: 50%;
-}
+        /* Contenedor de la cuadrícula */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        /* Estilo para cada elemento de la cuadrícula */
+        .grid-item {
+            background-color: white;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilo para las imágenes */
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Estilo para los detalles */
+        details {
+            margin-top: 10px;
+        }
+
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #555;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%; /* Ocupa todo el ancho de la página */
+        }
+
+        p footer{
+            background-color: #555;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
