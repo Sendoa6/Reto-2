@@ -1,11 +1,3 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 header {
     display: flex;
     flex-direction: column;
@@ -41,5 +33,19 @@ header {
     border-bottom: 40px solid black; 
     padding-bottom: 10px;
     width: 100%;           
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    margin-top: 15px;
+    text-align: center;
+}
+#txtrecomendacion{
+    font-size: 25px;
 }
 
