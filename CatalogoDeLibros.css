@@ -1,0 +1,48 @@
+.tabs{
+    /*Para poder ordenar los elementos en una columna*/
+    display: flex;
+    flex-direction: column;
+    max-width: 400px; /*ancho máximo del contenedor*/ 
+    margin: auto; /*centra el contenedor horizontalmente en la página*/
+}
+
+.tab-label{
+    padding: 10px 15px; /*Para que haya espacio 10px arriba y abajo y 15px a los lados*/
+    background-color: #007bff; 
+    color: white;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* Ocultar los radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Cambiar color de la pestaña activa */
+input[type="radio"]:checked + .tab-label {
+    background-color: #0056b3;
+}
+
+/* Contenido de pestañas: ocultar por defecto */
+.tab-content {
+    display: none;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Mostrar el contenido cuando el input está seleccionado */
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5,
+#tab6:checked ~ #content6
+{
+    display: block;
+}
