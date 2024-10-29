@@ -1,3 +1,9 @@
 body{
     
 }
+nav{
+    font-size: 25px;
+    text-decoration: none;
+    color: inherit;
+    margin-right: 50px;
+}
