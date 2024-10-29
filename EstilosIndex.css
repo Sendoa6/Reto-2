@@ -37,3 +37,9 @@ nav a {
 #uno li {
     margin: 0;
 }
+header {
+    border-bottom: 40px solid black; 
+    padding-bottom: 10px;
+    width: 100%;           
+}
+
