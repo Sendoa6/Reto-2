@@ -1,11 +1,11 @@
+*{
+    background-color: #0072ab;
+}
 
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 40px solid black; 
-    padding-bottom: 10px;
-    width: 100%;  
 }
 
 nav {
@@ -34,29 +34,85 @@ nav a {
     margin: 0;
 }
 
+header {
+    border-bottom: 40px solid black; 
+    padding-bottom: 10px;
+    width: 100%;           
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     display: block;
     justify-content: center;
     align-items: center;
+    background-color: aliceblue;
+}
+
+div{
+    width: 85%;
+    margin: auto;
 }
 
 h1 {
     text-align: center;
     font-size: 36px;
     margin-bottom: 20px;
-    text-transform: uppercase;
+    background-color: lightblue;
 }
+        /* Contenedor de la cuadrícula */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 800px;
+            width: 100%;
+        }
 
-h2 {
-    background-color: #888888;
-    color:red;
-    font-size: 24px;
-}
+        /* Estilo para cada elemento de la cuadrícula */
+        .grid-item {
+            background-color: white;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
 
-p {
-    text-align: justify;
-    background-color: #cccccc;
-    line-height: 1.5em;
-}
+        /* Estilo para las imágenes */
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Estilo para los detalles */
+        details {
+            margin-top: 10px;
+        }
+
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #555;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%; /* Ocupa todo el ancho de la página */
+        }
+
+        p footer{
+            background-color: #555;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
