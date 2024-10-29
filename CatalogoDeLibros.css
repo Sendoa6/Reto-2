@@ -1,3 +1,5 @@
+/*Para el header*/
+
 header {
     display: flex;
     flex-direction: column;
@@ -29,11 +31,25 @@ nav a {
 #uno li {
     margin: 0;
 }
+
 header {
     border-bottom: 40px solid black; 
     padding-bottom: 10px;
     width: 100%;           
 }
+
+/*Hasta aquí el header*/
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+}
+
+h1{
+    text-align: center;
+    background-color: lightblue;
+}
+
 
 .tabs{
     /*Para poder ordenar los elementos en una columna*/
