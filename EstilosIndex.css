@@ -12,7 +12,7 @@ nav {
 
 nav img {
     margin-right: 80px;
-}
+} 
 
 nav ul {
     list-style-type: none;
@@ -40,6 +40,8 @@ body {
     display: block;
     justify-content: center;
     align-items: center;
+    height: auto;
+    width: auto;
 }
 main{
     margin-top: 15px;
@@ -50,4 +52,3 @@ main{
 #txtrecomendacion{
     font-size: 25px;
 }
-
