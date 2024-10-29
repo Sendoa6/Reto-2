@@ -1,3 +1,40 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+nav img {
+    margin-right: 80px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    margin-left: 80px;
+    text-decoration: none;
+    color: inherit;
+}
+
+#uno li {
+    margin: 0;
+}
+header {
+    border-bottom: 40px solid black; 
+    padding-bottom: 10px;
+    width: 100%;           
+}
+
 .tabs{
     /*Para poder ordenar los elementos en una columna*/
     display: flex;
