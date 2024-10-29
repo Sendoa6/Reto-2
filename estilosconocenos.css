@@ -1,15 +1,11 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 40px solid black; 
+    padding-bottom: 10px;
+    width: 100%;  
 }
 
 nav {
@@ -37,10 +33,13 @@ nav a {
 #uno li {
     margin: 0;
 }
-header {
-    border-bottom: 40px solid black; 
-    padding-bottom: 10px;
-    width: 100%;           
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
