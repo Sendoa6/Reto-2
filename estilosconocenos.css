@@ -1,3 +1,4 @@
+/* HEADER */
 header {
     display: flex;
     flex-direction: column;
@@ -37,83 +38,90 @@ header {
     padding-bottom: 10px;
     width: 100%;           
 }
+
+/* Hasta aqui el HEADER */
+/* BODY */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    min-height: 100vh;
-    padding-bottom: 60px; /* Espacio reservado para el footer fijo */
+    margin: 0;
     background-color: aliceblue;
 }
 
-div{
-    width: 85%;
-    margin: auto;
+.cuerpo{
+    background-color: #0065a3;
+    width: 80%;
+    margin: 0 auto;
 }
 
+/* Estilo del titulo */
 h1 {
     text-align: center;
     font-size: 36px;
     margin-bottom: 20px;
     background-color: lightblue;
 }
-        /* Contenedor de la cuadrícula */
-        .grid-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            max-width: 800px;
-            width: 100%;
-        }
 
-        /* Estilo para cada elemento de la cuadrícula */
-        .grid-item {
-            background-color: white;
-            border-radius: 8px;
-            padding: 10px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
+/* Contenedor de la cuadrícula */
+.grid-container {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 85%;
+    padding-bottom: 20px;
+    column-gap: 40px;
+}
 
-        /* Estilo para las imágenes */
-        .grid-item img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
+/* Estilo para cada elemento de la cuadrícula */
+.grid-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-        /* Estilo para los detalles */
-        details {
-            margin-top: 10px;
-        }
+/* Estilo para las imágenes */
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 
-        summary {
-            font-weight: bold;
-            cursor: pointer;
-        }
+/* Estilo para el summary */
+summary {
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
 
-        footer {
-            background-color: #555;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            width: 100%; /* Ocupa todo el ancho de la página */
-            position: fixed; /* Fija el footer al fondo de la ventana */
-            left: 0; /* Alinea el footer al borde izquierdo */
-            bottom: 0; /* Alinea el footer al fondo */
-            z-index: 10; /* Asegura que el footer esté sobre otros elementos */
-        }
-        
+/* Hasta aqui el BODY */
+/* FOOTER */
 
-        p footer{
-            background-color: #555;
-        }
+footer {
+    color: white;
+    text-align: center;
+    width: 100vw; /* Ocupar todo el ancho de la ventana */
+    background-color: #232F3E;
+    padding: 20px;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0; /* Asegura que no haya margen */
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}
 
-        footer a {
-            color: #4CAF50;
-            text-decoration: none;
-            margin: 0 10px;
-        }
+p footer{
+    background-color: #555;
+}
 
-        footer a:hover {
-            text-decoration: underline;
-        }
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Hasta aqui el FOOTER */
