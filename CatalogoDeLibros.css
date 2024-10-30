@@ -35,21 +35,24 @@ nav a {
 header {
     border-bottom: 40px solid black; 
     padding-bottom: 10px;
-    width: 100%;           
+    width: 100%;
+    /*Imagen para el fondo*/  
+    background-image: url(https://png.pngtree.com/background/20211215/original/pngtree-abstract-light-blue-background-picture-image_1459673.jpg);         
+    /*Que la imagen cubra todo el header porque el tamaño era demasiado pequeño*/
+    background-size: cover;
 }
 
 /*Hasta aquí el header*/
 
 body{
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /*La tipografía de la página*/
     background-color: aliceblue;
 }
 
 h1{
-    text-align: center;
-    background-color: lightblue;
+    text-align: center; /*Centrar el título h1*/
+    background-color: lightblue; /*Para darle color al fondo del título h1*/
 }
-
 
 .tabs{
     /*Para poder ordenar los elementos en una columna*/
@@ -61,26 +64,26 @@ h1{
 
 .tab-label{
     padding: 10px 15px; /*Para que haya espacio 10px arriba y abajo y 15px a los lados*/
-    background-color: #007bff; 
-    color: white;
-    cursor: pointer;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 5px;
-    text-align: center;
+    background-color: #007bff; /*El color de los botones*/ 
+    color: white; /*El color del texto de los botones*/
+    cursor: pointer; /*Cambiar el puntero del ratón cuando le pones encima del botón sin haberlo pulsado*/
+    border: 1px solid #ddd; /*Poner un borde con 1px de ancho, línea continua, y color gris*/
+    border-radius: 5px; /*Para redondear las esquinas*/
+    margin-bottom: 5px; /*Para hacer un margen debajo del tab-label*/
+    text-align: center; /*Alinear el texto al centro*/
 }
 
-/* Ocultar los radio buttons */
+/* Para ocultar los botones radio */
 input[type="radio"] {
     display: none;
 }
 
-/* Cambiar color de la pestaña activa */
+/*Cuando pulsemos una pestaña que se cambie el color a un azul más oscuro*/
 input[type="radio"]:checked + .tab-label {
     background-color: #0056b3;
 }
 
-/* Contenido de pestañas: ocultar por defecto */
+/*Ocultar el contenido de las pestañas por defecto*/
 .tab-content {
     display: none;
     padding: 15px;
@@ -89,7 +92,7 @@ input[type="radio"]:checked + .tab-label {
     margin-top: 10px;
 }
 
-/* Mostrar el contenido cuando el input está seleccionado */
+/*Mostrar el contenido cuando el input está seleccionado*/
 #tab1:checked ~ #content1,
 #tab2:checked ~ #content2,
 #tab3:checked ~ #content3,
