@@ -39,13 +39,11 @@ header {
     padding-bottom: 10px;
     width: 100%;           
 }
-
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    display: block;
-    justify-content: center;
-    align-items: center;
+    min-height: 100vh;
+    padding-bottom: 60px; /* Espacio reservado para el footer fijo */
     background-color: aliceblue;
 }
 
@@ -101,7 +99,12 @@ h1 {
             text-align: center;
             padding: 20px;
             width: 100%; /* Ocupa todo el ancho de la página */
+            position: fixed; /* Fija el footer al fondo de la ventana */
+            left: 0; /* Alinea el footer al borde izquierdo */
+            bottom: 0; /* Alinea el footer al fondo */
+            z-index: 10; /* Asegura que el footer esté sobre otros elementos */
         }
+        
 
         p footer{
             background-color: #555;
