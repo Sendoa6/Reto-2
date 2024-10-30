@@ -11,15 +11,12 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(https://png.pngtree.com/background/20211215/original/pngtree-abstract-light-blue-background-picture-image_1459673.jpg);
-    background-size: cover;
 }
 
 nav {
     display: flex;
     align-items: center;
     padding: 10px;
-    
 }
 
 nav img {
@@ -41,10 +38,15 @@ nav a {
 #uno li {
     margin: 0;
 }
+
 header {
     border-bottom: 40px solid black; 
     padding-bottom: 10px;
-    width: 100%;           
+    width: 100%;
+    /*Imagen para el fondo*/  
+    background-image: url(https://png.pngtree.com/background/20211215/original/pngtree-abstract-light-blue-background-picture-image_1459673.jpg);         
+    /*Que la imagen cubra todo el header porque el tamaño era demasiado pequeño*/
+    background-size: cover;
 }
 
 /*Fin del header estatico por cada pagina*/
