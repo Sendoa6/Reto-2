@@ -39,21 +39,10 @@ nav a {
     margin: 0;
 }
 
-header {
-    border-bottom: 40px solid black; 
-    padding-bottom: 10px;
-    width: 100%;
-    /*Imagen para el fondo*/  
-    background-image: url(https://png.pngtree.com/background/20211215/original/pngtree-abstract-light-blue-background-picture-image_1459673.jpg);         
-    /*Que la imagen cubra todo el header porque el tamaño era demasiado pequeño*/
-    background-size: cover;
-}
-
 /*Fin del header estatico por cada pagina*/
 
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
     background-color: #f4f4f4;
 }
 
@@ -120,3 +109,49 @@ input[type="submit"]:hover {
     background-color: #4cae4c;
 }
 /*Fin de la creacion del formulario*/
+header {
+    border-bottom: 40px solid black; 
+    padding-bottom: 10px;
+    width: 100%;      
+    background-image: url(https://png.pngtree.com/background/20211215/original/pngtree-abstract-light-blue-background-picture-image_1459673.jpg);
+    background-size: cover    
+}
+/* FOOTER */
+/* Asegura que el body ocupe toda la altura de la ventana */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    box-sizing: border-box; /* Asegura que el padding se mantenga dentro del ancho total */
+}
+
+/* Flexbox en el contenido para mantener el footer al fondo */
+main {
+    flex: 1; /* El contenido crece para llenar el espacio entre el header y footer */
+}
+
+/* FOOTER */
+footer {
+    color: white;
+    text-align: center;
+    width: 100%; /* Ocupar todo el ancho de la ventana */
+    background-color: #232F3E;
+    padding: 20px;
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+    margin: 0; /* Elimina margen extra */
+}
+
+/* Ajustes en los enlaces dentro del footer */
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
