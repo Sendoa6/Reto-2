@@ -74,7 +74,7 @@ table{
 footer {
     color: white;
     text-align: center;
-    width: 100vw; /* Ocupar todo el ancho de la ventana */
+    width: 100%; /* Ocupar todo el ancho de la ventana */
     background-color: #232F3E;
     padding: 20px;
     position: relative;
