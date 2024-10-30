@@ -101,3 +101,39 @@ footer a:hover {
     text-decoration: underline;
 }
 /* Hasta aqui el FOOTER */
+/* Media query para pantallas de hasta 1440px */
+@media (max-width: 1440px) {
+    
+    /* Ajusta el tamaño y el espacio de los enlaces en la barra de navegación */
+    nav a {
+        margin: 5px 10px; /* Menor margen lateral */
+        font-size: 1em; /* Ajuste de tamaño de fuente */
+    }
+
+    /* Ajusta márgenes en el main */
+    main {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    /* Reduce el tamaño de las imágenes en la sección de recomendaciones */
+    table img {
+        height: 200px;
+        width: 200px;
+    }
+
+    /* Ajusta tamaño de las recomendaciones */
+    #txtrecomendacion {
+        font-size: 20px;
+    }
+
+    #titlrecomendaciones {
+        font-size: 4vh;
+    }
+
+    /* Ajusta el tamaño del texto en el footer */
+    footer {
+        font-size: 0.9em;
+        padding: 15px;
+    }
+}
