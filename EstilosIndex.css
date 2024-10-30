@@ -68,3 +68,7 @@ table{
 #titlrecomendaciones{
     font-size: 5vh;
 }
+#txtbienvenida{
+    text-indent: 2em;
+    text-align: justify;
+}
