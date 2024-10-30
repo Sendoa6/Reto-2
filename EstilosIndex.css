@@ -136,4 +136,41 @@ footer a:hover {
         font-size: 0.9em;
         padding: 15px;
     }
+    /* Media query para pantallas de hasta 1024px */
+@media (max-width: 1024px) {
+
+    /* Ajuste en el tamaño y espaciado de los enlaces en la barra de navegación */
+    nav a {
+        margin: 5px 10px; /* Menor margen para mejor ajuste en pantallas pequeñas */
+        font-size: 0.9em; /* Ligero ajuste de tamaño de fuente */
+    }
+
+    /* Ajustes en el main para reducir los márgenes */
+    main {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    /* Reducción del tamaño de las imágenes en la sección de recomendaciones */
+    table img {
+        height: 150px;
+        width: 150px;
+    }
+
+    /* Ajuste de los títulos y texto de las recomendaciones */
+    #txtrecomendacion {
+        font-size: 18px;
+    }
+
+    #titlrecomendaciones {
+        font-size: 3.5vh;
+    }
+
+    /* Ajuste de tamaño en el footer */
+    footer {
+        font-size: 0.8em;
+        padding: 15px;
+    }
+}
+
 }
