@@ -34,7 +34,7 @@ nav a {
 }
 
 header {
-    border-bottom: 40px solid black; 
+    border-bottom: 10px solid black; 
     padding-bottom: 10px;
     width: 100%;           
 }
@@ -68,7 +68,7 @@ h1 {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     width: 85%;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     column-gap: 40px;
 }
 
@@ -101,12 +101,10 @@ summary {
 footer {
     color: white;
     text-align: center;
-    width: 100vw; /* Ocupar todo el ancho de la ventana */
+    width: 100%; /* Ocupar todo el ancho de la ventana */
     background-color: #232F3E;
     padding: 20px;
     position: relative;
-    left: 0;
-    right: 0;
     margin: 0; /* Asegura que no haya margen */
     box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
 }
