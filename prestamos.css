@@ -50,7 +50,13 @@ h1 {
     color: #333;
     background-color: lightblue;
     text-align: center;
+    cursor: pointer;
 }
+
+h1:hover{
+    background-color: rgb(104, 159, 177);
+}
+
 
 table {
     width: 100%;
