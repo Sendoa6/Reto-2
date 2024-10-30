@@ -45,6 +45,7 @@ body {
     align-items: center;
     height: auto;
     width: auto;
+    background-color: aliceblue
 }
 main{
     margin-top: 15px;
