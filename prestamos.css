@@ -11,6 +11,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url(https://png.pngtree.com/background/20211215/original/pngtree-abstract-light-blue-background-picture-image_1459673.jpg);
+    background-size: cover;
 }
 
 nav {

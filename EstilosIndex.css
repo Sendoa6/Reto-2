@@ -32,7 +32,9 @@ nav a {
 header {
     border-bottom: 40px solid black; 
     padding-bottom: 10px;
-    width: 100%;           
+    width: 100%;      
+    background-image: url(https://png.pngtree.com/background/20211215/original/pngtree-abstract-light-blue-background-picture-image_1459673.jpg);
+    background-size: cover    
 }
 body {
     margin: 0;
