@@ -33,6 +33,12 @@ nav a {
     margin-left: 80px;
     text-decoration: none;
     color: inherit;
+    padding: 7px;
+}
+
+nav a:hover{
+    background-color: lightskyblue;
+    border-radius: 10px;
 }
 
 #uno li {
@@ -40,7 +46,7 @@ nav a {
 }
 
 header {
-    border-bottom: 40px solid black; 
+    border-bottom: 10px solid black; 
     padding-bottom: 10px;
     width: 100%;
     /*Imagen para el fondo*/  

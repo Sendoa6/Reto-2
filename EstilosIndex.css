@@ -25,13 +25,19 @@ nav a {
     margin-left: 80px;
     text-decoration: none;
     color: inherit;
+    padding: 7px;
+}
+
+nav a:hover{
+    background-color: lightskyblue;
+    border-radius: 10px;
 }
 
 #uno li {
     margin: 0;
 }
 header {
-    border-bottom: 40px solid black; 
+    border-bottom: 10px solid black; 
     padding-bottom: 10px;
     width: 100%;      
     background-image: url(https://png.pngtree.com/background/20211215/original/pngtree-abstract-light-blue-background-picture-image_1459673.jpg);

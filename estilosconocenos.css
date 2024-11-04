@@ -27,6 +27,12 @@ nav a {
     margin-left: 80px;
     text-decoration: none;
     color: inherit;
+    padding: 7px;
+}
+
+nav a:hover{
+    background-color: lightskyblue;
+    border-radius: 10px;
 }
 
 #uno li {
@@ -79,6 +85,10 @@ h1 {
     padding: 10px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item:hover{
+    background-color: lightgray;
 }
 
 /* Estilo para las imágenes */
