@@ -53,6 +53,10 @@ body {
     background-color: aliceblue;
 }
 
+p{
+text-align: justify;
+}
+
 .cuerpo{
     background-color: #0065a3;
     width: 80%;
