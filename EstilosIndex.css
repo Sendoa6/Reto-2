@@ -108,3 +108,14 @@ footer a:hover {
 }
 /* Hasta aqui el FOOTER */
 
+.imagenbiblio{
+    width: 50%;
+}
+
+.imagenbiblio2{
+    width: 45%;
+}
+
+.txtrecomendacion{
+    margin: 15px;
+}
