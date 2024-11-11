@@ -43,6 +43,7 @@ nav a:hover{
 
 #uno li {
     margin: 0;
+    font-weight: bold;
 }
 
 header {
@@ -151,4 +152,7 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+.sinestilo{
+    list-style-type: none;
 }
