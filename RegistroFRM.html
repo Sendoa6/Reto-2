@@ -16,6 +16,12 @@
                 el "#" hace que no se envien los datos recopilados a ningun lugar externo sino que se quedaran en esta pagina ya que no disponemos de php, method define como se envian los datos, 
                 post hace que los datos del formulario se envían de manera segura en el cuerpo de la solicitud, sin ser visibles en la URL.-->
                 
+                <label for="id_usuario">ID_Usuario</label>
+                <input type="text" id="id_usuario" name="id_usuario" disabled>
+
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" required>
+
                 <label for="nombre">Nombre:</label>
 
                 <input type="text" id="nombre" name="nombre" required> <!-- Required para que el campo sea obligatorio y text para que te deje escribir en forma de texto -->
@@ -23,11 +29,8 @@
                 <label for="apellido">Apellido:</label>
                 <input type="text" id="apellido" name="apellido" required>
 
-                <label for="direccion">Dirección:</label>
-                <input type="text" id="direccion" name="direccion" required>
-
-                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required> <!-- Para insertar una fecha -->
+                <label for="telefono">Telefono:</label>
+                <input type="text" id="telefono" name="telefono" required>
 
                 <label for="genero_libro">Género de Libro Favorito:</label>
                 <select id="genero_libro" name="genero_libro" required> <!-- se despliega una pestaña con varias opciones -->
@@ -41,9 +44,6 @@
 
                 <label for="libro_favorito">Libro Favorito:</label>
                 <input type="text" id="libro_favorito" name="libro_favorito" required>
-
-                <label for="dni">DNI:</label>
-                <input type="text" id="dni" name="dni" required>
 
                 <label for="username">Nombre de Usuario:</label>
                 <input type="text" id="username" name="username" required>
