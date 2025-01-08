@@ -12,12 +12,12 @@
         <div class="caja-form"> <!-- Para la estructura de la caja -->
             <img src="media/muskizlogo.png" alt="BibliotecaMuskiz"> <!-- Insertar imagen -->
             <h2>Registro de Usuario</h2>
-            <form action="RegistroFRM.php" method="post"><!-- form, es para recopilar datos, action redirige los datos a donde quieras, 
+            <form action="registro_usuario.php" method="post"><!-- form, es para recopilar datos, action redirige los datos a donde quieras, 
                 el "#" hace que no se envien los datos recopilados a ningun lugar externo sino que se quedaran en esta pagina ya que no disponemos de php, method define como se envian los datos, 
                 post hace que los datos del formulario se envían de manera segura en el cuerpo de la solicitud, sin ser visibles en la URL.-->
                 
-                <label for="id_usuario">ID Usuario</label>
-                <input type="text" id="id_usuario" name="id_usuario" disabled>
+                <!-- <label for="id_usuario">ID Usuario</label>
+                <input type="text" id="id_usuario" name="id_usuario" disabled> -->
 
                 <label for="dni">DNI:</label>
                 <input type="text" id="dni" name="dni" required>
