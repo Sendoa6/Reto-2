@@ -1,23 +1,58 @@
-<?php 
-$dni = $_POST['dni'];
-$nombre = $_POST['nombre'];
-$apellido = $_POST['apellido'];
-$telefono = $_POST['telefono'];
-$Correo = $_POST['Correo'];
-$username = $_POST['username'];
-$password = $_POST['password'];
-$password2 = $_POST['password2'];
-$NumeroSS = $_POST['NumeroSS'];
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="media/muskizlogo.png" type="image/x-icon">
+    <title>Registro - Biblioteca</title>
+    <link rel="stylesheet" href="EstilosFormulario.css">
+</head>
+<body>
+    <div class="caja"> <!-- Para reservar el espacio para el formulario -->
+        <div class="caja-form"> <!-- Para la estructura de la caja -->
+            <img src="media/muskizlogo.png" alt="BibliotecaMuskiz"> <!-- Insertar imagen -->
+            <h2>Registro de Usuario</h2>
+            <form action="RegistroFRM.php" method="post"><!-- form, es para recopilar datos, action redirige los datos a donde quieras, 
+                el "#" hace que no se envien los datos recopilados a ningun lugar externo sino que se quedaran en esta pagina ya que no disponemos de php, method define como se envian los datos, 
+                post hace que los datos del formulario se envían de manera segura en el cuerpo de la solicitud, sin ser visibles en la URL.-->
+                
+                <label for="id_usuario">ID Usuario</label>
+                <input type="text" id="id_usuario" name="id_usuario" disabled>
 
-$id_usuario = $_POST['id_usuario'];
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" required>
 
-FOR ($I = 0; $I <= 99999; $I++){
-    
-}
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required> <!-- Required para que el campo sea obligatorio y text para que te deje escribir en forma de texto -->
 
-$peticion = "INSERT INTO";
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
 
-$respuesta = f_sql($peticion);
+                <label for="telefono">Telefono:</label>
+                <input type="text" id="telefono" name="telefono" required>
 
+                <label for="telefono">Correo Electronico:</label>
+                <input type="text" id="Correo" name="Correo" required>
 
-?>
+                <label for="username">Nombre de Usuario:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required><!-- Password para que al escribir no se vea la contraseña -->
+
+                <label for="password">Repite la contraseña:</label>
+                <input type="password" id="password2" name="password2" required><!-- Password para que al escribir no se vea la contraseña -->
+
+                <label for="username">Numero Seguridad Social:</label>
+                <input type="text" id="NumeroSS" name="NumeroSS" required>
+
+                <button type="submit">Registrarse</button>
+                Volver al <a href="Formulario1.html"> inicio de sesion.</a><br> <!-- Redirigir hacia otro html -->
+                Volver a la <a href="index.html">página principal.</a>
+            </form>
+        </div>
+
+       
+    </div>
+</body>
+</html>
