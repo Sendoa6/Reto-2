@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="media/muskizlogo.png" type="image/x-icon">
-    <title>Registro - Biblioteca</title>
+    <title>Registro de usuarios - Biblioteca</title>
     <link rel="stylesheet" href="EstilosFormulario.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
                 post hace que los datos del formulario se envían de manera segura en el cuerpo de la solicitud, sin ser visibles en la URL.-->
                 
                 <!-- <label for="id_usuario">ID Usuario</label>
-                <input type="text" id="id_usuario" name="id_usuario" disabled> -->
+                <input type="text" id="id_usuario" name="id_usuario" disabled> --->
 
                 <label for="dni">DNI:</label>
                 <input type="text" id="dni" name="dni" required>
