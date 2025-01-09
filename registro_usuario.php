@@ -24,12 +24,33 @@ if (!is_numeric($telefono) && strlen($telefono) != 9){
     header("Refresh: 3; url=RegistroFRM.php");
     exit;
 }
-if (strpos($email, '@') == false && strpos($email, '.') == false) {
+if (strpos($Correo, '@') == false && strpos($Correo, '.') == false) {
     echo "<script type='text/javascript'>alert('Dato Incorrecto');</script>";
     header("Refresh: 3; url=RegistroFRM.php");
     exit;
 }
 
+
+    $verificar_usuario = mysqli_query($conexion, "SELECT * FROM usuarios WHERE nombre_usuario='$username' ");
+    if (mysqli_num_rows($verificar_usuario) > 0){
+        echo "<script type='text/javascript'>alert('Este usuario ya está en uso, intenta con uno diferente');</script>";
+        header("Refresh: 0.1; url=RegistroFRM.php");
+        exit();
+    }    
+    $verificar_correo = mysqli_query($conexion, "SELECT * FROM usuarios WHERE correo='$Correo' ");
+    if (mysqli_num_rows($verificar_correo) > 0){
+        echo "<script type='text/javascript'>alert('Este correo ya está en uso, intenta con uno diferente');</script>";
+        header("Refresh: 0.1; url=RegistroFRM.php");
+        exit();
+    }   
+
     $ejecutar = mysqli_query($conexion, $query);
+
+if ($ejecutar){
+    echo "<script type='text/javascript'>alert('Usuario creado correctamente');</script>";
+    header("Refresh: 0.1; url=index.html");
+}
+
+mysqli_close($conexion);
 
 ?>
