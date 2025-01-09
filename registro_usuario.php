@@ -13,6 +13,22 @@
     $NumeroSS = $_POST["NumeroSS"];
 
     $query = "INSERT INTO usuarios(dni,nombre,apellidos,telefono,correo,nombre_usuario,contrasena,contrasena2,nro_seguridad_social) VALUES ('$dni','$nombre','$apellido','$telefono','$Correo','$username','$password','$password2','$NumeroSS')";
+    
+    if ($password2 != $password){
+        echo "<script type='text/javascript'>alert('Dato Incorrecto');</script>";
+        header("Refresh: 3; url=RegistroFRM.php");
+        exit;
+}
+if (!is_numeric($telefono) && strlen($telefono) != 9){
+    echo "<script type='text/javascript'>alert('Dato Incorrecto');</script>";
+    header("Refresh: 3; url=RegistroFRM.php");
+    exit;
+}
+if (strpos($email, '@') == false && strpos($email, '.') == false) {
+    echo "<script type='text/javascript'>alert('Dato Incorrecto');</script>";
+    header("Refresh: 3; url=RegistroFRM.php");
+    exit;
+}
 
     $ejecutar = mysqli_query($conexion, $query);
 
