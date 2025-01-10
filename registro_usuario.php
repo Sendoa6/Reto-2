@@ -2,7 +2,6 @@
 
     include 'Conexiones.php';
 
-    $dni = $_POST["dni"];
     $nombre = $_POST["nombre"];
     $apellido = $_POST["apellido"];
     $telefono = $_POST["telefono"];
@@ -10,25 +9,27 @@
     $username = $_POST["username"];
     $password = $_POST["password"];
     $password2 = $_POST["password2"];
-    $NumeroSS = $_POST["NumeroSS"];
+    $password = hash('sha512', $password);
+    $password2 = hash('sha512', $password2);
 
-    $query = "INSERT INTO usuarios(dni,nombre,apellidos,telefono,correo,nombre_usuario,contrasena,contrasena2,nro_seguridad_social) VALUES ('$dni','$nombre','$apellido','$telefono','$Correo','$username','$password','$password2','$NumeroSS')";
+
+    $query = "INSERT INTO usuarios(nombre,apellidos,telefono,correo,nombre_usuario,contrasena,contrasena2) VALUES ('$nombre','$apellido','$telefono','$Correo','$username','$password','$password2')";
     
     if ($password2 != $password){
         echo "<script type='text/javascript'>alert('Dato Incorrecto');</script>";
         header("Refresh: 3; url=RegistroFRM.php");
         exit;
-}
-if (!is_numeric($telefono) && strlen($telefono) != 9){
-    echo "<script type='text/javascript'>alert('Dato Incorrecto');</script>";
-    header("Refresh: 3; url=RegistroFRM.php");
-    exit;
-}
-if (strpos($Correo, '@') == false && strpos($Correo, '.') == false) {
-    echo "<script type='text/javascript'>alert('Dato Incorrecto');</script>";
-    header("Refresh: 3; url=RegistroFRM.php");
-    exit;
-}
+    }
+    if (!is_numeric($telefono) && strlen($telefono) != 9){
+        echo "<script type='text/javascript'>alert('Dato Incorrecto');</script>";
+        header("Refresh: 3; url=RegistroFRM.php");
+        exit;
+    }
+    if (strpos($Correo, '@') == false && strpos($Correo, '.') == false) {
+        echo "<script type='text/javascript'>alert('Dato Incorrecto');</script>";
+        header("Refresh: 3; url=RegistroFRM.php");
+        exit;
+    }
 
 
     $verificar_usuario = mysqli_query($conexion, "SELECT * FROM usuarios WHERE nombre_usuario='$username' ");
@@ -46,11 +47,11 @@ if (strpos($Correo, '@') == false && strpos($Correo, '.') == false) {
 
     $ejecutar = mysqli_query($conexion, $query);
 
-if ($ejecutar){
-    echo "<script type='text/javascript'>alert('Usuario creado correctamente');</script>";
-    header("Refresh: 0.1; url=index.html");
-}
+    if ($ejecutar){
+        echo "<script type='text/javascript'>alert('Usuario creado correctamente');</script>";
+        header("Refresh: 0.1; url=index.html");
+    }
 
-mysqli_close($conexion);
+    mysqli_close($conexion);
 
 ?>

@@ -19,8 +19,8 @@
                 <!-- <label for="id_usuario">ID Usuario</label>
                 <input type="text" id="id_usuario" name="id_usuario" disabled> --->
 
-                <label for="dni">DNI:</label>
-                <input type="text" id="dni" name="dni" required>
+                <!-- <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" required> -->
 
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required> <!-- Required para que el campo sea obligatorio y text para que te deje escribir en forma de texto -->
@@ -43,8 +43,8 @@
                 <label for="password">Repite la contraseña:</label>
                 <input type="password" id="password2" name="password2" required><!-- Password para que al escribir no se vea la contraseña -->
 
-                <label for="username">Numero Seguridad Social:</label>
-                <input type="text" id="NumeroSS" name="NumeroSS" required>
+                <!-- <label for="username">Numero Seguridad Social:</label>
+                <input type="text" id="NumeroSS" name="NumeroSS" required> -->
 
                 <button type="submit">Registrarse</button>
                 Volver al <a href="Formulario1.html"> inicio de sesion.</a><br> <!-- Redirigir hacia otro html -->
