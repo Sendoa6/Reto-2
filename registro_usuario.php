@@ -17,17 +17,17 @@
     
     if ($password2 != $password){
         echo "<script type='text/javascript'>alert('Dato Incorrecto');</script>";
-        header("Refresh: 3; url=RegistroFRM.php");
+        header("Refresh: 0.1; url=RegistroFRM.php");
         exit;
     }
     if (!is_numeric($telefono) && strlen($telefono) != 9){
         echo "<script type='text/javascript'>alert('Dato Incorrecto');</script>";
-        header("Refresh: 3; url=RegistroFRM.php");
+        header("Refresh: 0.1; url=RegistroFRM.php");
         exit;
     }
     if (strpos($Correo, '@') == false && strpos($Correo, '.') == false) {
         echo "<script type='text/javascript'>alert('Dato Incorrecto');</script>";
-        header("Refresh: 3; url=RegistroFRM.php");
+        header("Refresh: 0.1; url=RegistroFRM.php");
         exit;
     }
 
