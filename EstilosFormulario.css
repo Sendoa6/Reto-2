@@ -4,7 +4,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    /* background-color: #f4f4f9; */
+    background-image: url(https://wallpaper.forfun.com/fetch/e7/e7bfc1edebf545897f7d266883c4a7f0.jpeg);
     display: flex;
     align-items: center;
     justify-content: center;
