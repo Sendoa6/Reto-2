@@ -1,3 +1,14 @@
+<?php
+
+    session_start();
+    if(isset($_SESSION['usuario'])){
+        header("location: bienvenida.php");
+    }
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -17,11 +28,11 @@
       </ul>
     </nav>
     <nav>
-      <a href="index.html"> Inicio</a>
+      <a href="index.php"> Inicio</a>
       <a href="Conocenos.html"> Conocenos</a>
       <a href="CatalogoDeLibros.html"> Catalogo de Libros</a>
-      <a href="Prestamos.html"> Prestamos</a>
-      <a href="Formulario1.html"> Iniciar Sesion</a>
+      <a href="Prestamos.php"> Prestamos</a>
+      <a href="Formulario1.php"> Iniciar Sesion</a>
    </nav>
   </header>
   <main>

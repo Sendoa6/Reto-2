@@ -19,22 +19,25 @@
       </ul>
     </nav>
     <nav  >
-      <a href="index.html"> Inicio</a>
+      <a href="index.php"> Inicio</a>
       <a href="Conocenos.html"> Conocenos</a>
       <a href="CatalogoDeLibros.html"> Catalogo de Libros</a>
-      <a href="Prestamos.html"> Prestamos</a>
-      <a href="Formulario1.html"> Iniciar Sesion</a>
+      <a href="Prestamos.php"> Prestamos</a>
+      <a href="Formulario1.php"> Iniciar Sesion</a>
    </nav>
   </header>
   <main>
    <!--Creacion de Formulario-->
   <h2>Registrar Préstamo</h2>
-  <form id="prestamoForm">
-    <label for="titulo">Título del libro:</label><br>
-    <input type="text" id="titulo" name="titulo" required><br><br>
+  <form id="prestamoForm" action="registro_prestamos.php" method="post">
+    <label for="ID">ID del libro:</label><br>
+    <input type="text" id="ID" name="ID" required><br><br>
        
     <label for="nombre">Nombre del usuario:</label><br>
     <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" name="password" required><!-- Password para que al escribir no se vea la contraseña -->
        
     <label for="fecha">Fecha de préstamo:</label><br>
     <input type="date" id="fecha" name="fecha" required><br><br>

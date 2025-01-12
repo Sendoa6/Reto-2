@@ -13,7 +13,7 @@
             <img src="media/muskizlogo.png" alt="BibliotecaMuskiz"><!-- Insertar imagen -->
         
             <h2>Inicio de Sesión</h2>
-            <form action="#" method="post"> <!-- form, es para recopilar datos, action redirige los datos a donde quieras, 
+            <form action="login_usuario.php" method="post"> <!-- form, es para recopilar datos, action redirige los datos a donde quieras, 
                                             el "#" hace que no se envien los datos recopilados a ningun lugar externo sino que se quedaran en esta pagina ya que no disponemos de php, method define como se envian los datos, 
                                             post hace que los datos del formulario se envían de manera segura en el cuerpo de la solicitud, sin ser visibles en la URL.-->
 
@@ -25,7 +25,7 @@
                 <button  type="submit">Iniciar Sesión</button><!-- para hacer un boton que haga la funcion de enviar -->
             </form>
             ¿Nuevo usuario? <a href="RegistroFRM.php"> Registrate aqui.</a><br> <!-- Redirigir hacia otro html -->
-            Volver a la <a href="index.html">página principal.</a>
+            Volver a la <a href="index.php">página principal.</a>
         </div>
     </div>
 </body>

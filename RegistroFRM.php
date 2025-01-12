@@ -47,8 +47,8 @@
                 <input type="text" id="NumeroSS" name="NumeroSS" required> -->
 
                 <button type="submit">Registrarse</button>
-                Volver al <a href="Formulario1.html"> inicio de sesion.</a><br> <!-- Redirigir hacia otro html -->
-                Volver a la <a href="index.html">página principal.</a>
+                Volver al <a href="Formulario1.php"> inicio de sesion.</a><br> <!-- Redirigir hacia otro html -->
+                Volver a la <a href="index.php">página principal.</a>
             </form>
         </div>
 
