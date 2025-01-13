@@ -33,12 +33,6 @@
     <label for="ID">ID del libro:</label><br>
     <input type="text" id="ID" name="ID" required><br><br>
        
-    <label for="nombre">Nombre del usuario:</label><br>
-    <input type="text" id="nombre" name="nombre" required><br><br>
-
-    <label for="password">Contraseña:</label>
-    <input type="password" id="password" name="password" required><!-- Password para que al escribir no se vea la contraseña -->
-       
     <label for="fecha">Fecha de préstamo:</label><br>
     <input type="date" id="fecha" name="fecha" required><br><br>
        
