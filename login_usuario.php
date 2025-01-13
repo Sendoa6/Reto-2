@@ -15,7 +15,7 @@
         exit();
     }else{
         echo "<script type='text/javascript'>alert('Este usuario no existe, por favor pruebe otra vez');</script>";
-        header("Refresh: 0.1; url=RegistroFRM.php");
+        header("Refresh: 0.1; url=Formulario1.php");
         exit();
     }
 ?>

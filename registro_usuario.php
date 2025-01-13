@@ -49,7 +49,7 @@
 
     if ($ejecutar){
         echo "<script type='text/javascript'>alert('Usuario creado correctamente');</script>";
-        header("Refresh: 0.1; url=index.html");
+        header("Refresh: 0.1; url=index.php");
     }
 
     mysqli_close($conexion);
