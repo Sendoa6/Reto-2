@@ -34,6 +34,10 @@
       <a href="Prestamos.php"> Prestamos</a>
       <a href="Formulario1.php"> Iniciar Sesion</a>
    </nav>
+   <form action="miPerfil.php" method="post">
+       <a class=perfil href="miPerfil.php">Mi perfil</a>
+   </form>
+ 
   </header>
   <main>
   <img class="imagenbiblio" id="bibliotecamuskiz" src="media/UdaletxeaII.jpeg" alt="Biblioteca Municipal de Muskiz">

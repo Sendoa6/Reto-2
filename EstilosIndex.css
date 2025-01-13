@@ -14,7 +14,18 @@ nav {
 nav img {
     margin-right: 80px;
 } 
-
+.perfil{
+    list-style-type: none;
+    margin-left: 80px;
+    text-decoration: none;
+    color: inherit;
+    padding: 7px;
+    margin-left: 85em;
+}
+.perfil:hover{
+    background-color: lightskyblue;
+    border-radius: 10px;
+}
 nav ul {
     list-style-type: none;
     padding: 0;
