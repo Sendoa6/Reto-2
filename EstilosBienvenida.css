@@ -1,0 +1,116 @@
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+nav img {
+    margin-right: 80px;
+} 
+.perfil{
+    list-style-type: none;
+    margin-left: 80px;
+    text-decoration: none;
+    color: inherit;
+    padding: 7px;
+    margin-left: 85em;
+}
+.perfil:hover{
+    background-color: lightskyblue;
+    border-radius: 10px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    margin-left: 80px;
+    text-decoration: none;
+    color: inherit;
+    padding: 7px;
+}
+
+nav a:hover{
+    background-color: lightskyblue;
+    border-radius: 10px;
+}
+
+#uno li {
+    margin: 0;
+}
+header {
+    border-bottom: 10px solid black; 
+    padding-bottom: 10px;
+    width: 100%;      
+    background-image: url(https://png.pngtree.com/background/20211215/original/pngtree-abstract-light-blue-background-picture-image_1459673.jpg);
+    background-size: cover    
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    background-color: aliceblue
+}
+
+/* FOOTER */
+
+footer {
+    color: white;
+    text-align: center;
+    width: 100%; /* Ocupar todo el ancho de la ventana */
+    background-color: #232F3E;
+    padding: 20px;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0; /* Asegura que no haya margen */
+    margin-top: 2vw;
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}
+
+p footer{
+    background-color: #555;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Hasta aqui el FOOTER */
+
+.imagenbiblio{
+    width: 50%;
+}
+
+.imagenbiblio2{
+    width: 45%;
+}
+
+.txtrecomendacion{
+    margin: 15px;
+}
+h1{
+    text-align: center;
+    background-color: #0065a3;
+    color: white;
+    margin-left: 15em;
+    margin-right: 15em;
+}

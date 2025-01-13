@@ -35,7 +35,7 @@
       <a href="Formulario1.php"> Iniciar Sesion</a>
    </nav>
    <form action="miPerfil.php" method="post">
-       <a class=perfil href="miPerfil.php">Mi perfil</a>
+       <a class=perfil href="bienvenida.php">Mi perfil</a>
    </form>
  
   </header>
