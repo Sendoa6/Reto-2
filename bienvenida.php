@@ -3,7 +3,7 @@
     session_start();
 
     if(!isset($_SESSION['usuario'])){
-        echo "<script type='text/javascript'>alert('Por favor debes de iniciar sesion'); window.location = 'index.html'; </script>";
+        echo "<script type='text/javascript'>alert('Por favor debes de iniciar sesion'); window.location = 'index.php'; </script>";
         session_destroy();
         die();
     }
