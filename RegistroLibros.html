@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Libros</title>
+    <link rel="icon" href="media\muskizlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="RegistroLibros.css">
+</head>
+<body>
+    <header>
+        <nav class="header-1">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgwIRrFipHhzib2ULMT65_BOWt4EEIxC5SIg&s" alt="Logo ayuntamiento muskiz" height="85" width="85">
+          <ul id="uno">
+            <li><b>Biblioteca Municipal de Muskiz</b></li>
+            <li><b>Muskizko Udal Liburutegia</b></li>
+          </ul>
+        </nav>
+        <nav>
+          <a href="index.php"> Inicio</a>
+          <a href="Conocenos.html"> Conocenos</a>
+          <a href="CatalogoDeLibros.html"> Catalogo de Libros</a>
+          <a href="Prestamos.php"> Prestamos</a>
+          <a href="Formulario1.php"> Iniciar Sesion</a>
+       </nav>
+       <form action="miPerfil.php" method="post">
+           <a class=perfil href="bienvenida.php">Mi perfil</a>
+       </form>
+    </header>
+    
+    <br>
+    <h1>Regitrar libros al catálogo</h1>
+    <br>
+
+    <form id="RegistarLibro" action="" method="post">
+        <label for="ID">ID del libro:</label><br>
+        <input type="text" id="ID" name="ID" required><br><br>
+           
+        <label for="titulo">Título del libro:</label><br>
+        <input type="text" id="titulo" name="titulo" required><br><br>
+
+        <label for="titulo"">Autor del libro:</label><br>
+        <input type="text" id="autor" name="autor" required><br><br>
+           
+        <input type="submit" value="Registrar libro">
+    </form>
+    <br>
+
+    <footer>
+        <p>&copy; 2024 Muskizko Liburutegia. Todos los derechos reservados.</p>
+        <p>
+          <a href="https://facebook.com" target="_blank">Facebook</a> |
+          <a href="https://twitter.com" target="_blank">Twitter</a> |
+          <a href="https://instagram.com" target="_blank">Instagram</a>
+        </p>
+        <p>
+          <a href="https://maps.app.goo.gl/edZ15iYRnLJY2kUx6" target="_blank">📍🌍Localización y horarios</a>|
+          <a href="mailto:contacto@misitioweb.com">Contáctanos</a>
+        </p>
+    </footer>
+</body>
+</html>
