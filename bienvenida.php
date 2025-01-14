@@ -3,7 +3,7 @@
     session_start();
 
     if(!isset($_SESSION['usuario'])){
-        echo "<script type='text/javascript'>alert('Por favor debes de iniciar sesion'); window.location = 'index.php'; </script>";
+        echo "<script type='text/javascript'>  window.location = 'Formulario1.php'; </script>";
         session_destroy();
         die();
     }
@@ -33,13 +33,19 @@
       <a href="CatalogoDeLibros.html"> Catalogo de Libros</a>
       <a href="Prestamos.php"> Prestamos</a>
       <a href="Formulario1.php"> Iniciar Sesion</a>
-   </nav>
-   <form action="miPerfil.php" method="post">
-       <a class=perfil href="miPerfil.php">Mi perfil</a>
+      <form action="bienvenida.php" method="post">
+      <a class=perfil href="bienvenida.php"><img class="imgperfil" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVg9KLX4bqxbJvgDoC8zXQGIWrrb1fcPsYQ&s" 
+      alt="img"></a>
    </form>
- 
+   </nav>
+   <form action="bienvenida.php" method="post">
+       <a class=perfil href="bienvenida.php">Mi perfil</a>
+   </form>
   </header>
+
   <h1> MI PERFIL</h1>
+
+
     <a href="cerrar_sesion.php">Cerrar sesión</a>
     <footer>
     <p>&copy; 2024 Muskizko Liburutegia. Todos los derechos reservados.</p>

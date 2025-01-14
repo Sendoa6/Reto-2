@@ -24,7 +24,7 @@
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgwIRrFipHhzib2ULMT65_BOWt4EEIxC5SIg&s" alt="Logo ayuntamiento muskiz" height="85" width="85">
       <ul id="uno">
         <li><b>Biblioteca Municipal de Muskiz</b></li>
-        <li><b>Muskizko Udal Liburutegia</b></li>
+        <li><b>Muskizko Udal Liburutegia</b></li> 
       </ul>
     </nav>
     <nav>
@@ -33,10 +33,12 @@
       <a href="CatalogoDeLibros.html"> Catalogo de Libros</a>
       <a href="Prestamos.php"> Prestamos</a>
       <a href="Formulario1.php"> Iniciar Sesion</a>
-   </nav>
-   <form action="bienvenida.php" method="post">
-       <a class=perfil href="bienvenida.php">Mi perfil</a>
+      <form action="bienvenida.php" method="post">
+      <a class=perfil href="bienvenida.php"><img class="imgperfil" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVg9KLX4bqxbJvgDoC8zXQGIWrrb1fcPsYQ&s" 
+      alt="img"></a>
    </form>
+   </nav>
+   
  
   </header>
   <main>
