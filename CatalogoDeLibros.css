@@ -150,7 +150,10 @@ input[type="radio"]:checked + .tab-label {
 #tab3:checked ~ #content3,
 #tab4:checked ~ #content4,
 #tab5:checked ~ #content5,
-#tab6:checked ~ #content6
+#tab6:checked ~ #content6,
+#tab7:checked ~ #content7,
+#tab8:checked ~ #content8
+
 {
     display: block;
 }
@@ -187,4 +190,27 @@ footer a:hover {
 }
 .sinestilo{
     list-style-type: none;
+}
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tab-label {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+input[type="radio"]:checked + .tab-label + .tab-content {
+    display: block;
 }

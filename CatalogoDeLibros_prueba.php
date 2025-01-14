@@ -59,25 +59,27 @@
             }
 
 
-            $contador = 1;
-            // Mostrar cada género en su sección
+            $contador = 1;  // Inicia el contador en 1
+
             foreach ($generos as $genero => $librosPorGenero) {
                 echo "<h2>" . htmlspecialchars($genero) . "</h2>";
-                echo '<input type="radio" id="tab_'.$contador.'" name="tab">';
-                echo '<label for="tab_' .$contador. '" class="tab-label">Ver ' . htmlspecialchars($genero) . '</label>';
-                echo '<div class="tab-content">';
+                echo '<input type="radio" id="tab'.$contador.'" name="tab">';
+                echo '<label for="tab' .$contador. '" class="tab-label">Ver ' . htmlspecialchars($genero) . '</label>';
+                echo '<div class="tab-content" id="content'.$contador.'">';
                 echo '<ul>';
+                
                 foreach ($librosPorGenero as $libro) {
                     echo '<li>';
-                    echo '<img src="' . htmlspecialchars($libro['imagen_url']) . '" alt="' . htmlspecialchars($libro['Titulo']) . '" width="40%">';
-                    echo '<p><strong>Título:</strong> ' . htmlspecialchars($libro['Titulo']) . '</p>';
+                    echo '<p><strong>Título:</strong> ' . htmlspecialchars($libro['titulo']) . '</p>';
                     echo '<p><strong>Autor:</strong> ' . htmlspecialchars($libro['Autor_Nombre']) . ' ' . htmlspecialchars($libro['Autor_Apellidos']) . '</p>';
+                    echo '<img src="' . htmlspecialchars($libro['imagen_url']) . '" alt="' . htmlspecialchars($libro['titulo']) . '" width="40%">';
                     echo '</li>';
                 }
                 echo '</ul>';
                 echo '</div>';
-                $contador++;
+                $contador++;  // Aumenta el contador
             }
+
 
             // Cerrar la conexión
             mysqli_close($conexion);
