@@ -1,6 +1,14 @@
 <?php
+session_start();
 
-    if (isset($_SESSION['ID_usuario']) and $_SESSION['ID_usuario'] == 18) {
-        
+// Verificar si la variable de sesión 'empleado' está definida
+if (isset($_SESSION['empleado'])) {
+    if ($_SESSION['empleado'] === true) {
+        echo 'Es empleado';
+    } else {
+        echo 'No es empleado';
     }
+} else {
+    echo 'No se ha establecido el estado de empleado';
+}
 ?>
