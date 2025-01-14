@@ -39,44 +39,47 @@
    </form>
    </nav>
   </header>
-  <main>
-  <img class="imagenbiblio" id="bibliotecamuskiz" src="media/UdaletxeaII.jpeg" alt="Biblioteca Municipal de Muskiz">
-  <img class="imagenbiblio2" id="ayuntamientomuskiz" src="media/Ayuntamiento2.jpg" alt="Ayuntamiento de Muskiz">
-  <br>
-  <h4>Bienvenidos a la Biblioteca de Muskiz</h4>
-  <p id="txtbienvenida">
-    Descubre un mundo de conocimiento, inspiración y aprendizaje en la Biblioteca de Muskiz. Aquí encontrarás una amplia colección de libros y recursos digitales 
-    para todas las edades. Nuestro objetivo es ofrecerte un espacio abierto y accesible donde puedas disfrutar de la lectura, la investigación y la cultura. Explora nuestras 
-    secciones y consulta el catálogo en línea. ¡Te invitamos a formar parte de esta experiencia literaria y educativa en Muskiz!
-  </p>
-  <h3 id="titlrecomendaciones">Nuestras Recomendaciones</h3>
-    <table>
-      <caption class="txtrecomendacion"><u>Infantil y Juvenil</u></caption>
-        <tr>
-          <td><a href="CatalogoDeLibros.html"><img src="media/Geronimo_Stilton.jpg" alt="Geronimo_Stilton" height="300" width="300"></a></td>
-          <td><a href="CatalogoDeLibros.html"><img src="media/Capitan_Calzoncillos.jpeg" alt="Capitan capitan-calzoncillos" height="300" width="300"></a></td>
-          <td><a href="CatalogoDeLibros.html"><img src="media/Diario_de_Greg.jpg" alt="Diario de Greg" height="300" width="300"></a></td>
-        </tr>
-        <tr>
-          <td class="titllibros">Geronimo Stilton</td>
-          <td class="titllibros">Capitan Calzoncillos</td>
-          <td class="titllibros">Diario de Greg</td>
-        </tr>
-    </table>
-    <table>
-      <caption class="txtrecomendacion"><u>Adultos</u></caption>
-        <tr>
-          <td><a href="CatalogoDeLibros.html"><img src="media/Mistborn.jpeg" alt="Mistborn" height="300" width="300"></a></td>
-          <td><a href="CatalogoDeLibros.html"><img src="media/Juego_de_Tronos.jpg" alt="Game of Thrones" height="300" width="300"></a></td>
-          <td><a href="CatalogoDeLibros.html"><img src="media/El_Señor_de_Los_Anillos.jpg" alt="El señor de los anillos" height="300" width="300"></a></td>
-        </tr>
-        <tr>
-          <td class="titllibros">Mistborn</td>
-          <td class="titllibros">Juego de Tronos</td>
-          <td class="titllibros">El Señor de Los Anillos</td>
-        </tr>
-    </table>
-  </main>
+
+  <div class="cuerpo">
+    <main>
+    <img class="imagenbiblio" id="bibliotecamuskiz" src="media/UdaletxeaII.jpeg" alt="Biblioteca Municipal de Muskiz">
+    <img class="imagenbiblio2" id="ayuntamientomuskiz" src="media/Ayuntamiento2.jpg" alt="Ayuntamiento de Muskiz">
+    <br>
+    <h4>Bienvenidos a la Biblioteca de Muskiz</h4>
+    <p id="txtbienvenida">
+      Descubre un mundo de conocimiento, inspiración y aprendizaje en la Biblioteca de Muskiz. Aquí encontrarás una amplia colección de libros y recursos digitales 
+      para todas las edades. Nuestro objetivo es ofrecerte un espacio abierto y accesible donde puedas disfrutar de la lectura, la investigación y la cultura. Explora nuestras 
+      secciones y consulta el catálogo en línea. ¡Te invitamos a formar parte de esta experiencia literaria y educativa en Muskiz!
+    </p>
+    <h3 id="titlrecomendaciones">Nuestras Recomendaciones</h3>
+      <table>
+        <caption class="txtrecomendacion"><u>Infantil y Juvenil</u></caption>
+          <tr>
+            <td><a href="CatalogoDeLibros.html"><img src="media/Geronimo_Stilton.jpg" alt="Geronimo_Stilton" height="300" width="300"></a></td>
+            <td><a href="CatalogoDeLibros.html"><img src="media/Capitan_Calzoncillos.jpeg" alt="Capitan capitan-calzoncillos" height="300" width="300"></a></td>
+            <td><a href="CatalogoDeLibros.html"><img src="media/Diario_de_Greg.jpg" alt="Diario de Greg" height="300" width="300"></a></td>
+          </tr>
+          <tr>
+            <td class="titllibros">Geronimo Stilton</td>
+            <td class="titllibros">Capitan Calzoncillos</td>
+            <td class="titllibros">Diario de Greg</td>
+          </tr>
+      </table>
+      <table>
+        <caption class="txtrecomendacion"><u>Adultos</u></caption>
+          <tr>
+            <td><a href="CatalogoDeLibros.html"><img src="media/Mistborn.jpeg" alt="Mistborn" height="300" width="300"></a></td>
+            <td><a href="CatalogoDeLibros.html"><img src="media/Juego_de_Tronos.jpg" alt="Game of Thrones" height="300" width="300"></a></td>
+            <td><a href="CatalogoDeLibros.html"><img src="media/El_Señor_de_Los_Anillos.jpg" alt="El señor de los anillos" height="300" width="300"></a></td>
+          </tr>
+          <tr>
+            <td class="titllibros">Mistborn</td>
+            <td class="titllibros">Juego de Tronos</td>
+            <td class="titllibros">El Señor de Los Anillos</td>
+          </tr>
+      </table>
+    </main>
+  </div>
   <footer>
     <p>&copy; 2024 Muskizko Liburutegia. Todos los derechos reservados.</p>
     <p>

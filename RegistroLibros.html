@@ -22,24 +22,25 @@
           <a href="CatalogoDeLibros.html"> Catalogo de Libros</a>
           <a href="Prestamos.php"> Prestamos</a>
           <a href="Formulario1.php"> Iniciar Sesion</a>
+          <form action="bienvenida.php" method="post">
+            <a class=perfil href="bienvenida.php"><img class="imgperfil" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVg9KLX4bqxbJvgDoC8zXQGIWrrb1fcPsYQ&s" 
+            alt="img"></a>
+          </form>
        </nav>
-       <form action="miPerfil.php" method="post">
-           <a class=perfil href="bienvenida.php">Mi perfil</a>
-       </form>
     </header>
     
     <br>
     <h1>Regitrar libros al catálogo</h1>
     <br>
 
-    <form id="RegistarLibro" action="" method="post">
+    <form class="registrolibro" id="RegistarLibro" action="" method="post">
         <label for="ID">ID del libro:</label><br>
         <input type="text" id="ID" name="ID" required><br><br>
            
         <label for="titulo">Título del libro:</label><br>
         <input type="text" id="titulo" name="titulo" required><br><br>
 
-        <label for="titulo"">Autor del libro:</label><br>
+        <label for="titulo">Autor del libro:</label><br>
         <input type="text" id="autor" name="autor" required><br><br>
            
         <input type="submit" value="Registrar libro">

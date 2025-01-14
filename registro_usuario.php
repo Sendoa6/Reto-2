@@ -11,9 +11,9 @@
     $password2 = $_POST["password2"];
     $password = hash('sha512', $password);
     $password2 = hash('sha512', $password2);
+    $NumeroSS = $_POST['NumeroSS'];
 
-
-    $query = "INSERT INTO usuarios(nombre,apellidos,telefono,correo,nombre_usuario,contrasena,contrasena2) VALUES ('$nombre','$apellido','$telefono','$Correo','$username','$password','$password2')";
+    $query = "INSERT INTO usuarios(nombre,apellidos,telefono,correo,nombre_usuario,contrasena,contrasena2,NumeroSS) VALUES ('$nombre','$apellido','$telefono','$Correo','$username','$password','$password2','$NumeroSS')";
     
     if ($password2 != $password){
         echo "<script type='text/javascript'>alert('Dato Incorrecto');</script>";
@@ -30,7 +30,11 @@
         header("Refresh: 0.1; url=RegistroFRM.php");
         exit;
     }
-
+    if (!is_numeric($NumeroSS) && strlen($telefono) != 12){
+        echo "<script type='text/javascript'>alert('Dato Incorrecto');</script>";
+        header("Refresh: 0.1; url=RegistroFRM.php");
+        exit;
+    }
 
     $verificar_usuario = mysqli_query($conexion, "SELECT * FROM usuarios WHERE nombre_usuario='$username' ");
     if (mysqli_num_rows($verificar_usuario) > 0){
@@ -45,6 +49,7 @@
         exit();
     }   
 
+    
     $ejecutar = mysqli_query($conexion, $query);
     
     if ($ejecutar){

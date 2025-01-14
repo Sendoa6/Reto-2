@@ -46,6 +46,19 @@ header {
     width: 100%;           
 }
 
+.imgperfil{
+    height: 55px;
+    width: 55px;
+    margin: 0;
+    padding: 0;
+    border: 2px solid black;
+    border-radius: 100px;
+}
+.perfil{
+    display: flex;
+    justify-content: right;
+    transform: translateX(180px);
+}
 /* Hasta aqui el HEADER */
 body{
     font-family: Arial, sans-serif; /*La tipografía de la página*/
@@ -62,7 +75,7 @@ h1{
     
 }
 
-form {
+.devPrest{
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 20px;

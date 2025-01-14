@@ -21,8 +21,7 @@ header {
     border-radius: 100px;
 }
 .perfil{
-    display: flex;
-    justify-content: right;
+
     transform: translateX(180px);
 }
 nav {
@@ -46,11 +45,13 @@ nav a {
     text-decoration: none;
     color: inherit;
     padding: 7px;
+    transition: transform 0.3s ease; /*Animación*/
 }
 
 nav a:hover{
     background-color: lightskyblue;
     border-radius: 10px;
+    transform: scale(1.3); /*Animación*/
 }
 
 #uno li {
@@ -60,32 +61,49 @@ nav a:hover{
 /*Fin del header estatico por cada pagina*/
 
 body {
+    margin: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    border: solid;
+    background-image: url(https://wallpaper.forfun.com/fetch/e7/e7bfc1edebf545897f7d266883c4a7f0.jpeg);
+}
+
+main{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    box-sizing: border-box; /* Asegura que el padding se mantenga dentro del ancho total */
 }
 
 h1 {
-    color: #333;
+    color: #000000;
     background-color: lightblue;
     text-align: center;
     cursor: pointer;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 1%;
+    border-radius: 20px;
 }
 
-h1:hover{
+.prestamos{
+    transition: transform 0.3s ease;
+}
+
+.prestamos:hover{
     background-color: rgb(104, 159, 177);
+    transform: scale(1.2);
 }
 
 
 table {
     width: 100%;
-
     margin-top: 20px;
-}
-
-h2 {
-    color: #333;
-    background-color: lightblue;
-    text-align: center;
 }
 
 th, td {
@@ -106,6 +124,9 @@ th {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
 }
 
 label {
@@ -142,16 +163,6 @@ header {
 }
 /* FOOTER */
 /* Asegura que el body ocupe toda la altura de la ventana */
-body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-    background-color: aliceblue;
-    box-sizing: border-box; /* Asegura que el padding se mantenga dentro del ancho total */
-}
 
 /* Flexbox en el contenido para mantener el footer al fondo */
 main {
@@ -167,6 +178,7 @@ footer {
     padding: 20px;
     box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
     margin: 0; /* Elimina margen extra */
+    border-top: solid 10px black;
 }
 
 /* Ajustes en los enlaces dentro del footer */
