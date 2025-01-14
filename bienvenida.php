@@ -1,13 +1,11 @@
 <?php
 
     session_start();
-
     if(!isset($_SESSION['usuario'])){
         echo "<script type='text/javascript'>  window.location = 'Formulario1.php'; </script>";
         session_destroy();
         die();
     }
-
 ?>
 
 <!DOCTYPE html>
@@ -38,14 +36,26 @@
       alt="img"></a>
    </form>
    </nav>
-   <form action="bienvenida.php" method="post">
-       <a class=perfil href="bienvenida.php">Mi perfil</a>
-   </form>
   </header>
 
   <h1> MI PERFIL</h1>
-
-
+  <br>
+  <div class="cajaperfil">
+  <img class="imgperfil2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVg9KLX4bqxbJvgDoC8zXQGIWrrb1fcPsYQ&s" 
+  alt="img"></a>
+  <a href="">Cambiar icono</a>
+  </div>
+  <div>
+    <?php 
+    echo "Usuario: ".$_SESSION['usuario'];
+    echo "Nombre: ".$_SESSION['nombre'];
+    echo "Apellido: ".$_SESSION['apellido'];
+    echo "Telefono: ".$_SESSION['telefono'];
+    echo "Corre Electronico: ".$_SESSION['correo']
+    ?>
+  </div>
+    <br>
+    <br>
     <a href="cerrar_sesion.php">Cerrar sesión</a>
     <footer>
     <p>&copy; 2024 Muskizko Liburutegia. Todos los derechos reservados.</p>

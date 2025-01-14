@@ -1,4 +1,3 @@
-
 header {
     display: flex;
     flex-direction: column;
@@ -14,22 +13,23 @@ nav {
 nav img {
     margin-right: 80px;
 } 
-.perfil{
-    list-style-type: none;
-    margin-left: 80px;
-    text-decoration: none;
-    color: inherit;
-    padding: 7px;
-    margin-left: 85em;
+.imgperfil{
+    height: 55px;
+    width: 55px;
+    margin: 0;
+    padding: 0;
+    border: 2px solid black;
+    border-radius: 100px;
 }
-.perfil:hover{
-    background-color: lightskyblue;
-    border-radius: 10px;
+.perfil{
+    display: flex;
+    justify-content: right;
+    transform: translateX(180px);
 }
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 0; 
 }
 
 nav a {
@@ -64,7 +64,6 @@ body {
     width: auto;
     background-color: aliceblue
 }
-
 /* FOOTER */
 
 footer {
@@ -126,4 +125,13 @@ h1{
     display: flex;
     justify-content: right;
     transform: translateX(180px);
+}
+.imgperfil2{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 100px;
+}
+.cajaperfil{
+    text-align: center;
 }

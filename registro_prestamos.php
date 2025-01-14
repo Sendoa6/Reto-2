@@ -13,6 +13,7 @@
 
     if (isset($_SESSION['ID_usuario'])) {
         $userId = $_SESSION['ID_usuario'];
+
         echo "El ID del usuario es: " . $userId;
     } else {
         echo "No hay usuario logueado.";
