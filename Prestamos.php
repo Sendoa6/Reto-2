@@ -19,11 +19,11 @@
       </ul>
     </nav>
     <nav  >
-      <a href="index.php"> Inicio</a>
-      <a href="Conocenos.html"> Conocenos</a>
-      <a href="CatalogoDeLibros.html"> Catalogo de Libros</a>
-      <a href="Prestamos.php"> Prestamos</a>
-      <a href="Formulario1.php"> Iniciar Sesion</a>
+      <a class="ventana" href="index.php"> Inicio</a>
+      <a class="ventana" href="Conocenos.html"> Conocenos</a>
+      <a class="ventana" href="CatalogoDeLibros.html"> Catalogo de Libros</a>
+      <a class="ventanaactual" href="Prestamos.php"> Prestamos</a>
+      <a class="ventana" href="Formulario1.php"> Iniciar Sesion</a>
       <form action="bienvenida.php" method="post">
       <a class=perfil href="bienvenida.php"><img class="imgperfil" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVg9KLX4bqxbJvgDoC8zXQGIWrrb1fcPsYQ&s" 
       alt="img"></a>

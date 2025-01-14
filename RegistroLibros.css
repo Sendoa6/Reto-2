@@ -28,11 +28,13 @@ nav a {
     text-decoration: none;
     color: inherit;
     padding: 7px;
+    transition: transform 0.3s ease; /*Animación*/
 }
 
-nav a:hover{
+.ventana:hover{
     background-color: lightskyblue;
     border-radius: 10px;
+    transform: scale(1.3); /*Animación*/
 }
 
 #uno li {
@@ -53,24 +55,43 @@ header {
     padding: 0;
     border: 2px solid black;
     border-radius: 100px;
+    transition: transform 0.3s ease; /*Animación*/
 }
+
+.imgperfil:hover{
+    transform: scale(1.3); /*Animación*/
+}
+
 .perfil{
-    display: flex;
-    justify-content: right;
     transform: translateX(180px);
 }
 /* Hasta aqui el HEADER */
 
 body{
-    font-family: Arial, sans-serif; /*La tipografía de la página*/
-    background-color: aliceblue;
+    margin: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Arial, sans-serif;
+    border: solid;
+    background-image: url(https://wallpaper.forfun.com/fetch/e7/e7bfc1edebf545897f7d266883c4a7f0.jpeg);
+}
+
+.cuerpo{
+    padding-top: 5%;
+    padding-bottom: 5%;
     margin: 0;
-    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    background-color: aliceblue;
 }
 
 h1{
     text-align: center; /*Centrar el título h1*/
-    background-color: lightblue; /*Para darle color al fondo del título h1*/
+    background-color: lightskyblue; /*Para darle color al fondo del título h1*/
     margin-left: 25%;
     margin-right: 25%;
     
@@ -123,7 +144,7 @@ footer {
     left: 0;
     right: 0;
     margin: 0; /* Asegura que no haya margen */
-    margin-top: 2vw;
+    border-top: 10px solid black;
     box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
 }
 

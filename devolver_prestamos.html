@@ -17,49 +17,52 @@
           </ul>
         </nav>
         <nav>
-          <a href="index.php"> Inicio</a>
-          <a href="Conocenos.html"> Conocenos</a>
-          <a href="CatalogoDeLibros.html"> Catalogo de Libros</a>
-          <a href="Prestamos.php"> Prestamos</a>
-          <a href="Formulario1.php"> Iniciar Sesion</a>
+          <a class="ventana" href="index.php"> Inicio</a>
+          <a class="ventana" href="Conocenos.html"> Conocenos</a>
+          <a class="ventana" href="CatalogoDeLibros.html"> Catalogo de Libros</a>
+          <a class="ventana" href="Prestamos.php"> Prestamos</a>
+          <a class="ventana" href="Formulario1.php"> Iniciar Sesion</a>
           <form action="bienvenida.php" method="post">
             <a class=perfil href="bienvenida.php"><img class="imgperfil" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVg9KLX4bqxbJvgDoC8zXQGIWrrb1fcPsYQ&s" 
             alt="img"></a>
           </form>
         </nav>
     </header>
-
-    <br>
-    <h1>Registrar la devolución de un préstamo</h1>
-    <br>
-
-    <form class="devPrest" id="devolucion" action="" method="post">
-        <label for="ID">ID del préstamo:</label><br>
-        <input type="text" id="ID" name="ID" required><br><br>
-           
-        <label for="fecha">Fecha de devolución:</label><br>
-        <input type="date" id="fecha" name="fecha" required><br><br>
-           
-        <input type="submit" value="Registrar devolución del préstamo">
-      </form>
+    
+    <div class="cuerpo">
       <br>
-      
-      <!--Con JavaScript haremos que la fecha predeterminada, si no se introduce ninguna, sea la actual-->
-    <script>
-        // Obtener la fecha actual en formato YYYY-MM-DD
-        const fechaActual = new Date().toISOString().split("T")[0];
+      <h1>Registrar la devolución de un préstamo</h1>
+      <br>
 
-        // Establecer la fecha predeterminada en el campo de fecha
-        const campoFecha = document.getElementById("fecha");
-        campoFecha.value = fechaActual;
+      <form class="devPrest" id="devolucion" action="" method="post">
+          <label for="ID">ID del préstamo:</label><br>
+          <input type="text" id="ID" name="ID" required><br><br>
+            
+          <label for="fecha">Fecha de devolución:</label><br>
+          <input type="date" id="fecha" name="fecha" required><br><br>
+            
+          <input type="submit" value="Registrar devolución del préstamo">
+        </form>
+        <br>
+        
+        <!--Con JavaScript haremos que la fecha predeterminada, si no se introduce ninguna, sea la actual-->
+      <script>
+          // Obtener la fecha actual en formato YYYY-MM-DD
+          const fechaActual = new Date().toISOString().split("T")[0];
 
-        // Validar que el campo no quede vacío al enviar
-        document.getElementById("devolucion").addEventListener("submit", (e) => {
-            if (!campoFecha.value) {
-                campoFecha.value = fechaActual; // Reasignar si está vacío
-            }
-        });
-    </script>
+          // Establecer la fecha predeterminada en el campo de fecha
+          const campoFecha = document.getElementById("fecha");
+          campoFecha.value = fechaActual;
+
+          // Validar que el campo no quede vacío al enviar
+          document.getElementById("devolucion").addEventListener("submit", (e) => {
+              if (!campoFecha.value) {
+                  campoFecha.value = fechaActual; // Reasignar si está vacío
+              }
+          });
+      </script>
+    </div>
+
     <footer>
         <p>&copy; 2024 Muskizko Liburutegia. Todos los derechos reservados.</p>
         <p>
