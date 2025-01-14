@@ -1,13 +1,21 @@
 <?php
 
+    session_start();
     include 'Conexiones.php';
 
-    $ID = $_POST["ID"];
+    $ID_Ejemplar = $_POST["ID"];
+    $fecha_prestamo = $_POST["fecha"];
     $fecha = $_POST["fecha"];
+    $fecha = new DateTime($fecha);
+    $fecha->modify('+3 months');
+    $fecha_limite = $fecha->format('Y-m-d');
+    $fecha_devolucion;
 
-    if ($_SESSION){
-        // $query = "INSERT INTO prestamos(ID,nombre,password,correo,nombre_usuario,contrasena,contrasena2) VALUES ('$nombre','$apellido','$telefono','$Correo','$username','$password','$password2')";
-        
+    if (isset($_SESSION['ID_usuario'])) {
+        $userId = $_SESSION['ID_usuario'];
+        echo "El ID del usuario es: " . $userId;
+    } else {
+        echo "No hay usuario logueado.";
     }
 
 ?>

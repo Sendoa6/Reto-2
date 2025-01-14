@@ -34,7 +34,7 @@
       <a href="Prestamos.php"> Prestamos</a>
       <a href="Formulario1.php"> Iniciar Sesion</a>
    </nav>
-   <form action="miPerfil.php" method="post">
+   <form action="bienvenida.php" method="post">
        <a class=perfil href="bienvenida.php">Mi perfil</a>
    </form>
  
