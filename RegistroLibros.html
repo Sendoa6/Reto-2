@@ -17,35 +17,49 @@
           </ul>
         </nav>
         <nav>
-          <a href="index.php"> Inicio</a>
-          <a href="Conocenos.html"> Conocenos</a>
-          <a href="CatalogoDeLibros.html"> Catalogo de Libros</a>
-          <a href="Prestamos.php"> Prestamos</a>
-          <a href="Formulario1.php"> Iniciar Sesion</a>
+          <a class="ventana" href="index.php"> Inicio</a>
+          <a class="ventana" href="Conocenos.html"> Conocenos</a>
+          <a class="ventana" href="CatalogoDeLibros.html"> Catalogo de Libros</a>
+          <a class="ventana" href="Prestamos.php"> Prestamos</a>
+          <a class="ventana" href="Formulario1.php"> Iniciar Sesion</a>
           <form action="bienvenida.php" method="post">
             <a class=perfil href="bienvenida.php"><img class="imgperfil" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVg9KLX4bqxbJvgDoC8zXQGIWrrb1fcPsYQ&s" 
             alt="img"></a>
           </form>
        </nav>
     </header>
-    
-    <br>
-    <h1>Regitrar libros al catálogo</h1>
-    <br>
+    <div class="cuerpo">
+      <br>
+      <h1>Regitrar libros al catálogo</h1>
+      <br>
 
-    <form class="registrolibro" id="RegistarLibro" action="" method="post">
-        <label for="ID">ID del libro:</label><br>
-        <input type="text" id="ID" name="ID" required><br><br>
-           
-        <label for="titulo">Título del libro:</label><br>
-        <input type="text" id="titulo" name="titulo" required><br><br>
+      <form class="registrolibro" id="RegistarLibro" action="" method="post">
+          <label for="ISBN">ISBN del libro:</label><br>
+          <input type="text" id="ISBN" name="ISBN" required><br><br>
+            
+          <label for="titulo">Título del libro:</label><br>
+          <input type="text" id="titulo" name="titulo" required><br><br>
 
-        <label for="titulo"">Autor del libro:</label><br>
-        <input type="text" id="autor" name="autor" required><br><br>
-           
-        <input type="submit" value="Registrar libro">
-    </form>
-    <br>
+          <label for="copias">Número de copias:</label><br>
+          <input type="text" id="copias" name="copias" required><br><br>
+
+          <label for="genero">Género del libro:</label><br>
+          <select id="genero" name="genero" required>
+            <option value="" disabled selected>Seleccione un género</option>
+            <option value="fantasia">Fantasía</option>
+            <option value="Drama">Drama</option>
+            <option value="Terror">Terror</option>
+            <option value="romance">Romance</option>
+            <option value="biografia">Biografía</option>
+            <option value="ingles">Ingles</option>
+            <option value="infantil">Infantil</option>
+            <option value="autoayuda">Autoayuda</option>
+          </select><br><br>
+            
+          <input type="submit" value="Registrar libro">
+      </form>
+      <br>
+    </div>
 
     <footer>
         <p>&copy; 2024 Muskizko Liburutegia. Todos los derechos reservados.</p>
