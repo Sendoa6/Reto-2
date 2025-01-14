@@ -1,3 +1,13 @@
+<?php
+
+    session_start();
+    if(!isset($_SESSION['empleado'])){
+        echo "<script type='text/javascript'>  window.location = 'Formulario1.php'; </script>";
+        session_destroy();
+        die();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,6 +65,9 @@
             <option value="infantil">Infantil</option>
             <option value="autoayuda">Autoayuda</option>
           </select><br><br>
+
+          <label for="url">Url de imagen del libro:</label><br>
+          <input type="text" id="url" name="url" required><br><br>
             
           <input type="submit" value="Registrar libro">
       </form>

@@ -176,6 +176,7 @@ footer a:hover {
 
 table {
     margin: 20px auto; /* Centra la tabla horizontalmente */
+    margin-bottom: 0;
     text-align: center; /* Centra el contenido de las celdas */
     border-spacing: 10px; /* Espaciado entre celdas */
     width: 80%; /* Ajusta el ancho según sea necesario */

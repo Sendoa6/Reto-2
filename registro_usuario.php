@@ -51,7 +51,7 @@
 
     
     $ejecutar = mysqli_query($conexion, $query);
-
+    
     if ($ejecutar){
         echo "<script type='text/javascript'>alert('Usuario creado correctamente');</script>";
         header("Refresh: 0.1; url=index.php");
