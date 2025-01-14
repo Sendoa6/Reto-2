@@ -9,12 +9,7 @@ $password_login = mysqli_real_escape_string($conexion, $_POST['password_login'])
 $password_login = hash('sha512', $password_login); // Asegúrate de que coincida con lo almacenado en la base de datos
 
 // Consulta para validar el login y obtener datos del usuario, incluido el NumeroSS
-$query = "
-    SELECT ID_usuario, nombre_usuario, NumeroSS 
-    FROM usuarios 
-    WHERE nombre_usuario = '$username_login' AND contrasena = '$password_login'
-    LIMIT 1
-";
+$query = "SELECT ID_usuario, nombre_usuario, NumeroSS FROM usuarios WHERE nombre_usuario = '$username_login' AND contrasena = '$password_login' LIMIT 1";
 
 $result = mysqli_query($conexion, $query);
 
