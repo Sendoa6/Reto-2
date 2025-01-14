@@ -13,6 +13,13 @@
         $datos_usuario = mysqli_fetch_assoc($validar_login);
         $_SESSION['usuario'] = $datos_usuario['nombre_usuario'];
         $_SESSION['ID_usuario'] = $datos_usuario['ID_usuario'];
+        $_SESSION['telefono'] = $datos_usuario['telefono'];
+        $_SESSION['nombre'] = $datos_usuario['nombre'];
+        $_SESSION['apellido'] = $datos_usuario['apellido'];
+        $_SESSION['correo'] = $datos_usuario['correo'];
+
+
+
         header("location: bienvenida.php");
         exit();
     }else{

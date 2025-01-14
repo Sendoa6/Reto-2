@@ -38,8 +38,6 @@
       alt="img"></a>
    </form>
    </nav>
-   
- 
   </header>
   <main>
   <img class="imagenbiblio" id="bibliotecamuskiz" src="media/UdaletxeaII.jpeg" alt="Biblioteca Municipal de Muskiz">
