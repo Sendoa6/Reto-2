@@ -39,7 +39,19 @@ nav a:hover{
     margin: 0;
     font-weight: bold;
 }
-
+.imgperfil{
+    height: 55px;
+    width: 55px;
+    margin: 0;
+    padding: 0;
+    border: 2px solid black;
+    border-radius: 100px;
+}
+.perfil{
+    display: flex;
+    justify-content: right;
+    transform: translateX(180px);
+}
 header {
     border-bottom: 10px solid black; 
     padding-bottom: 10px;
