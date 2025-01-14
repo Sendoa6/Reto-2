@@ -1,3 +1,13 @@
+<?php
+
+    session_start();
+    if(!isset($_SESSION['empleado'])){
+        echo "<script type='text/javascript'>  window.location = 'Formulario1.php'; </script>";
+        session_destroy();
+        die();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
