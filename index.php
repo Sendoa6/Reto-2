@@ -57,9 +57,9 @@
       <table>
         <caption class="txtrecomendacion"><u>Infantil y Juvenil</u></caption>
           <tr>
-            <td><a href="CatalogoDeLibros.html"><img src="media/Geronimo_Stilton.jpg" alt="Geronimo_Stilton" height="300" width="300"></a></td>
-            <td><a href="CatalogoDeLibros.html"><img src="media/Capitan_Calzoncillos.jpeg" alt="Capitan capitan-calzoncillos" height="300" width="300"></a></td>
-            <td><a href="CatalogoDeLibros.html"><img src="media/Diario_de_Greg.jpg" alt="Diario de Greg" height="300" width="300"></a></td>
+            <td><a href="CatalogoDeLibros.html"><img class="geronimo" src="media/Geronimo_Stilton.jpg" alt="Geronimo_Stilton" height="300" width="300"></a></td>
+            <td><a href="CatalogoDeLibros.html"><img class="calzoncillos" src="media/Capitan_Calzoncillos.jpeg" alt="Capitan capitan-calzoncillos" height="300" width="300"></a></td>
+            <td><a href="CatalogoDeLibros.html"><img class="diariogreg" src="media/Diario_de_Greg.jpg" alt="Diario de Greg" height="300" width="300"></a></td>
           </tr>
           <tr>
             <td class="titllibros">Geronimo Stilton</td>
@@ -70,9 +70,9 @@
       <table>
         <caption class="txtrecomendacion"><u>Adultos</u></caption>
           <tr>
-            <td><a href="CatalogoDeLibros.html"><img src="media/Mistborn.jpeg" alt="Mistborn" height="300" width="300"></a></td>
-            <td><a href="CatalogoDeLibros.html"><img src="media/Juego_de_Tronos.jpg" alt="Game of Thrones" height="300" width="300"></a></td>
-            <td><a href="CatalogoDeLibros.html"><img src="media/El_Señor_de_Los_Anillos.jpg" alt="El señor de los anillos" height="300" width="300"></a></td>
+            <td><a href="CatalogoDeLibros.html"><img class="mistborn" src="media/Mistborn.jpeg" alt="Mistborn" height="300" width="300"></a></td>
+            <td><a href="CatalogoDeLibros.html"><img class="juegodetronos" src="media/JuegoDeTronos.jpg" alt="Game of Thrones" height="300" width="300"></a></td>
+            <td><a href="CatalogoDeLibros.html"><img class="anillos" src="media/El_Señor_de_Los_Anillos.jpg" alt="El señor de los anillos" height="300" width="300"></a></td>
           </tr>
           <tr>
             <td class="titllibros">Mistborn</td>

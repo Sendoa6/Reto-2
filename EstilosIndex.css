@@ -99,6 +99,9 @@ main{
 
 .bienvenidos{
     background-color: lightskyblue;
+    border: solid ;
+    border-radius: 50px;
+    padding: 5%;
 }
 
 #txtrecomendacion{
@@ -118,6 +121,14 @@ table{
 .titllibros{
     background-color: blue;
     color: white;
+}
+
+.geronimo,.calzoncillos,.diariogreg,.mistborn,.juegodetronos,.anillos{
+    transition: transform 0.3s ease; /*Animación*/
+}
+
+.geronimo:hover,.calzoncillos:hover,.diariogreg:hover,.mistborn:hover,.juegodetronos:hover,.anillos:hover{
+    transform: scale(1.3); /*Animación*/
 }
 /* Hasta aqui el BODY */
 /* FOOTER */
@@ -161,4 +172,22 @@ footer a:hover {
 
 .txtrecomendacion{
     margin: 15px;
+}
+
+table {
+    margin: 20px auto; /* Centra la tabla horizontalmente */
+    text-align: center; /* Centra el contenido de las celdas */
+    border-spacing: 10px; /* Espaciado entre celdas */
+    width: 80%; /* Ajusta el ancho según sea necesario */
+}
+
+td {
+    text-align: center; /* Centra contenido dentro de las celdas */
+    vertical-align: middle; /* Alinea verticalmente */
+}
+
+.geronimo, .calzoncillos, .diariogreg, .mistborn, .juegodetronos, .anillos {
+    display: block;
+    margin: 0 auto; /* Centra las imágenes dentro de las celdas */
+    max-width: 100%; /* Escala las imágenes correctamente */
 }
