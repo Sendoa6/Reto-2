@@ -32,7 +32,7 @@
   </header>
   <main>
    <!--Creacion de Formulario-->
-  <h2>Registrar Préstamo</h2>
+  <h1>Registrar Préstamo</h1>
   <form class="prestamoform"id="prestamoForm" action="registro_prestamos.php" method="post">
     <label for="ID">ID del libro:</label><br>
     <input type="text" id="ID" name="ID" required><br><br>
@@ -44,7 +44,7 @@
   </form>
 
   <details>
-    <summary><h1>Préstamos de Biblioteca</h1></summary>
+    <summary><h1 class="prestamos">Préstamos de Biblioteca</h1></summary>
     <!--Creacion de tabla de Prestamos-->
   <table>
     <thead>
