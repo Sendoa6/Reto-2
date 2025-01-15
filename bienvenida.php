@@ -19,7 +19,7 @@
 <body>
   <header>
     <nav class="header-1">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgwIRrFipHhzib2ULMT65_BOWt4EEIxC5SIg&s" alt="Logo ayuntamiento muskiz" height="85" width="85">
+      <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgwIRrFipHhzib2ULMT65_BOWt4EEIxC5SIg&s" alt="Logo ayuntamiento muskiz" height="85" width="85">
       <ul id="uno">
         <li><b>Biblioteca Municipal de Muskiz</b></li>
         <li><b>Muskizko Udal Liburutegia</b></li>
@@ -48,12 +48,14 @@
   <div>
     <?php 
     echo "Usuario: " .(string)$_SESSION['usuario'] . "<br>";
-    echo "ID Usuario: " .(string)$_SESSION['ID_usuario'] . "<br>";
+    echo "ID Usuario: " .$_SESSION['ID_usuario'] . "<br>";
     echo "Nombre: " . (string)$_SESSION['nombre'] . "<br>";
-    echo "Apellido: " .(string)$_SESSION['apellido'] . "<br>";
+    echo "Apellido: " .(string)$_SESSION['apellidos'] . "<br>";
     echo "Telefono: ". $_SESSION['telefono'] . "<br>";
     echo "Corre Electronico: ". (string)$_SESSION['correo'] . "<br>";
     echo "NumeroSS: ". $_SESSION['NumeroSS'] . "<br>";
+
+    print_r($_SESSION);
 
     ?>
   </div>

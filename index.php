@@ -21,13 +21,13 @@
 <body>
   <header>
     <nav class="header-1">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgwIRrFipHhzib2ULMT65_BOWt4EEIxC5SIg&s" alt="Logo ayuntamiento muskiz" height="85" width="85">
+      <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgwIRrFipHhzib2ULMT65_BOWt4EEIxC5SIg&s" alt="Logo ayuntamiento muskiz" height="85" width="85">
       <ul id="uno">
         <li><b>Biblioteca Municipal de Muskiz</b></li>
         <li><b>Muskizko Udal Liburutegia</b></li> 
       </ul>
     </nav>
-    <nav>
+    <nav class="ventanas">
       <a class="ventanaactual" href="index.php"> Inicio</a>
       <a class="ventana" href="Conocenos.html"> Conocenos</a>
       <a class="ventana" href="CatalogoDeLibros.php"> Catalogo de Libros</a>
@@ -46,20 +46,20 @@
       <img class="imagenbiblio" id="bibliotecamuskiz" src="media/UdaletxeaII.jpeg" alt="Biblioteca Municipal de Muskiz">
       <img class="imagenbiblio2" id="ayuntamientomuskiz" src="media/Ayuntamiento2.jpg" alt="Ayuntamiento de Muskiz">
       <br>
-      <h4>Bienvenidos a la Biblioteca de Muskiz</h4>
+      <h2>BIENVENIDOS A LA BIBLIOTECA DE MUSKIZ</h2>
       <p id="txtbienvenida">
         Descubre un mundo de conocimiento, inspiración y aprendizaje en la Biblioteca de Muskiz. Aquí encontrarás una amplia colección de libros y recursos digitales 
         para todas las edades. Nuestro objetivo es ofrecerte un espacio abierto y accesible donde puedas disfrutar de la lectura, la investigación y la cultura. Explora nuestras 
-        secciones y consulta el catálogo en línea. ¡Te invitamos a formar parte de esta experiencia literaria y educativa en Muskiz!
+        secciones y consulta el catálogo en línea. <b>¡Te invitamos a formar parte de esta experiencia literaria y educativa en Muskiz!</b>
       </p>
     </div>
     <h3 id="titlrecomendaciones">Nuestras Recomendaciones</h3>
       <table>
         <caption class="txtrecomendacion"><u>Infantil y Juvenil</u></caption>
           <tr>
-            <td><a href="CatalogoDeLibros.html"><img class="geronimo" src="media/Geronimo_Stilton.jpg" alt="Geronimo_Stilton" height="300" width="300"></a></td>
-            <td><a href="CatalogoDeLibros.html"><img class="calzoncillos" src="media/Capitan_Calzoncillos.jpeg" alt="Capitan capitan-calzoncillos" height="300" width="300"></a></td>
-            <td><a href="CatalogoDeLibros.html"><img class="diariogreg" src="media/Diario_de_Greg.jpg" alt="Diario de Greg" height="300" width="300"></a></td>
+            <td><a href="CatalogoDeLibros.html"><img class="geronimo" src="media/Geronimo_Stilton.jpg" alt="Geronimo_Stilton" height="400" width="400"></a></td>
+            <td><a href="CatalogoDeLibros.html"><img class="calzoncillos" src="media/Capitan_Calzoncillos.jpeg" alt="Capitan capitan-calzoncillos" height="400" width="400"></a></td>
+            <td><a href="CatalogoDeLibros.html"><img class="diariogreg" src="media/Diario_de_Greg.jpg" alt="Diario de Greg" height="400" width="400"></a></td>
           </tr>
           <tr>
             <td class="titllibros">Geronimo Stilton</td>
@@ -70,9 +70,9 @@
       <table>
         <caption class="txtrecomendacion"><u>Adultos</u></caption>
           <tr>
-            <td><a href="CatalogoDeLibros.html"><img class="mistborn" src="media/Mistborn.jpeg" alt="Mistborn" height="300" width="300"></a></td>
-            <td><a href="CatalogoDeLibros.html"><img class="juegodetronos" src="media/JuegoDeTronos.jpg" alt="Game of Thrones" height="300" width="300"></a></td>
-            <td><a href="CatalogoDeLibros.html"><img class="anillos" src="media/El_Señor_de_Los_Anillos.jpg" alt="El señor de los anillos" height="300" width="300"></a></td>
+            <td><a href="CatalogoDeLibros.html"><img class="mistborn" src="media/Mistborn.jpeg" alt="Mistborn" height="400" width="400"></a></td>
+            <td><a href="CatalogoDeLibros.html"><img class="juegodetronos" src="media/JuegoDeTronos.jpg" alt="Game of Thrones" height="400" width="400"></a></td>
+            <td><a href="CatalogoDeLibros.html"><img class="anillos" src="media/El_Señor_de_Los_Anillos.jpg" alt="El señor de los anillos" height="400" width="400"></a></td>
           </tr>
           <tr>
             <td class="titllibros">Mistborn</td>

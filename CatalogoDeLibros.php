@@ -7,22 +7,22 @@
     <title>Catalogo</title>
     <link rel="stylesheet" href="CatalogoDeLibros.css">
 </head>
-<body>
+<body> 
     <!-- Encabezado -->
     <header>
         <nav>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgwIRrFipHhzib2ULMT65_BOWt4EEIxC5SIg&s" alt="Logo ayuntamiento muskiz" height="85" width="85">
+            <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgwIRrFipHhzib2ULMT65_BOWt4EEIxC5SIg&s" alt="Logo ayuntamiento muskiz" height="85" width="85">
             <ul id="uno">
                 <li>Biblioteca Municipal de Muskiz</li>
                 <li>Muskizko Udal Liburutegia</li>
             </ul>
         </nav>
-        <nav>
-            <a href="index.php">Inicio</a>
-            <a href="Conocenos.html">Conocenos</a>
-            <a href="CatalogoDeLibros.php">Catalogo de Libros</a>
-            <a href="Prestamos.php">Prestamos</a>
-            <a href="Formulario1.php">Iniciar Sesion</a>
+        <nav class="ventanas">
+            <a class="ventana" href="index.php">Inicio</a>
+            <a class="ventana" href="Conocenos.html">Conocenos</a>
+            <a class="ventanaactual" href="CatalogoDeLibros.php">Catalogo de Libros</a>
+            <a class="ventana" href="Prestamos.php">Prestamos</a>
+            <a class="ventana" href="Formulario1.php">Iniciar Sesion</a>
             <form action="bienvenida.php" method="post">
                 <a class="perfil" href="bienvenida.php">
                     <img class="imgperfil" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVg9KLX4bqxbJvgDoC8zXQGIWrrb1fcPsYQ&s" alt="img">
@@ -32,6 +32,7 @@
     </header>
     <div class="cuerpo">
         <h1>Nuestro catálogo</h1>
+        <br>
         <div class="tabs">
         <?php
             include 'Conexiones.php';
@@ -85,6 +86,7 @@
             mysqli_close($conexion);
         ?>
         </div>
+        <br>
     </div>
     <footer>
         <p>&copy; 2024 Muskizko Liburutegia. Todos los derechos reservados.</p>

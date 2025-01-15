@@ -5,7 +5,15 @@ header {
     align-items: center;
     background-image: url(https://png.pngtree.com/background/20211215/original/pngtree-abstract-light-blue-background-picture-image_1459673.jpg);
     background-size: cover;
+    border-bottom: 10px solid black; 
+    padding-bottom: 10px;
+    width: 100%; 
 }
+
+.logo{
+    border-radius: 20px;
+}
+
 
 nav {
     display: flex;
@@ -40,12 +48,6 @@ nav a {
 #uno li {
     margin: 0;
     font-weight: bold;
-}
-
-header {
-    border-bottom: 10px solid black; 
-    padding-bottom: 10px;
-    width: 100%;           
 }
 
 .imgperfil{

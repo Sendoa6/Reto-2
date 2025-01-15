@@ -5,6 +5,10 @@ header {
     align-items: center;
 }
 
+.logo{
+    border-radius: 20px;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -70,6 +74,7 @@ header {
     background-size: cover    
 }
 /*FIN HEADER*/
+
 body{
     margin: 3%;
     margin-left: 10%;
@@ -86,14 +91,10 @@ body{
     display: block;
     justify-content: center;
     align-items: center;
-    height: auto;
-    width: auto;
     background-color: aliceblue;
 }
 
 main{
-    margin-left: 20%;
-    margin-right: 20%;
     text-align: center;
 }
 
@@ -102,6 +103,8 @@ main{
     border: solid ;
     border-radius: 50px;
     padding: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #txtrecomendacion{
@@ -110,7 +113,19 @@ main{
 table{
     width: 100%;
     padding-bottom: 10%;
+    margin: 10px auto; /* Centra la tabla horizontalmente */
+    margin-bottom: 0;
+    text-align: center; /* Centra el contenido de las celdas */
+    border-spacing: 10px; /* Espaciado entre celdas */
 }
+
+
+td {
+    text-align: center; /* Centra contenido dentro de las celdas */
+    vertical-align: middle; /* Alinea verticalmente */
+    border: solid;
+}
+
 #titlrecomendaciones{
     font-size: 5vh;
 }
@@ -174,21 +189,184 @@ footer a:hover {
     margin: 15px;
 }
 
-table {
-    margin: 20px auto; /* Centra la tabla horizontalmente */
-    margin-bottom: 0;
-    text-align: center; /* Centra el contenido de las celdas */
-    border-spacing: 10px; /* Espaciado entre celdas */
-    width: 80%; /* Ajusta el ancho según sea necesario */
-}
-
-td {
-    text-align: center; /* Centra contenido dentro de las celdas */
-    vertical-align: middle; /* Alinea verticalmente */
-}
-
 .geronimo, .calzoncillos, .diariogreg, .mistborn, .juegodetronos, .anillos {
     display: block;
     margin: 0 auto; /* Centra las imágenes dentro de las celdas */
     max-width: 100%; /* Escala las imágenes correctamente */
+}
+
+
+/*MEDIA QUERYS*/
+/* CSS GLOBAL */
+body {
+    margin: 3% 10%;
+    font-family: Arial, sans-serif;
+    background-image: url('https://wallpaper.forfun.com/fetch/e7/e7bfc1edebf545897f7d266883c4a7f0.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    border-bottom: 10px solid black;
+    padding-bottom: 10px;
+    background-image: url('https://png.pngtree.com/background/20211215/original/pngtree-abstract-light-blue-background-picture-image_1459673.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    width: 100%;
+    background-color: #232F3E;
+    padding: 20px;
+    border-top: solid 10px black;
+}
+
+/* IMÁGENES Y TABLAS */
+.imagenbiblio {
+    width: 50%;
+}
+
+.imagenbiblio2 {
+    width: 45%;
+}
+
+/* MEDIA QUERIES */
+/*Pantallas muy grandes 4k*/
+@media (min-width: 2560px){
+    /*Tamaño del botón que dirige a mi perfil*/
+    .imgperfil {
+        height: 80px;
+        width: 80px;
+    }
+
+    /*Tamaño de letra del texto de las ventanas*/
+    nav a {
+        margin-left: 0;
+        margin-bottom: 10px;
+        font-size: 2rem;
+
+    }
+
+    /*Más espacio entre las ventanas que dirigen a las demás páginas*/
+    .ventanas{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    /*Título del header (Biblioteca Municipal de Muskiz...)*/
+    nav ul li {
+        font-size: 2rem;
+    }
+
+    .bienvenidos {
+        padding: 3%;
+    }
+
+    /*Título del texto de bienvenida más grande*/
+    h2{
+        font-size: 2rem;
+    }
+
+    /*Texto de bienvenida más grande*/
+    #txtbienvenida {
+        font-size: 2rem;
+    }
+
+    /*Ancho de la tabla y tamaño de letra*/
+    table {
+        width: 80%;
+        font-size: 2rem;
+    }
+
+    /*Texto del footer más grande*/
+    footer p{
+        font-size: 2rem;
+    }
+}
+
+
+/* Pantallas grandes (desktop) */
+
+/* Pantallas medianas (tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .imgperfil {
+        height: 55px;
+        width: 55px;
+    }
+
+    .imagenbiblio, .imagenbiblio2 {
+        width: 70%;
+    }
+
+    .bienvenidos {
+        padding: 5%;
+    }
+
+    #txtbienvenida {
+        font-size: 1rem;
+        text-align: justify;
+    }
+}
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin-left: 0;
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+
+    .imgperfil {
+        height: 45px;
+        width: 45px;
+    }
+
+    .imagenbiblio, .imagenbiblio2 {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .bienvenidos {
+        padding: 10%;
+        text-align: center;
+    }
+
+    #txtbienvenida {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 10px;
+    }
 }
