@@ -5,6 +5,10 @@ header {
     align-items: center;
 }
 
+.logo{
+    border-radius: 20px;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -291,28 +295,6 @@ footer {
 
 
 /* Pantallas grandes (desktop) */
-@media (min-width: 1200px) and (max-width: 2559px){
-    .imgperfil {
-        height: 70px;
-        width: 70px;
-    }
-
-    nav ul li {
-        font-size: 1.5rem;
-    }
-
-    table {
-        width: 70%;
-    }
-
-    .bienvenidos {
-        padding: 3%;
-    }
-
-    #txtbienvenida {
-        font-size: 1.5rem;
-    }
-}
 
 /* Pantallas medianas (tablets) */
 @media (min-width: 768px) and (max-width: 1199px) {

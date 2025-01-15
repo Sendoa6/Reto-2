@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+.logo{
+    border-radius: 20px;
+}
+
+
 .imgperfil{
     height: 55px;
     width: 55px;
@@ -231,4 +236,89 @@ footer a:hover {
 
 input[type="radio"]:checked + .tab-label + .tab-content {
     display: block;
+}
+
+/* MEDIA QUERIES */
+/*Pantallas muy grandes 4k*/
+@media (min-width: 2560px){
+    /*Tamaño del botón que dirige a mi perfil*/
+    .imgperfil {
+        height: 80px;
+        width: 80px;
+    }
+
+    /*Tamaño de letra del texto de las ventanas*/
+    nav a {
+        margin-left: 0;
+        margin-bottom: 10px;
+        font-size: 2rem;
+
+    }
+
+    /*Más espacio entre las ventanas que dirigen a las demás páginas*/
+    .ventanas{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    /*Título del header (Biblioteca Municipal de Muskiz...)*/
+    nav ul li {
+        font-size: 2rem;
+    }
+
+    /*Texto del footer más grande*/
+    footer p{
+        font-size: 2rem;
+    }
+}
+
+
+/* Pantallas grandes (desktop) */
+
+/* Pantallas medianas (tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    .imgperfil {
+        height: 55px;
+        width: 55px;
+    }
+}
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin-left: 0;
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+
+    .imgperfil {
+        height: 45px;
+        width: 45px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .cuerpo{
+        padding: 10%;}
 }

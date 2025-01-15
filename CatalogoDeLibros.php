@@ -11,7 +11,7 @@
     <!-- Encabezado -->
     <header>
         <nav>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgwIRrFipHhzib2ULMT65_BOWt4EEIxC5SIg&s" alt="Logo ayuntamiento muskiz" height="85" width="85">
+            <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgwIRrFipHhzib2ULMT65_BOWt4EEIxC5SIg&s" alt="Logo ayuntamiento muskiz" height="85" width="85">
             <ul id="uno">
                 <li>Biblioteca Municipal de Muskiz</li>
                 <li>Muskizko Udal Liburutegia</li>
