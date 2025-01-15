@@ -13,8 +13,12 @@
     $password2 = hash('sha512', $password2);
     $NumeroSS = $_POST['NumeroSS'];
 
-    $query = "INSERT INTO usuarios(nombre,apellidos,telefono,correo,nombre_usuario,contrasena,contrasena2,NumeroSS) VALUES ('$nombre','$apellido','$telefono','$Correo','$username','$password','$password2','$NumeroSS')";
-    
+    if ($NumeroSS == '') {
+        $query = "INSERT INTO usuarios(nombre,apellidos,telefono,correo,nombre_usuario,contrasena,contrasena2) VALUES ('$nombre','$apellido','$telefono','$Correo','$username','$password','$password2')";
+    }else{
+        $query = "INSERT INTO usuarios(nombre,apellidos,telefono,correo,nombre_usuario,contrasena,contrasena2,NumeroSS) VALUES ('$nombre','$apellido','$telefono','$Correo','$username','$password','$password2','$NumeroSS')";
+    }
+
     if ($password2 != $password){
         echo "<script type='text/javascript'>alert('Error. Las contraseñas no coinciden.');</script>";
         header("Refresh: 0.1; url=RegistroFRM.php");
@@ -30,10 +34,12 @@
         header("Refresh: 0.1; url=RegistroFRM.php");
         exit;
     }
-    if (!is_numeric($NumeroSS) && strlen($NumeroSS) != 12){
-        echo "<script type='text/javascript'>alert('Error. Número de la seguridad social inválido.');</script>";
-        header("Refresh: 0.1; url=RegistroFRM.php");
-        exit;
+    if ($NumeroSS != ""){
+        if (!is_numeric($NumeroSS) && strlen($NumeroSS) != 12){
+            echo "<script type='text/javascript'>alert('Seguridad Social');</script>";
+            header("Refresh: 0.1; url=RegistroFRM.php");
+            exit;
+        }
     }
 
     $verificar_usuario = mysqli_query($conexion, "SELECT * FROM usuarios WHERE nombre_usuario='$username' ");
