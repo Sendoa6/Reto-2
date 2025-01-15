@@ -61,10 +61,6 @@
     echo "Telefono: ". $_SESSION['telefono'] . "<br>";
     echo "Corre Electronico: ". (string)$_SESSION['correo'] . "<br>";
     echo "NumeroSS: ". $_SESSION['NumeroSS'] . "<br>";
-
-    print_r($_SESSION);
-    
-
     ?>
   </div>
     <br>
