@@ -139,7 +139,7 @@ h1 {
 
 .grid-item:hover{
     background-color: lightgray;
-    transform: scale(1.3); /*Animación*/
+    transform: scale(1.1); /*Animación*/
 }
 
 /* Estilo para las imágenes */
@@ -154,6 +154,13 @@ summary {
     font-weight: bold;
     margin-top: 10px;
     cursor: pointer;
+    background-color: lightskyblue;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 30px;
+    border: dashed gainsboro;
 }
 
 /* Hasta aqui el BODY */
