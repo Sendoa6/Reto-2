@@ -43,7 +43,7 @@
       <h1>Regitrar libros al catálogo</h1>
       <br>
 
-      <form class="registrolibro" id="RegistarLibro" action="" method="post">
+      <form class="registrolibro" id="RegistarLibro" action="registro_libros.php" method="post">
           <label for="ISBN">ISBN del libro:</label><br>
           <input type="text" id="ISBN" name="ISBN" required><br><br>
             
