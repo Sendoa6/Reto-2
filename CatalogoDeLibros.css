@@ -133,8 +133,21 @@ h1{
 
 /*con hover, cuando pasamos el raton por encima se cambia el color del boton a un azul mas oscuro*/
 .tab-label:hover{
+    width: 400px;
     background-color: #0056b3;
 }
+
+.tab-label {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #007bff;
+    border: 1px solid #ccc;
+
+    width: 200px;
+    height: 50px;
+    transition: width 1s;
+}
+
 
 /* Para ocultar los botones radio */
 input[type="radio"] {
@@ -144,6 +157,7 @@ input[type="radio"] {
 /*Cuando pulsemos una pestaña que se cambie el color a un azul más oscuro*/
 input[type="radio"]:checked + .tab-label {
     background-color: #0056b3;
+    width: 400px;
 }
 
 /*Ocultar el contenido de las pestañas por defecto*/
@@ -206,13 +220,6 @@ footer a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-}
-
-.tab-label {
-    cursor: pointer;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
 }
 
 .tab-content {
