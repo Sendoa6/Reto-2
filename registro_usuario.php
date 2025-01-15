@@ -52,22 +52,7 @@
     
     $ejecutar = mysqli_query($conexion, $query);
 
-    // GUARDAR DATOS DE REGISTRO EN LA SESION
-
-    if (isset($_SESSION['ID_usuario'])) {
-        $id_usuario = $_SESSION['ID_usuario'];
-        $query = "SELECT * FROM usuarios WHERE ID_usuario = $id_usuario";
-        $result = mysqli_query($conexion, $query);
-        if ($result && mysqli_num_rows($result) > 0) {
-            $datos_usuario = mysqli_fetch_assoc($result);
-
-        $_SESSION['nombre'] = $datos_usuario['nombre'];
-        $_SESSION['apellidos'] = $datos_usuario['apellidos'];
-        $_SESSION['telefono'] = $datos_usuario['telefono']; 
-        $_SESSION['correo'] = $datos_usuario['correo'];
-
-    }
-}
+    
     if ($ejecutar){
         echo "<script type='text/javascript'>alert('Usuario creado correctamente');</script>";
         header("Refresh: 0.1; url=index.php");
