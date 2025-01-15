@@ -20,7 +20,7 @@
 <body>
     <header>
         <nav class="header-1">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgwIRrFipHhzib2ULMT65_BOWt4EEIxC5SIg&s" alt="Logo ayuntamiento muskiz" height="85" width="85">
+          <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgwIRrFipHhzib2ULMT65_BOWt4EEIxC5SIg&s" alt="Logo ayuntamiento muskiz" height="85" width="85">
           <ul id="uno">
             <li><b>Biblioteca Municipal de Muskiz</b></li>
             <li><b>Muskizko Udal Liburutegia</b></li>
@@ -68,6 +68,12 @@
 
           <label for="url">Url de imagen del libro:</label><br>
           <input type="text" id="url" name="url" required><br><br>
+
+          <label for="nombre">Nombre del autor</label><br>
+          <input type="text" id="nombre" name="nombre" required><br><br>
+
+          <label for="apellidos">Apellidos del autor</label><br>
+          <input type="text" id="apellidos" name="apellidos" required><br><br>
             
           <input type="submit" value="Registrar libro">
       </form>

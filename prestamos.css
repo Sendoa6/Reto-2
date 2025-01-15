@@ -1,11 +1,7 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display:block;
-    justify-content: center;
-    align-items: center;
-    background-color: aliceblue;
+.logo{
+    border-radius: 20px;
 }
+
 
 header {
     display: flex;
@@ -82,6 +78,10 @@ body {
     font-family: Arial, sans-serif;
     border: solid;
     background-image: url(https://wallpaper.forfun.com/fetch/e7/e7bfc1edebf545897f7d266883c4a7f0.jpeg);
+    display:block;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
 }
 
 main{
