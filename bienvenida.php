@@ -28,7 +28,7 @@
     <nav>
       <a href="index.php"> Inicio</a>
       <a href="Conocenos.html"> Conocenos</a>
-      <a href="CatalogoDeLibros.html"> Catalogo de Libros</a>
+      <a href="CatalogoDeLibros.php"> Catalogo de Libros</a>
       <a href="Prestamos.php"> Prestamos</a>
       <a href="Formulario1.php"> Iniciar Sesion</a>
       <form action="bienvenida.php" method="post">

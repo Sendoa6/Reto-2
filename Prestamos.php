@@ -21,7 +21,7 @@
     <nav  >
       <a class="ventana" href="index.php"> Inicio</a>
       <a class="ventana" href="Conocenos.html"> Conocenos</a>
-      <a class="ventana" href="CatalogoDeLibros.html"> Catalogo de Libros</a>
+      <a class="ventana" href="CatalogoDeLibros.php"> Catalogo de Libros</a>
       <a class="ventanaactual" href="Prestamos.php"> Prestamos</a>
       <a class="ventana" href="Formulario1.php"> Iniciar Sesion</a>
       <form action="bienvenida.php" method="post">
