@@ -57,7 +57,8 @@
 
         $datos_usuario = mysqli_fetch_assoc($result);
   }
-
+ 
+  
     $_SESSION['nombre'] = $datos_usuario['nombre'];
     $_SESSION['apellidos'] = $datos_usuario['apellidos'];
     $_SESSION['telefono'] = $datos_usuario['telefono']; 
