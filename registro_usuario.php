@@ -51,6 +51,12 @@
 
     
     $ejecutar = mysqli_query($conexion, $query);
+
+        //GUARDAR DATOS DE REGISTRO EN LA SESION
+        $_SESSION['telefono'] = $datos_usuario['telefono'];
+        $_SESSION['apellidos'] = $datos_usuario['apellidos'];
+        $_SESSION['nombre'] = $datos_usuario['nombre'];
+        $_SESSION['correo'] = $datos_usuario['correo'];
     
     if ($ejecutar){
         echo "<script type='text/javascript'>alert('Usuario creado correctamente');</script>";

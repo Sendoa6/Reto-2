@@ -48,12 +48,14 @@
   <div>
     <?php 
     echo "Usuario: " .(string)$_SESSION['usuario'] . "<br>";
-    echo "ID Usuario: " .(string)$_SESSION['ID_usuario'] . "<br>";
+    echo "ID Usuario: " .$_SESSION['ID_usuario'] . "<br>";
     echo "Nombre: " . (string)$_SESSION['nombre'] . "<br>";
-    echo "Apellido: " .(string)$_SESSION['apellido'] . "<br>";
+    echo "Apellido: " .(string)$_SESSION['apellidos'] . "<br>";
     echo "Telefono: ". $_SESSION['telefono'] . "<br>";
     echo "Corre Electronico: ". (string)$_SESSION['correo'] . "<br>";
     echo "NumeroSS: ". $_SESSION['NumeroSS'] . "<br>";
+
+    print_r($_SESSION);
 
     ?>
   </div>
