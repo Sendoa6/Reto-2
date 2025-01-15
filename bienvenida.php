@@ -46,7 +46,13 @@
   <a href="">Cambiar icono</a>
   </div>
   <div>
-    <?php 
+    <?php
+
+    if ($_SESSION['empleado']==TRUE) {
+      echo "ERES EMPLEADO <br>";
+    }else{
+      echo "NO ERES EMPLEADO <br>";
+    }
     echo "Usuario: " .(string)$_SESSION['usuario'] . "<br>";
     echo "ID Usuario: " .$_SESSION['ID_usuario'] . "<br>";
     echo "Nombre: " . (string)$_SESSION['nombre'] . "<br>";
@@ -56,6 +62,7 @@
     echo "NumeroSS: ". $_SESSION['NumeroSS'] . "<br>";
 
     print_r($_SESSION);
+    
 
     ?>
   </div>
