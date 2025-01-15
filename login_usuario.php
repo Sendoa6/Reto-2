@@ -10,17 +10,17 @@ $password_login = hash('sha512', $password_login); // Asegúrate de que coincida
 
 // Consulta para validar el login y obtener datos del usuario, incluido el NumeroSS
 $query = "SELECT ID_usuario, nombre_usuario, NumeroSS FROM usuarios WHERE nombre_usuario = '$username_login' AND contrasena = '$password_login' LIMIT 1";
-$datos_usuario = "SELECT * FROM usuarios WHERE ID_usuario = $id_usuario";
+$datos_usuario = "SELECT * FROM usuarios WHERE nombre_usuario = '$username_login'";
 
 $result = mysqli_query($conexion, $query);
 $datos = mysqli_query($conexion, $datos_usuario);
 
 if ($datos && mysqli_num_rows($datos) > 0) {
     $datos_usuarioo = mysqli_fetch_assoc($datos);
-    $_SESSION['nombre'] = $datos_usuario['nombre'];
-    $_SESSION['apellidos'] = $datos_usuario['apellidos'];
-    $_SESSION['telefono'] = $datos_usuario['telefono']; 
-    $_SESSION['correo'] = $datos_usuario['correo'];
+    $_SESSION['nombre'] = $datos_usuarioo['nombre'];
+    $_SESSION['apellidos'] = $datos_usuarioo['apellidos'];
+    $_SESSION['telefono'] = $datos_usuarioo['telefono']; 
+    $_SESSION['correo'] = $datos_usuarioo['correo'];
 }
 
 // Verificar si el usuario existe
