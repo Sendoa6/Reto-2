@@ -68,6 +68,12 @@
 
           <label for="url">Url de imagen del libro:</label><br>
           <input type="text" id="url" name="url" required><br><br>
+
+          <label for="nombre">Nombre del autor</label><br>
+          <input type="text" id="nombre" name="nombre" required><br><br>
+
+          <label for="apellidos">Apellidos del autor</label><br>
+          <input type="text" id="apellidos" name="apellidos" required><br><br>
             
           <input type="submit" value="Registrar libro">
       </form>
