@@ -16,22 +16,22 @@
     $query = "INSERT INTO usuarios(nombre,apellidos,telefono,correo,nombre_usuario,contrasena,contrasena2,NumeroSS) VALUES ('$nombre','$apellido','$telefono','$Correo','$username','$password','$password2','$NumeroSS')";
     
     if ($password2 != $password){
-        echo "<script type='text/javascript'>alert('Dato Incorrecto');</script>";
+        echo "<script type='text/javascript'>alert('Error. Las contraseñas no coinciden.');</script>";
         header("Refresh: 0.1; url=RegistroFRM.php");
         exit;
     }
     if (!is_numeric($telefono) && strlen($telefono) != 9){
-        echo "<script type='text/javascript'>alert('Dato Incorrecto');</script>";
+        echo "<script type='text/javascript'>alert('Error. Número de teléfono inválido.');</script>";
         header("Refresh: 0.1; url=RegistroFRM.php");
         exit;
     }
     if (strpos($Correo, '@') == false && strpos($Correo, '.') == false) {
-        echo "<script type='text/javascript'>alert('Dato Incorrecto');</script>";
+        echo "<script type='text/javascript'>alert('Error. Correo electrónico inválido.');</script>";
         header("Refresh: 0.1; url=RegistroFRM.php");
         exit;
     }
     if (!is_numeric($NumeroSS) && strlen($NumeroSS) != 12){
-        echo "<script type='text/javascript'>alert('Dato Incorrecto');</script>";
+        echo "<script type='text/javascript'>alert('Error. Número de la seguridad social inválido.');</script>";
         header("Refresh: 0.1; url=RegistroFRM.php");
         exit;
     }
