@@ -20,11 +20,6 @@ if ($result && mysqli_num_rows($result) > 0) {
     // Guardar datos del usuario en la sesión
     $_SESSION['usuario'] = $datos_usuario['nombre_usuario'];
     $_SESSION['ID_usuario'] = $datos_usuario['ID_usuario'];
-    $_SESSION['telefono'] = isset($datos_usuario['telefono']);
-    $_SESSION['nombre'] = isset($datos_usuario['nombre']);
-    $_SESSION['apellidos'] = isset($datos_usuario['apellidos']);
-    $_SESSION['nombre'] = isset($datos_usuario['nombre']);
-    $_SESSION['correo'] = isset($datos_usuario['correo']);
     $_SESSION['NumeroSS'] = $datos_usuario['NumeroSS'];
 
     

@@ -43,7 +43,7 @@
                 <label for="password">Repite la contraseña:</label>
                 <input type="password" id="password2" name="password2" required><!-- Password para que al escribir no se vea la contraseña -->
 
-                <label for="username">Numero Seguridad Social:</label>
+                <label for="username">Numero Seguridad Social (Si eres empleado):</label>
                 <input type="text" id="NumeroSS" name="NumeroSS">
 
                 <button type="submit">Registrarse</button>
