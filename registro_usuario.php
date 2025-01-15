@@ -30,7 +30,7 @@
         header("Refresh: 0.1; url=RegistroFRM.php");
         exit;
     }
-    if (!is_numeric($NumeroSS) && strlen($telefono) != 12){
+    if (!is_numeric($NumeroSS) && strlen($NumeroSS) != 12){
         echo "<script type='text/javascript'>alert('Dato Incorrecto');</script>";
         header("Refresh: 0.1; url=RegistroFRM.php");
         exit;
