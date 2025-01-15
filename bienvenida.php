@@ -48,21 +48,6 @@
   </div>
   <div>
     <?php
-  // GUARDAR DATOS DE REGISTRO EN LA SESION
-
-    $datos_usuario = "SELECT * FROM usuarios WHERE ID_usuario = $id_usuario";
-
-    $result = mysqli_query($conexion, $datos_usuario);
-    if ($result && mysqli_num_rows($result) > 0) {
-
-        $datos_usuario = mysqli_fetch_assoc($result);
-  }
- 
-  
-    $_SESSION['nombre'] = $datos_usuario['nombre'];
-    $_SESSION['apellidos'] = $datos_usuario['apellidos'];
-    $_SESSION['telefono'] = $datos_usuario['telefono']; 
-    $_SESSION['correo'] = $datos_usuario['correo'];
 
     if ($_SESSION['empleado']==TRUE) {
       echo "ERES EMPLEADO <br>";
