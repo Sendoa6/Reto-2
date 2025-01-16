@@ -6,25 +6,26 @@
         header("Location: Formulario1.php");
         exit();
     }
+    
 $foto_perfil = 'ruta/a/imagen/por/defecto.jpg';
 
 if (isset($_SESSION['ID_usuario'])) {
     $ID_usuario = $_SESSION['ID_usuario'];
 
     $sql = "SELECT foto_perfil FROM usuarios WHERE ID_usuario = ?";
-    $vincular = $conexion->prepare($sql);
+    $stmt = $conexion->prepare($sql);
 
-    if ($vincular) {
-        $vincular->bind_param("i", $ID_usuario);
-        $vincular->execute();
-        $vincular->bind_result($foto_perfil);
+    if ($stmt) {
+        $stmt->bind_param("i", $ID_usuario);
+        $stmt->execute();
+        $stmt->bind_result($foto_perfil);
 
-        if ($vincular->fetch()) {
+        if ($stmt->fetch()) {
         } else {
             $foto_perfil = 'ruta/a/imagen/por/defecto.jpg';
         }
 
-        $vincular->close();
+        $stmt->close();
     } else {
         $foto_perfil = 'ruta/a/imagen/por/defecto.jpg';
     }
