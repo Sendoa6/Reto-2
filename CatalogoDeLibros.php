@@ -57,7 +57,7 @@ if (isset($_SESSION['ID_usuario'])) {
           <a class="ventana" href="Formulario1.php"> Iniciar Sesion</a>
           <?php
      if ($_SESSION==TRUE) {
-      
+        
       echo '<form action="bienvenida.php" method="post">';
       echo '<a class="perfil" href="bienvenida.php">';
       echo '<img class="imgperfil" src="' . htmlspecialchars($foto_perfil) . '" alt="Foto de perfil">';
