@@ -1,6 +1,7 @@
 <?php
 
     session_start();
+    
     if(!isset($_SESSION['usuario'])){
         echo "<script type='text/javascript'>  window.location = 'Formulario1.php'; </script>";
         session_destroy();
@@ -41,42 +42,37 @@
   <h1> MI PERFIL</h1>
   <br>
   <div class="cajaperfil">
-  <img class="imgperfil2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVg9KLX4bqxbJvgDoC8zXQGIWrrb1fcPsYQ&s" 
-  alt="img"></a>
-  <a href="">Cambiar icono</a>
+  <img class="imgperfil2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVg9KLX4bqxbJvgDoC8zXQGIWrrb1fcPsYQ&s"
+  alt="img"></a> 
+  <a href="">Cambiar icono</a><br><br><br><br>
   </div>
-  <div>
+  <div class="cajadatos">
     <?php
-
     if ($_SESSION['empleado']==TRUE) {
-      echo "ERES EMPLEADO <br>";
+      echo "<p>EMPLEADO </p><br>";
     }else{
-      echo "NO ERES EMPLEADO <br>";
+      echo "<p>NO EMPLEADO </p><br>";
     }
-    echo "Usuario: " .(string)$_SESSION['usuario'] . "<br>";
-    echo "ID Usuario: " .$_SESSION['ID_usuario'] . "<br>";
-    echo "Nombre: " . (string)$_SESSION['nombre'] . "<br>";
-    echo "Apellido: " .(string)$_SESSION['apellidos'] . "<br>";
-    echo "Telefono: ". $_SESSION['telefono'] . "<br>";
-    echo "Corre Electronico: ". (string)$_SESSION['correo'] . "<br>";
-    echo "NumeroSS: ". $_SESSION['NumeroSS'] . "<br>";
-
-    print_r($_SESSION);
-    
-
+    echo "<p>Usuario: " .(string)$_SESSION['usuario'] . "</p><br>";
+    echo "<p>ID Usuario: " .$_SESSION['ID_usuario'] . "</p><br>";
+    echo "<p>Nombre: " . (string)$_SESSION['nombre'] . "</p><br>";
+    echo "<p>Apellido: " .(string)$_SESSION['apellidos'] . "</p><br>";
+    echo "<p>Telefono: ". $_SESSION['telefono'] . "</p><br>";
+    echo "<p>Corre Electronico: ". (string)$_SESSION['correo'] . "</p><br>";
+    echo "<p>NumeroSS: ". $_SESSION['NumeroSS'] . "</p><br>";
     ?>
+    <a href="cerrar_sesion.php"><p>Cerrar sesión</p></a>
   </div>
     <br>
     <br>
-    <a href="cerrar_sesion.php">Cerrar sesión</a>
     <footer>
-    <p>&copy; 2024 Muskizko Liburutegia. Todos los derechos reservados.</p>
-    <p>
+    <p class="footer">&copy; 2024 Muskizko Liburutegia. Todos los derechos reservados.</p>
+    <p class="footer">
       <a href="https://facebook.com" target="_blank">Facebook</a> |
       <a href="https://twitter.com" target="_blank">Twitter</a> |
       <a href="https://instagram.com" target="_blank">Instagram</a>
     </p>
-    <p>
+    <p class="footer">
       <a href="https://maps.app.goo.gl/edZ15iYRnLJY2kUx6" target="_blank">📍🌍Localización y horarios</a>|
       <a href="mailto:contacto@misitioweb.com">Contáctanos</a>
     </p>
