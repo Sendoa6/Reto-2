@@ -6,7 +6,6 @@
         header("Location: Formulario1.php");
         exit();
     }
-    
 $foto_perfil = 'ruta/a/imagen/por/defecto.jpg';
 
 if (isset($_SESSION['ID_usuario'])) {
