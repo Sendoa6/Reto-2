@@ -2,8 +2,8 @@
     session_start();
     include 'Conexiones.php';
     if (!isset($_SESSION['usuario'])) {
-        session_destroy(); // Destruir cualquier sesión residual
-        header("Location: Formulario1.php"); // Redirigir al formulario de inicio de sesión
+        session_destroy();
+        header("Location: Formulario1.php");
         exit();
     }
     
