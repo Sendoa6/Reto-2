@@ -137,7 +137,15 @@ h1{
     width: 200px;
     border: 2px solid black;
     border-radius: 100px;
+    margin-left: 6.5em;
 }
 .cajaperfil{
     text-align: center;
+}
+p{
+    text-align: center;
+}
+.cajadatos{
+    background-color: #0065a3;
+    
 }
