@@ -165,3 +165,56 @@ p{
     border: none;
     background-color: #232F3E;
 }
+details summary {
+    list-style: none; /* Elimina la flechita del summary */
+}
+h1 {
+    color: #000000;
+    background-color: lightskyblue;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 1%;
+    border-radius: 20px;
+}
+
+.prestamos {
+    transition: transform 0.3s ease;
+}
+
+.prestamos:hover {
+    background-color: rgb(104, 159, 177);
+    transform: scale(1.2); /* Animación al pasar el mouse */
+}
+table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: lightskyblue;
+}
+nav a {
+    margin-left: 80px;
+    text-decoration: none;
+    color: inherit;
+    padding: 7px;
+    transition: transform 0.3s ease; /* Animación */
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

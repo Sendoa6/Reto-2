@@ -23,7 +23,7 @@
     //Si usuario esta con la sesion iniciada...
     if (isset($_SESSION['ID_usuario'])) {
         $userId = $_SESSION['ID_usuario']; //...se almacena el id usuario en una variable
-
+    }
     // CONSULTA PARA CONTAR PENALIZACIONES
     $query = "SELECT total_penalizaciones FROM usuarios WHERE ID_usuario = '$userId'";
 
@@ -33,9 +33,10 @@
     if ($row = mysqli_fetch_assoc($result)) {
         // Verificar el total de penalizaciones
         if ($row['total_penalizaciones'] >= 3) {
-            echo "El usuario tiene 3 o más penalizaciones y no puede realizar préstamos.";
-            mysqli_close($conexion); // Cierra la conexión a la base de datos
-            exit(); // Finaliza el script
+            echo "<script type='text/javascript'>alert('No puedes registrar más préstamos porque tienes 3 o mas penalizaciones activas, habla con los encargados de la biblioteca.');</script>";
+            header("Refresh: 0.1; url=bienvenida.php");
+            mysqli_close($conexion);
+            exit(); // Detener la ejecución
         }
     } else {
         echo "Error: No se pudo encontrar al usuario en la base de datos.";
@@ -43,7 +44,24 @@
         exit();
     }
 
-        
+    $sql = "SELECT COUNT(*) AS prestamos_activos FROM prestamos WHERE ID_usuario = '$userId' AND fecha_devolucion IS NULL";
+
+    $result = mysqli_query($conexion, $sql);
+
+    if ($result) {
+    $row = mysqli_fetch_assoc($result);
+    $prestamos_activos = $row['prestamos_activos'];
+    }
+
+    // Verificar si el usuario tiene 3 o más préstamos activos
+    if ($prestamos_activos >= 3) {
+        echo "<script type='text/javascript'>alert('No puedes registrar más préstamos porque tienes $prestamos_activos préstamos activos.');</script>";
+        header("Refresh: 0.1; url=bienvenida.php");
+        mysqli_close($conexion);
+        exit(); // Detener la ejecución
+    }
+
+
     // Manejar correctamente fecha_devolucion si es null
     $fecha_devolucion_sql = is_null($fecha_devolucion) ? "NULL" : "'$fecha_devolucion'";
 
@@ -59,5 +77,5 @@
     } else {
         echo "Error al registrar el préstamo: " . mysqli_error($conexion);
     }
-}
+
 ?>
