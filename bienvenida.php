@@ -1,12 +1,38 @@
 <?php
     session_start();
-    
+    include 'Conexiones.php';
     if (!isset($_SESSION['usuario'])) {
         session_destroy(); // Destruir cualquier sesión residual
         header("Location: Formulario1.php"); // Redirigir al formulario de inicio de sesión
         exit();
     }
-    ?>
+    
+$foto_perfil = 'ruta/a/imagen/por/defecto.jpg';
+
+if (isset($_SESSION['ID_usuario'])) {
+    $ID_usuario = $_SESSION['ID_usuario'];
+
+    $sql = "SELECT foto_perfil FROM usuarios WHERE ID_usuario = ?";
+    $vincular = $conexion->prepare($sql);
+
+    if ($vincular) {
+        $vincular->bind_param("i", $ID_usuario);
+        $vincular->execute();
+        $vincular->bind_result($foto_perfil);
+
+        if ($vincular->fetch()) {
+        } else {
+            $foto_perfil = 'ruta/a/imagen/por/defecto.jpg';
+        }
+
+        $vincular->close();
+    } else {
+        $foto_perfil = 'ruta/a/imagen/por/defecto.jpg';
+    }
+
+    $conexion->close();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,7 +61,7 @@
     <?php else: ?>
         <form action="bienvenida.php" method="post">
         <a class="perfil" href="bienvenida.php">
-          <img class="imgperfil" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVg9KLX4bqxbJvgDoC8zXQGIWrrb1fcPsYQ&s" alt="Perfil">
+          <img class="imgperfil" src="<?php echo htmlspecialchars($foto_perfil); ?>" alt="Foto de perfil">
         </a>
       </form>
     <?php endif; ?>
@@ -45,8 +71,7 @@
   <h1> MI PERFIL</h1>
   <br>
   <div class="cajaperfil">
-  <img class="imgperfil2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVg9KLX4bqxbJvgDoC8zXQGIWrrb1fcPsYQ&s"
-  alt="img"></a> 
+  <img class="imgperfil2" src="<?php echo htmlspecialchars($foto_perfil); ?>" alt="Foto de perfil">
   <a href="CambioFoto.html">Cambiar foto</a><br><br><br><br>
   </div>
   <div class="cajadatos">

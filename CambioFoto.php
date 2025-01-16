@@ -1,46 +1,48 @@
 <?php
-// Conexión a la base de datos
-$conn = new mysqli("localhost", "usuario", "contraseña", "base_datos");
+session_start();
+include 'Conexiones.php';
 
-// Verificar conexión
-if ($conn->connect_error) {
-    die("Error de conexión: " . $conn->connect_error);
-}
-
-// Verificar si se envió una foto
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['foto'])) {
-    $id_usuario = 1; // ID del usuario actual (puedes obtenerlo de una sesión)
-    $foto_seleccionada = $_POST['foto']; // URL de la foto seleccionada
-
-    // Actualizar la columna foto_perfil en la base de datos
-    $sql = "UPDATE usuarios SET foto_perfil = ? WHERE id = ?";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("si", $foto_seleccionada, $id_usuario);
-
-    if ($stmt->execute()) {
-        echo "¡Foto de perfil actualizada con éxito!";
+    if (isset($_SESSION['ID_usuario'])) {
+        $ID_usuario = $_SESSION['ID_usuario'];
     } else {
-        echo "Error al actualizar la foto: " . $conn->error;
+        echo "No se ha encontrado el ID del usuario en la sesión.";
+        exit();
     }
 
-    $stmt->close();
+    $foto_seleccionada = $_POST['foto'];
+
+    echo "Foto seleccionada: " . htmlspecialchars($foto_seleccionada) . "<br>";
+
+    if (!$conexion) {
+        die("Error en la conexión: " . mysqli_connect_error());
+    }
+
+    $sql = "UPDATE usuarios SET foto_perfil = ? WHERE ID_usuario = ?";
+    $stmt = $conexion->prepare($sql);
+
+    if ($stmt) {
+        $stmt->bind_param("si", $foto_seleccionada, $ID_usuario);
+
+        if ($stmt->execute()) {
+            if ($stmt->affected_rows > 0) {
+                echo "¡Foto de perfil actualizada con éxito!<br>";
+                header("Location: bienvenida.php");
+                exit();
+            } else {
+                echo "No se encontraron filas para actualizar. ¿Es el ID correcto?<br>";
+            }
+        } else {
+            echo "Error al ejecutar la consulta: " . $stmt->error . "<br>";
+        }
+
+        $stmt->close();
+    } else {
+        echo "Error al preparar la consulta: " . $conexion->error . "<br>";
+    }
+
+    $conexion->close();
+} else {
+    echo "No se ha recibido ninguna foto.<br>";
 }
-
-$conn->close();
-?>
-
-<?php
-// Conexión a la base de datos
-$conn = new mysqli("localhost", "usuario", "contraseña", "base_datos");
-
-// Obtener la foto del usuario
-$id_usuario = 1; // ID del usuario actual (puedes obtenerlo de una sesión)
-$sql = "SELECT foto_perfil FROM usuarios WHERE id = ?";
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("i", $id_usuario);
-$stmt->execute();
-$stmt->bind_result($foto_perfil);
-$stmt->fetch();
-$stmt->close();
-$conn->close();
 ?>
