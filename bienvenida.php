@@ -52,12 +52,12 @@ if (isset($_SESSION['ID_usuario'])) {
     </nav>
     <nav>
     <a href="index.php">Inicio</a>
-    <a href="Conocenos.html">Conocenos</a>
+    <a href="Conocenos.php">Conocenos</a>
     <a href="CatalogoDeLibros.php">Catalogo de Libros</a>
     <a href="Prestamos.php">Prestamos</a>
     <?php
     if ($_SESSION['empleado']){
-      echo'<a href="devolver_prestamos.html">Devolver Prestamos</a>';
+      echo'<a href="devolver_prestamos.php">Devolver Prestamos</a>';
       echo'<a href="RegistroLibros.php">Registrar libros</a>';
     }
     ?>

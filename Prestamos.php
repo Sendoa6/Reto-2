@@ -51,11 +51,16 @@ if (isset($_SESSION['ID_usuario'])) {
       <a class="ventana" href="CatalogoDeLibros.php"> Catálogo de Libros</a>
       <a class="ventanaactual" href="Prestamos.php"> Préstamos</a>
       <a class="ventana" href="Formulario1.php"> Iniciar Sesión</a>
-      <form action="bienvenida.php" method="post">
-        <a class="perfil" href="bienvenida.php">
-          <img class="imgperfil" src="<?php echo htmlspecialchars($foto_perfil); ?>" alt="Foto de perfil">
-        </a>
-      </form>
+      <?php
+     if ($_SESSION==TRUE) {
+      
+      echo '<form action="bienvenida.php" method="post">';
+      echo '<a class="perfil" href="bienvenida.php">';
+      echo '<img class="imgperfil" src="' . htmlspecialchars($foto_perfil) . '" alt="Foto de perfil">';
+      echo '</a>';
+      echo '</form>';
+     }
+      ?>
     </nav>
   </header>
 
