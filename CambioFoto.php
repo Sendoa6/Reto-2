@@ -44,6 +44,3 @@ $stmt->fetch();
 $stmt->close();
 $conn->close();
 ?>
-
-<!-- Mostrar la foto -->
-<img src="<?php echo htmlspecialchars($foto_perfil); ?>" alt="Foto de perfil" width="150">
