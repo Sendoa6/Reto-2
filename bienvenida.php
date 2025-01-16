@@ -7,8 +7,6 @@
         exit();
     }
     ?>
-    
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -36,8 +34,11 @@
     <?php if (!isset($_SESSION['usuario'])): ?>
         <a href="Formulario1.php">Iniciar Sesion</a>
     <?php else: ?>
-        <a href="bienvenida.php">Mi Perfil</a>
-        <a href="cerrar_sesion.php">Cerrar Sesión</a>
+        <form action="bienvenida.php" method="post">
+        <a class="perfil" href="bienvenida.php">
+          <img class="imgperfil" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVg9KLX4bqxbJvgDoC8zXQGIWrrb1fcPsYQ&s" alt="Perfil">
+        </a>
+      </form>
     <?php endif; ?>
 </nav>
   </header>
@@ -47,7 +48,7 @@
   <div class="cajaperfil">
   <img class="imgperfil2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVg9KLX4bqxbJvgDoC8zXQGIWrrb1fcPsYQ&s"
   alt="img"></a> 
-  <a href="">Cambiar icono</a><br><br><br><br>
+  <a href="CambioFoto.html">Cambiar foto</a><br><br><br><br>
   </div>
   <div class="cajadatos">
     <?php

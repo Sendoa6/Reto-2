@@ -147,6 +147,8 @@ p{
     margin-left: 8em;
     margin-right: 8em;
     background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
     
 }
 .cajadatos{
@@ -157,7 +159,7 @@ p{
     padding-bottom: 2em;
     font-weight: bold;
     background-color: #30b0ff;
-    border-radius: ;
+    border-radius: 26px;
 }
 .footer{
     border: none;
