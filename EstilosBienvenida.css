@@ -13,8 +13,6 @@ header {
 .logo{
     border-radius: 20px;
 }
-
-
 nav {
     display: flex;
     align-items: center;
@@ -77,6 +75,7 @@ footer {
 
 p footer{
     background-color: #555;
+   
 }
 
 footer a {
@@ -98,7 +97,7 @@ body {
     align-items: center;
     height: auto;
     width: auto;
-    background-color: aliceblue
+    background-color: rgb(203, 231, 255)
 }
 
 .imagenbiblio{
@@ -144,8 +143,22 @@ h1{
 }
 p{
     text-align: center;
+    border: 3px solid black;
+    margin-left: 8em;
+    margin-right: 8em;
+    background-color: white;
+    
 }
 .cajadatos{
-    background-color: #0065a3;
-    
+    border: 3px solid black;
+    margin-left: 25em;
+    margin-right: 25em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-weight: bold;
+    background-color: #30b0ff;
+}
+.footer{
+    border: none;
+    background-color: #232F3E;
 }

@@ -49,9 +49,9 @@
   <div class="cajadatos">
     <?php
     if ($_SESSION['empleado']==TRUE) {
-      echo "<p>ERES EMPLEADO </p><br>";
+      echo "<p>EMPLEADO </p><br>";
     }else{
-      echo "<p>NO ERES EMPLEADO </p><br>";
+      echo "<p>NO EMPLEADO </p><br>";
     }
     echo "<p>Usuario: " .(string)$_SESSION['usuario'] . "</p><br>";
     echo "<p>ID Usuario: " .$_SESSION['ID_usuario'] . "</p><br>";
@@ -61,17 +61,18 @@
     echo "<p>Corre Electronico: ". (string)$_SESSION['correo'] . "</p><br>";
     echo "<p>NumeroSS: ". $_SESSION['NumeroSS'] . "</p><br>";
     ?>
+    <a href="cerrar_sesion.php"><p>Cerrar sesión</p></a>
   </div>
     <br>
     <br>
     <footer>
-    <p>&copy; 2024 Muskizko Liburutegia. Todos los derechos reservados.</p>
-    <p>
+    <p class="footer">&copy; 2024 Muskizko Liburutegia. Todos los derechos reservados.</p>
+    <p class="footer">
       <a href="https://facebook.com" target="_blank">Facebook</a> |
       <a href="https://twitter.com" target="_blank">Twitter</a> |
       <a href="https://instagram.com" target="_blank">Instagram</a>
     </p>
-    <p>
+    <p class="footer">
       <a href="https://maps.app.goo.gl/edZ15iYRnLJY2kUx6" target="_blank">📍🌍Localización y horarios</a>|
       <a href="mailto:contacto@misitioweb.com">Contáctanos</a>
     </p>
