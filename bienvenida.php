@@ -1,12 +1,13 @@
 <?php
-
     session_start();
     
-    if(!isset($_SESSION['usuario'])){
-        echo "<script type='text/javascript'>  window.location = 'Formulario1.php'; </script>";
-        session_destroy();
-        die();
+    if (!isset($_SESSION['usuario'])) {
+        session_destroy(); // Destruir cualquier sesión residual
+        header("Location: Formulario1.php"); // Redirigir al formulario de inicio de sesión
+        exit();
     }
+    ?>
+    
 ?>
 
 <!DOCTYPE html>
@@ -27,16 +28,18 @@
       </ul>
     </nav>
     <nav>
-      <a href="index.php"> Inicio</a>
-      <a href="Conocenos.html"> Conocenos</a>
-      <a href="CatalogoDeLibros.php"> Catalogo de Libros</a>
-      <a href="Prestamos.php"> Prestamos</a>
-      <a href="Formulario1.php"> Iniciar Sesion</a>
-      <form action="bienvenida.php" method="post">
-      <a class=perfil href="bienvenida.php"><img class="imgperfil" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVg9KLX4bqxbJvgDoC8zXQGIWrrb1fcPsYQ&s" 
-      alt="img"></a>
-   </form>
-   </nav>
+    <a href="index.php">Inicio</a>
+    <a href="Conocenos.html">Conocenos</a>
+    <a href="CatalogoDeLibros.php">Catalogo de Libros</a>
+    <a href="Prestamos.php">Prestamos</a>
+
+    <?php if (!isset($_SESSION['usuario'])): ?>
+        <a href="Formulario1.php">Iniciar Sesion</a>
+    <?php else: ?>
+        <a href="bienvenida.php">Mi Perfil</a>
+        <a href="cerrar_sesion.php">Cerrar Sesión</a>
+    <?php endif; ?>
+</nav>
   </header>
 
   <h1> MI PERFIL</h1>
