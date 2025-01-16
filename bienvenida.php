@@ -64,7 +64,6 @@
   </div>
     <br>
     <br>
-    <a href="cerrar_sesion.php"><p>Cerrar sesión</p></a>
     <footer>
     <p>&copy; 2024 Muskizko Liburutegia. Todos los derechos reservados.</p>
     <p>
