@@ -1,5 +1,32 @@
 <?php
     session_start();
+    include 'Conexiones.php';
+    $foto_perfil = 'ruta/a/imagen/por/defecto.jpg';
+
+if (isset($_SESSION['ID_usuario'])) {
+    $ID_usuario = $_SESSION['ID_usuario'];
+
+    $sql = "SELECT foto_perfil FROM usuarios WHERE ID_usuario = ?";
+    $stmt = $conexion->prepare($sql);
+
+    if ($stmt) {
+        $stmt->bind_param("i", $ID_usuario);
+        $stmt->execute();
+        $stmt->bind_result($foto_perfil);
+
+        if ($stmt->fetch()) {
+        } else {
+            $foto_perfil = 'ruta/a/imagen/por/defecto.jpg';
+        }
+
+        $stmt->close();
+    } else {
+        $foto_perfil = 'ruta/a/imagen/por/defecto.jpg';
+    }
+
+    $conexion->close();
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -22,14 +49,15 @@
     </nav>
     <nav class="ventanas">
       <a class="ventanaactual" href="index.php"> Inicio</a>
-      <a class="ventana" href="Conocenos.html"> Conocenos</a>
+      <a class="ventana" href="Conocenos.php"> Conocenos</a>
       <a class="ventana" href="CatalogoDeLibros.php"> Catalogo de Libros</a>
       <a class="ventana" href="Prestamos.php"> Prestamos</a>
       <a class="ventana" href="Formulario1.php"> Iniciar Sesion</a>
       <form action="bienvenida.php" method="post">
-      <a class=perfil href="bienvenida.php"><img class="imgperfil" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVg9KLX4bqxbJvgDoC8zXQGIWrrb1fcPsYQ&s" 
-      alt="img"></a>
-   </form>
+        <a class="perfil" href="bienvenida.php">
+          <img class="imgperfil" src="<?php echo htmlspecialchars($foto_perfil); ?>" alt="Foto de perfil">
+        </a>
+      </form>
    </nav>
   </header>
 
