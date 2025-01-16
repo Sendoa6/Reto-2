@@ -1,12 +1,38 @@
 <?php
     session_start();
-    
+    include 'Conexiones.php';
     if (!isset($_SESSION['usuario'])) {
-        session_destroy(); // Destruir cualquier sesión residual
-        header("Location: Formulario1.php"); // Redirigir al formulario de inicio de sesión
+        session_destroy();
+        header("Location: Formulario1.php");
         exit();
     }
-    ?>
+    
+$foto_perfil = 'ruta/a/imagen/por/defecto.jpg';
+
+if (isset($_SESSION['ID_usuario'])) {
+    $ID_usuario = $_SESSION['ID_usuario'];
+
+    $sql = "SELECT foto_perfil FROM usuarios WHERE ID_usuario = ?";
+    $stmt = $conexion->prepare($sql);
+
+    if ($stmt) {
+        $stmt->bind_param("i", $ID_usuario);
+        $stmt->execute();
+        $stmt->bind_result($foto_perfil);
+
+        if ($stmt->fetch()) {
+        } else {
+            $foto_perfil = 'ruta/a/imagen/por/defecto.jpg';
+        }
+
+        $stmt->close();
+    } else {
+        $foto_perfil = 'ruta/a/imagen/por/defecto.jpg';
+    }
+
+    $conexion->close();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,8 +59,11 @@
     <?php if (!isset($_SESSION['usuario'])): ?>
         <a href="Formulario1.php">Iniciar Sesion</a>
     <?php else: ?>
-        <a href="bienvenida.php">Mi Perfil</a>
-        <a href="cerrar_sesion.php">Cerrar Sesión</a>
+        <form action="bienvenida.php" method="post">
+        <a class="perfil" href="bienvenida.php">
+          <img class="imgperfil" src="<?php echo htmlspecialchars($foto_perfil); ?>" alt="Foto de perfil">
+        </a>
+      </form>
     <?php endif; ?>
 </nav>
   </header>
@@ -42,9 +71,8 @@
   <h1> MI PERFIL</h1>
   <br>
   <div class="cajaperfil">
-  <img class="imgperfil2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVg9KLX4bqxbJvgDoC8zXQGIWrrb1fcPsYQ&s"
-  alt="img"></a> 
-  <a href="">Cambiar icono</a><br><br><br><br>
+  <img class="imgperfil2" src="<?php echo htmlspecialchars($foto_perfil); ?>" alt="Foto de perfil">
+  <a href="CambioFoto.html">Cambiar foto</a><br><br><br><br>
   </div>
   <div class="cajadatos">
     <?php
