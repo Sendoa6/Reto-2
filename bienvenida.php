@@ -55,7 +55,12 @@ if (isset($_SESSION['ID_usuario'])) {
     <a href="Conocenos.html">Conocenos</a>
     <a href="CatalogoDeLibros.php">Catalogo de Libros</a>
     <a href="Prestamos.php">Prestamos</a>
-
+    <?php
+    if ($_SESSION['empleado']){
+      echo'<a href="devolver_prestamos.html">Devolver Prestamos</a>';
+      echo'<a href="RegistroLibros.php">Registrar libros</a>';
+    }
+    ?>
     <?php if (!isset($_SESSION['usuario'])): ?>
         <a href="Formulario1.php">Iniciar Sesion</a>
     <?php else: ?>
@@ -91,6 +96,53 @@ if (isset($_SESSION['ID_usuario'])) {
     ?>
     <a href="cerrar_sesion.php"><p>Cerrar sesión</p></a>
   </div>
+  <details>
+      <summary><h1 class="prestamos">Préstamos actuales de mi perfil</h1></summary>
+      <table>
+        <thead>
+          <t>
+            <th>ID_prestamo</th>
+            <th>Titulo del libro</th>
+            <th>Fecha Limite del prestamo</th>
+            <th>Fecha del Prestamo</th>
+          </t>
+        </thead>
+        <tbody>
+          <?php
+          // Incluir la conexión
+          include 'conexiones.php';
+
+          // Verificar si la conexión es exitosa
+          if (!$conexion) {
+              die("Error al conectar a la base de datos: " . mysqli_connect_error());
+          }
+
+          // Consulta para obtener los datos de los préstamos
+          $query = "SELECT p.ID_prestamo, l.titulo, p.fecha_prestamo, p.fecha_limite FROM prestamos p INNER JOIN ejemplares e ON e.ID_ejemplar = p.ID_ejemplar INNER JOIN libros l ON l.ID_libro = e.ID_libro WHERE p.ID_usuario = '$ID_usuario' ORDER BY p.ID_prestamo ASC";
+
+
+          $result = mysqli_query($conexion, $query);
+
+          // Verificar si hay resultados
+          if ($result && mysqli_num_rows($result) > 0) {
+              while ($row = mysqli_fetch_assoc($result)) {
+                  echo "<tr>";
+                  echo "<td>" . htmlspecialchars($row['ID_prestamo']) . "</td>";
+                  echo "<td>" . htmlspecialchars($row['titulo']) . "</td>";
+                  echo "<td>" . htmlspecialchars($row['fecha_prestamo']) . "</td>";
+                  echo "<td>" . htmlspecialchars($row['fecha_limite']) . "</td>";
+                  echo "</tr>";
+              }
+          } else {
+              echo "<tr><td colspan='4'>No hay préstamos registrados.</td></tr>";
+          }
+
+          // Cerrar la conexión
+          mysqli_close($conexion);
+          ?>
+        </tbody>
+      </table>
+    </details>
     <br>
     <br>
     <footer>
