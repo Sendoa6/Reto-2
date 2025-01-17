@@ -90,14 +90,14 @@ if (isset($_SESSION['ID_usuario'])) {
           <label for="genero">Género del libro:</label><br>
           <select id="genero" name="genero" required>
             <option value="" disabled selected>Seleccione un género</option>
-            <option value="fantasia">Fantasía</option>
+            <option value="Fantasía">Fantasía</option>
             <option value="Drama">Drama</option>
             <option value="Terror">Terror</option>
-            <option value="romance">Romance</option>
-            <option value="biografia">Biografía</option>
-            <option value="ingles">Ingles</option>
-            <option value="infantil">Infantil</option>
-            <option value="autoayuda">Autoayuda</option>
+            <option value="Romance">Romance</option>
+            <option value="Biografía">Biografía</option>
+            <option value="Inglés">Inglés</option>
+            <option value="Infantil">Infantil</option>
+            <option value="Autoayuda">Autoayuda</option>
           </select><br><br>
 
           <label for="url">Url de imagen del libro:</label><br>
