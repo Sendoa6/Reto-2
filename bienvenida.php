@@ -98,8 +98,8 @@ if (isset($_SESSION['ID_usuario'])) {
           <t>
             <th>ID_prestamo</th>
             <th>Titulo del libro</th>
-            <th>Fecha Limite del prestamo</th>
             <th>Fecha del Prestamo</th>
+            <th>Fecha Limite del prestamo</th>
           </t>
         </thead>
         <body>

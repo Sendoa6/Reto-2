@@ -70,12 +70,12 @@ if (isset($_SESSION['ID_usuario'])) {
       <h1>Registrar la devolución de un préstamo</h1>
       <br>
 
-      <form class="devPrest" id="devolucion" action="devolver_prestamos.php" method="post">
+      <form class="devPrest" id="devolucion" action="devolver_prestamos Codigo.php" method="post">
           <label for="ID">ID del préstamo:</label><br>
           <input type="text" id="ID" name="ID" required><br><br>
             
           <label for="fecha">Fecha de devolución:</label><br>
-          <input type="date" id="fecha" name="fecha" required><br><br>
+          <input type="date" id="fecha" name="fecha"><br><br>
             
           <input type="submit" value="Registrar devolución del préstamo">
         </form>

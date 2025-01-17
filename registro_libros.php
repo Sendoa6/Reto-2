@@ -46,6 +46,9 @@
     //Conexion a la base de datos y ejecucion de los insert
     $ejecutar = mysqli_query($conexion, $query3);
 
+    $query4 = "INSERT INTO ejemplares(estado_fisico,ID_libro) VALUES ('Buen estado','$ID_libros')";
+    $ejecutar = mysqli_query($conexion, $query4);
+
     //Si se ha ejecutado correctamente muestra un mensaje 
     if ($ejecutar){
         echo "<script type='text/javascript'>alert('Libro introducido correctamente a la base de datos');</script>";
