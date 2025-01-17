@@ -1,12 +1,10 @@
 <?php
-
     session_start();
     if(!isset($_SESSION['empleado'])){
         echo "<script type='text/javascript'>  window.location = 'Formulario1.php'; </script>";
         session_destroy();
         die();
     }
-    session_start();
     include 'Conexiones.php';
     $foto_perfil = 'ruta/a/imagen/por/defecto.jpg';
 
