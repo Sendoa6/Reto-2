@@ -52,7 +52,11 @@ if (isset($_SESSION['ID_usuario'])) {
       <a class="ventana" href="Conocenos.php"> Conocenos</a>
       <a class="ventana" href="CatalogoDeLibros.php"> Catalogo de Libros</a>
       <a class="ventana" href="Prestamos.php"> Prestamos</a>
-      <a class="ventana" href="Formulario1.php"> Iniciar Sesion</a>
+      <?php
+      if (!isset($_SESSION['usuario'])) {
+      echo '<a class="ventana" href="Formulario1.php">Iniciar Sesión</a>';
+      }
+      ?>
      <?php
      if ($_SESSION==TRUE) {
       

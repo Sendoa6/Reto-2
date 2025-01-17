@@ -97,9 +97,22 @@ body {
     align-items: center;
     height: auto;
     width: auto;
-    background-color: rgb(203, 231, 255)
+    margin: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Arial, sans-serif;
+    border: solid;
+    background-image: url(https://wallpaper.forfun.com/fetch/e7/e7bfc1edebf545897f7d266883c4a7f0.jpeg);
 }
-
+.cuerpo{
+    padding-top: 5%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
 .imagenbiblio{
     width: 50%;
 }
@@ -153,8 +166,8 @@ p{
 }
 .cajadatos{
     border: 3px solid black;
-    margin-left: 25em;
-    margin-right: 25em;
+    margin-left: 15em;
+    margin-right: 15em;
     padding-top: 2em;
     padding-bottom: 2em;
     font-weight: bold;
@@ -173,8 +186,8 @@ h1 {
     background-color: lightskyblue;
     text-align: center;
     cursor: pointer;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 5em;
+    margin-right: 5em;
     padding: 1%;
     border-radius: 20px;
 }
@@ -207,6 +220,9 @@ nav a {
     color: inherit;
     padding: 7px;
     transition: transform 0.3s ease; /* Animación */
+}
+nav a:hover{
+    transform: scale(1.3);
 }
 
 footer a {
