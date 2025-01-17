@@ -6,32 +6,6 @@
         header("Location: Formulario1.php");
         exit();
     }
-    
-$foto_perfil = 'ruta/a/imagen/por/defecto.jpg';
-
-if (isset($_SESSION['ID_usuario'])) {
-    $ID_usuario = $_SESSION['ID_usuario'];
-
-    $sql = "SELECT foto_perfil FROM usuarios WHERE ID_usuario = ?";
-    $stmt = $conexion->prepare($sql);
-
-    if ($stmt) {
-        $stmt->bind_param("i", $ID_usuario);
-        $stmt->execute();
-        $stmt->bind_result($foto_perfil);
-
-        if ($stmt->fetch()) {
-        } else {
-            $foto_perfil = 'ruta/a/imagen/por/defecto.jpg';
-        }
-
-        $stmt->close();
-    } else {
-        $foto_perfil = 'ruta/a/imagen/por/defecto.jpg';
-    }
-
-    $conexion->close();
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
