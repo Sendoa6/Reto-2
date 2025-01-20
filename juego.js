@@ -69,8 +69,12 @@ function checkMatch() {
 
     // Verifica si el jugador ha ganado
     if (matchedCards.length === cards.length) {
-      setTimeout(() => alert('¡Ganaste! 🎉'), 500);
+      alert('¡Ganaste! 🎉'); // Muestra el mensaje
+      setTimeout(() => {
+        window.location.href = 'juego.php'; // Redirige después de 500ms
+      }, 500);
     }
+    
   } else {
     // Si no coinciden, voltear las cartas nuevamente
     setTimeout(() => {
