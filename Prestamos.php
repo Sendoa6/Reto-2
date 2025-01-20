@@ -113,7 +113,7 @@ if (isset($_SESSION['ID_usuario'])) {
                   echo "<tr>";
                   echo "<td>" . htmlspecialchars($row['ID_ejemplar']) . "</td>";
                   echo "<td>" . htmlspecialchars($row['titulo']) . "</td>";
-                  echo "<td>" . htmlspecialchars($row['nombre'].$row['apellidos']) . "</td>";
+                  echo "<td>" . htmlspecialchars($row['nombre']." ".$row['apellidos']) . "</td>";
                   echo "</tr>";
               }
           } else {
