@@ -50,6 +50,7 @@ if (isset($_SESSION['ID_usuario'])) {
       <a class="ventana" href="Conocenos.php"> Conócenos</a>
       <a class="ventana" href="CatalogoDeLibros.php"> Catálogo de Libros</a>
       <a class="ventanaactual" href="Prestamos.php"> Préstamos</a>
+      <a class="ventana" href="juego.php">Juegos</a>
       <?php
       if (!isset($_SESSION['usuario'])) {
       echo '<a class="ventana" href="Formulario1.php">Iniciar Sesión</a>';

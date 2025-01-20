@@ -1,0 +1,169 @@
+  /*HEADER*/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 10px solid black; 
+    padding-bottom: 10px;
+    width: 100%;      
+    background-image: url(https://png.pngtree.com/background/20211215/original/pngtree-abstract-light-blue-background-picture-image_1459673.jpg);
+    background-size: cover    
+}
+
+.logo{
+    border-radius: 20px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+nav img {
+    margin-right: 80px;
+} 
+.imgperfil{
+    height: 55px;
+    width: 55px;
+    margin: 0;
+    padding: 0;
+    border: 2px solid black;
+    border-radius: 100px;
+}
+.perfil{
+    display: flex;
+    justify-content: right;
+    transform: translateX(180px);
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+}
+
+nav a {
+    margin-left: 80px;
+    text-decoration: none;
+    color: inherit;
+    padding: 7px;
+}
+
+nav a:hover{
+    background-color: lightskyblue;
+    border-radius: 10px;
+}
+
+#uno li {
+    margin: 0;
+}
+/*FIN HEADER*/
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    margin: 20px;
+    font-size: 2.5em;
+    color: black;
+  }
+  
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 12em);
+    grid-gap: 10px;
+    justify-content: center;
+    padding-bottom: 3em;
+  }
+  
+  .card {
+    width: 12em;
+    height: 12em;
+    background-color: #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none; /* Las imágenes están ocultas inicialmente */
+  }
+  
+  .card.flipped img {
+    display: block; /* Muestra la imagen al voltear la carta */
+  }
+  
+  .card.flipped {
+    background-color: #fff; /* Opcional: cambia el fondo de la carta volteada */
+  }
+  .cuerpo{
+    padding-top: 1%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    background-color: aliceblue;
+}
+/* FOOTER */
+footer {
+    color: white;
+    text-align: center;
+    width: 100%; /* Ocupar todo el ancho de la ventana */
+    background-color: #232F3E;
+    padding: 20px;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0; /* Asegura que no haya margen */
+    margin-top: 2vw;
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}
+
+p footer{
+    background-color: #555;
+   
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Hasta aqui el FOOTER */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    margin: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Arial, sans-serif;
+    border: solid;
+    background-image: url(https://wallpaper.forfun.com/fetch/e7/e7bfc1edebf545897f7d266883c4a7f0.jpeg);
+}
+
+  
+
+  

@@ -55,6 +55,7 @@ if (isset($_SESSION['ID_usuario'])) {
     <a href="Conocenos.php">Conocenos</a>
     <a href="CatalogoDeLibros.php">Catalogo de Libros</a>
     <a href="Prestamos.php">Prestamos</a>
+    <a href="juego.php">Juegos</a>
     <?php
     if ($_SESSION['empleado']){
       echo'<a href="devolver_prestamos.php">Devolver Prestamos</a>';
