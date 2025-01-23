@@ -49,7 +49,7 @@ nav a{
     padding: 7px;
     transition: transform 0.3s ease; /*Animación*/
 }
-
+ 
 .ventana:hover{
     background-color: lightskyblue;
     border-radius: 10px;
@@ -118,15 +118,15 @@ table{
     text-align: center; /* Centra el contenido de las celdas */
     border-spacing: 10px; /* Espaciado entre celdas */
     padding: 50px;
+    table-layout: fixed;
 }
 
 
 td {
     text-align: center; /* Centra contenido dentro de las celdas */
     vertical-align: middle; /* Alinea verticalmente */
-    border: solid;
 }
-
+ 
 #titlrecomendaciones{
     font-size: 5vh;
 }
@@ -196,10 +196,10 @@ footer a:hover {
     display: block;
     margin: 0 auto; /* Centra las imágenes dentro de las celdas */
     max-width: 100%; /* Escala las imágenes correctamente */
+    height: auto; /* Mantiene la proporción */
+    border-style: solid;
 }
 
-
-/*MEDIA QUERYS*/
 /* CSS GLOBAL */
 body {
     margin: 3% 10%;
@@ -371,5 +371,36 @@ footer {
 
     footer {
         padding: 10px;
+    }
+}
+
+@media (max-width:800px){
+    .geronimo, .calzoncillos, .diariogreg, .mistborn, .juegodetronos, .anillos {
+        width: 100%; /* Las imágenes ocuparán el 80% del ancho del contenedor */
+        max-width: none;
+        border-style: solid;
+    }
+
+    .imagenbiblio, .imagenbiblio2 {
+        width: 100%; /* Las imágenes de bienvenida se ajustan al 100% del ancho */
+    }
+
+    td{
+        border-style: none;
+    }
+
+    table {
+        width: 100%; /* Ajusta la tabla al ancho de la página */
+        border-spacing: 1px; /* Reduce el espacio entre celdas */
+    }
+}
+
+@media (max-width:420px){
+    h3{
+        font-size: 25px;
+    }
+    
+    .titllibros{
+        font-size: 9px;
     }
 }

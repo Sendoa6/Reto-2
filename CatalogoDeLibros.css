@@ -320,4 +320,37 @@ input[type="radio"]:checked + .tab-label + .tab-content {
 
     .cuerpo{
         padding: 10%;}
+
+}
+
+/*Pantallas de menos de 495 pixeles*/
+@media (max-width: 495px){
+    h1{
+        text-align: center; /*Centrar el título h1*/
+        background-color: lightskyblue; /*Para darle color al fondo del título h1*/
+        margin-left: 15%;
+        margin-right: 15%;
+        padding: 1%;
+        border-radius: 20px;
+
+    }
+}
+
+/*Pantallas de menos de 585 pixeles*/
+@media (max-width: 585px){
+    .tab-content{
+        width: 200px;
+        height: auto;
+    }
+
+    .tab-label {
+        width: 150px;
+        height: 50px;
+        transition: width 1s;
+    }
+
+    input[type="radio"]:checked + .tab-label {
+        width: 200px;
+    }
+
 }

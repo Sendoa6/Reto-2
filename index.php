@@ -26,7 +26,7 @@ if (isset($_SESSION['ID_usuario'])) {
 
     $conexion->close();
 }
-
+ 
 ?>
 
 <!DOCTYPE html>
@@ -84,7 +84,7 @@ if (isset($_SESSION['ID_usuario'])) {
         secciones y consulta el catálogo en línea. <b>¡Te invitamos a formar parte de esta experiencia literaria y educativa en Muskiz!</b>
       </p>
     </div>
-    <h3 id="titlrecomendaciones">Nuestras Recomendaciones</h3>
+    <h3>Nuestras Recomendaciones</h3>
       <table>
         <caption class="txtrecomendacion"><u>Infantil y Juvenil</u></caption>
           <tr>
