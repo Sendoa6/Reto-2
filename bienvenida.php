@@ -51,17 +51,32 @@ if (isset($_SESSION['ID_usuario'])) {
       </ul>
     </nav>
     <nav>
-    <a href="index.php">Inicio</a>
-    <a href="Conocenos.php">Conocenos</a>
-    <a href="CatalogoDeLibros.php">Catalogo de Libros</a>
-    <a href="Prestamos.php">Prestamos</a>
-    <a href="juego.php">Juegos</a>
+    <a class="ventana" href="index.php">Inicio</a>
+    <a class="ventana" href="Conocenos.php">Conocenos</a>
+    <a class="ventana" href="CatalogoDeLibros.php">Catalogo de Libros</a>
+    <a class="ventana" href="Prestamos.php">Prestamos</a>
+    <a class="ventana" href="juego.php">Juegos</a>
+    <?php
+      if (!isset($_SESSION['usuario'])) {
+      echo '<a class="ventanaactual" href="Formulario1.php">Iniciar Sesión</a>';
+      }
+    ?>
+    <?php
+     if ($_SESSION==TRUE) {
+      
+      echo '<form action="bienvenida.php" method="post">';
+      echo '<a class="perfil" href="bienvenida.php">';
+      echo '<img class="imgperfil" src="' . htmlspecialchars($foto_perfil) . '" alt="Foto de perfil">';
+      echo '</a>';
+      echo '</form>';
+     }
+    ?>
 
     <?php if (!isset($_SESSION['usuario'])): ?>
         <a href="Formulario1.php">Iniciar Sesion</a>
     <?php else: ?>
     <?php endif; ?>
-</nav> 
+</nav>  
   </header>
 <div class="cuerpo">
   <h1> MI PERFIL</h1>
@@ -70,12 +85,14 @@ if (isset($_SESSION['ID_usuario'])) {
     <img class="imgperfil2" src="<?php echo htmlspecialchars($foto_perfil); ?>" alt="Foto de perfil">
     <a href="CambioFoto.html">Cambiar foto</a><br><br><br><br>
   </div>
-  <?php
-    if ($_SESSION['empleado']){
-      echo'<a class="empleadoslink" href="devolver_prestamos.php">Devolver Prestamos</a>';
-      echo'<a class="empleadoslink" href="RegistroLibros.php">Registrar libros</a>';
-    }
-    ?>
+  <div class="botonesempleados">
+    <?php
+      if ($_SESSION['empleado']){
+        echo'<a class="empleadoslink" href="devolver_prestamos.php">Devolver Prestamos</a>';
+        echo'<a class="empleadoslink" href="RegistroLibros.php">Registrar libros</a>';
+      }
+      ?>
+    </div>
   <div class="cajadatos">
     <?php
     if ($_SESSION['empleado']==TRUE) {
