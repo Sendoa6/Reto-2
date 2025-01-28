@@ -39,7 +39,7 @@ if (isset($_SESSION['ID_usuario'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="EstilosBienvenida.css">
-    <title>Bienvenida</title>
+    <title>Mi perfil</title>
 </head>
 <body>
   <header>
