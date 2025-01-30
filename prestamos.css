@@ -315,3 +315,9 @@ details summary {
         width: 130px;
     }
 }
+
+@media(max-width:1300px){
+    header{
+        flex-direction: column;
+    }
+}
