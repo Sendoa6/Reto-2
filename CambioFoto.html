@@ -1,6 +1,13 @@
 <form action="cambiofoto.php" method="POST">
-    <h3>Selecciona tu nueva foto de perfil:</h3>
-
+   <style>
+    h3{
+        font-size: 2em;
+    }
+   </style>
+    <div class="Guardar">
+    <h3>Selecciona tu nueva foto de perfil:  </h3>
+    <button type="submit">Guardar</button>
+    </div>
     <label>
         <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1330849968822423582/image.png?ex=679ca91e&is=679b579e&hm=93408afb49f3c4c8791eef1e505ca699947e307470e9289fc0d755ac7fb156ca&">
         <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1330849968822423582/image.png?ex=679ca91e&is=679b579e&hm=93408afb49f3c4c8791eef1e505ca699947e307470e9289fc0d755ac7fb156ca&" alt="Opción 3" width="200">
@@ -34,25 +41,23 @@
         <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1330901654547206196/image.png?ex=679cd941&is=679b87c1&hm=47c8a121ebb537a4532cf7144bcfb62e614aee8e8b95b1873c66847855d233f0&" alt="Opción 25" width="200">
     </label>
     <label>
-        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1330867013538676768/image.png?ex=679cb8fe&is=679b677e&hm=89ce2746d94d081c4f6fabac5eb23a746c56bb27368fd58b02a68792a1973dc1&">
-        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1330867013538676768/image.png?ex=679cb8fe&is=679b677e&hm=89ce2746d94d081c4f6fabac5eb23a746c56bb27368fd58b02a68792a1973dc1&" alt="Opción 25" width="200">
-    </label>
-    <label>
-        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1330905837400621128/image.png?ex=679cdd26&is=679b8ba6&hm=f53d7a9f393f0c152f3bfcdf3c9bd9e9cc412f3550a0c07fec074b0258e9a483&">
-        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1330905837400621128/image.png?ex=679cdd26&is=679b8ba6&hm=f53d7a9f393f0c152f3bfcdf3c9bd9e9cc412f3550a0c07fec074b0258e9a483&" alt="Opción 25" width="200">
-    </label>
-    <label>
-        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1330907140663017524/image.png?ex=679cde5d&is=679b8cdd&hm=6d2cbd29025c2110036c24544d97bfed2ac239cb10b0a83711b20180a61c1b23&">
-        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1330907140663017524/image.png?ex=679cde5d&is=679b8cdd&hm=6d2cbd29025c2110036c24544d97bfed2ac239cb10b0a83711b20180a61c1b23&" alt="Opción 25" width="200">
-    </label>
-    <label>
-        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1330908240602730516/image.png?ex=679cdf63&is=679b8de3&hm=a55425e3cd2966bd08dc15b412d0563cce13be654a446620d90d439620df2fb2&">
-        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1330908240602730516/image.png?ex=679cdf63&is=679b8de3&hm=a55425e3cd2966bd08dc15b412d0563cce13be654a446620d90d439620df2fb2&" alt="Opción 25" width="200">
+        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1330906986224554126/image.png?ex=679cde38&is=679b8cb8&hm=4485626909fecd030a6ca8491702fc2daa0fda78833ecc00b4eef5e42f28d3b9&">
+        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1330906986224554126/image.png?ex=679cde38&is=679b8cb8&hm=4485626909fecd030a6ca8491702fc2daa0fda78833ecc00b4eef5e42f28d3b9&" alt="Opción 25" width="200">
     </label>
     <label>
         <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1330908482664267867/image.png?ex=679cdf9d&is=679b8e1d&hm=c5bbbc7afba9e6b6a5f012b571a0a3dfe0d5520c5aea8a6f7f490b28b225d35b&">
         <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1330908482664267867/image.png?ex=679cdf9d&is=679b8e1d&hm=c5bbbc7afba9e6b6a5f012b571a0a3dfe0d5520c5aea8a6f7f490b28b225d35b&" alt="Opción 25" width="200">
     </label>
+    <label>
+        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1330905837400621128/image.png?ex=679cdd26&is=679b8ba6&hm=f53d7a9f393f0c152f3bfcdf3c9bd9e9cc412f3550a0c07fec074b0258e9a483&">
+        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1330905837400621128/image.png?ex=679cdd26&is=679b8ba6&hm=f53d7a9f393f0c152f3bfcdf3c9bd9e9cc412f3550a0c07fec074b0258e9a483&" alt="Opción 25" width="150">
+    </label>
+    
+    <label>
+        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1330908240602730516/image.png?ex=679cdf63&is=679b8de3&hm=a55425e3cd2966bd08dc15b412d0563cce13be654a446620d90d439620df2fb2&">
+        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1330908240602730516/image.png?ex=679cdf63&is=679b8de3&hm=a55425e3cd2966bd08dc15b412d0563cce13be654a446620d90d439620df2fb2&" alt="Opción 25" width="200">
+    </label>
+
     <label>
         <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1331162242481393738/image.png?ex=679c7a72&is=679b28f2&hm=efcdcafbd7ef6f8575e17d5fb7ce918af7f32817360d88b399891da6d699d51a&">
         <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1331162242481393738/image.png?ex=679c7a72&is=679b28f2&hm=efcdcafbd7ef6f8575e17d5fb7ce918af7f32817360d88b399891da6d699d51a&" alt="Opción 25" width="200">
@@ -85,5 +90,4 @@
         <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1334114932811370526/image.png?ex=679cac5a&is=679b5ada&hm=3ef679c3d5510240e612196ae6a4a3efdda97e58ed6862263c8140c13baa9930&">
         <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1334114932811370526/image.png?ex=679cac5a&is=679b5ada&hm=3ef679c3d5510240e612196ae6a4a3efdda97e58ed6862263c8140c13baa9930&" alt="Opción 25" width="200">
     </label>
-    <button type="submit">Guardar</button>
 </form>
