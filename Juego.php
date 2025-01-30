@@ -47,11 +47,11 @@ if (isset($_SESSION['ID_usuario'])) {
       </ul>
     </nav>
     <nav class="ventanas">
-      <a class="ventanaactual" href="index.php"> Inicio</a>
+      <a class="ventana" href="index.php"> Inicio</a>
       <a class="ventana" href="Conocenos.php"> Conocenos</a>
       <a class="ventana" href="CatalogoDeLibros.php"> Catalogo de Libros</a>
       <a class="ventana" href="Prestamos.php"> Prestamos</a>
-      <a class="ventana" href="juego.php">Juegos</a>
+      <a class="ventanaactual" href="juego.php">Juegos</a>
       <?php
       if (!isset($_SESSION['usuario'])) {
       echo '<a class="ventana" href="Formulario1.php">Iniciar Sesión</a>';
@@ -72,7 +72,7 @@ if (isset($_SESSION['ID_usuario'])) {
   <div class ="cuerpo">
   <h1>JUEGO DE MEMORIA</h1>
   <div id="game-board" class="game-board"></div>
-  <script src="juego.js"></script>
+    <script src="juego.js"></script>
   </div>
   <footer>
     <p>&copy; 2024 Muskizko Liburutegia. Todos los derechos reservados.</p>
