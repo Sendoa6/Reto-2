@@ -59,7 +59,7 @@ if (isset($_SESSION['ID_usuario'])) {
           <a class="ventana" href="Prestamos.php"> Prestamos</a>
           <a class="ventana" href="juego.php">Juegos</a>
           <?php
-     if ($_SESS+çION==TRUE) {
+     if ($_SESSION==TRUE) {
       
       echo '<form action="bienvenida.php" method="post">';
       echo '<a class="perfil" href="bienvenida.php">';
