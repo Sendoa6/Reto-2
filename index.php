@@ -26,7 +26,6 @@ if (isset($_SESSION['ID_usuario'])) {
 
     $conexion->close();
 }
- 
 ?>
 
 <!DOCTYPE html>
