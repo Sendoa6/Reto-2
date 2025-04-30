@@ -13,9 +13,9 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 
     <?php
     try {
-        $stmt = $pdo->query("SELECT titulo, genero, imagen_url, fecha_agregado FROM libros ORDER BY fecha_agregado DESC LIMIT 10");
+        $resultado = mysqli_query($conexion, "SELECT titulo, genero, imagen_url, fecha_agregado FROM libros ORDER BY fecha_agregado DESC LIMIT 10");
 
-        while ($row = $stmt->fetch()) {
+        while ($row = mysqli_fetch_assoc($resultado)) {        
             $titulo = htmlspecialchars($row['titulo'], ENT_XML1, 'UTF-8');
             $genero = htmlspecialchars($row['genero'], ENT_XML1, 'UTF-8');
             $imagen = htmlspecialchars($row['imagen_url'], ENT_XML1, 'UTF-8');
