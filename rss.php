@@ -1,8 +1,6 @@
 <?php
 header('Content-Type: application/rss+xml; charset=UTF-8');
-
-// Incluir la conexión a la base de datos
-include('conexiones.php'); // Asegúrate de que la ruta sea correcta
+include('conexiones.php'); // Asegúrate de que $pdo esté definido aquí
 
 echo '<?xml version="1.0" encoding="UTF-8"?>';
 ?>
@@ -15,16 +13,14 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 
     <?php
     try {
-        // Usamos la conexión desde conexiones.php
         $stmt = $pdo->query("SELECT titulo, genero, imagen_url, fecha_agregado FROM libros ORDER BY fecha_agregado DESC LIMIT 10");
 
-        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            $titulo = htmlspecialchars($row['titulo'], ENT_XML1);
-            $genero = htmlspecialchars($row['genero'], ENT_XML1);
-            $imagen = htmlspecialchars($row['imagen_url'], ENT_XML1);
+        while ($row = $stmt->fetch()) {
+            $titulo = htmlspecialchars($row['titulo'], ENT_XML1, 'UTF-8');
+            $genero = htmlspecialchars($row['genero'], ENT_XML1, 'UTF-8');
+            $imagen = htmlspecialchars($row['imagen_url'], ENT_XML1, 'UTF-8');
             $fecha = date(DATE_RSS, strtotime($row['fecha_agregado']));
-            $link = $imagen ?: 'https://www.tubiblioteca.com'; // usar la imagen como enlace o poner uno genérico
-
+            $link = "http://localhost:3000/libro.php?titulo=" . urlencode($row['titulo']);
             echo "
     <item>
       <title>$titulo</title>
