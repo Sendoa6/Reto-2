@@ -15,7 +15,7 @@
 
 
     // Inserts guardados en variables "Query"
-    $query = "INSERT INTO libros(titulo,ISBN,numero_copias,genero,imagen_url) VALUES ('$titulo','$ISBN','$copias','$genero','$url')";
+    $query = "INSERT INTO libros(titulo,ISBN,numero_copias,genero,imagen_url,fecha_agregado) VALUES ('$titulo','$ISBN','$copias','$genero','$url',CURDATE())";
     $query2 = "INSERT INTO autores(nombre,apellidos) VALUES ('$nombre','$apellidos')";
 
     //Conexion a la base de datos y ejecución de los inserts 
