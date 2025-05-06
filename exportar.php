@@ -17,7 +17,7 @@ $resultado = $conn->query($sql);
 if ($resultado->num_rows > 0) {
 
     // Crea un nuevo objeto SimpleXMLElement como raíz con el nodo <libros>
-    $xml = new SimpleXMLElement('<libros></libros>');
+    $xml = new SimpleXMLElement('<catalogo></catalogo>');
 
     // Itera sobre cada fila del resultado como un arreglo asociativo
     while($libro = $resultado->fetch_assoc()) {
