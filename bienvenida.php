@@ -86,12 +86,19 @@ if (isset($_SESSION['ID_usuario'])) {
     <a href="CambioFoto.html">Cambiar foto</a><br><br><br><br>
   </div>
   <div class="botonesempleados">
-    <?php
-      if ($_SESSION['empleado']){
-        echo'<a class="empleadoslink" href="devolver_prestamos.php">Devolver Prestamos</a>';
-        echo'<a class="empleadoslink" href="RegistroLibros.php">Registrar libros</a>';
-      }
-      ?>
+  <?php
+if ($_SESSION['empleado']) {
+    echo '<div style="display: flex; gap: 10px; align-items: center;">';
+    echo '<a class="empleadoslink" href="devolver_prestamos.php">Devolver Prestamos</a>';
+    echo '<a class="empleadoslink" href="RegistroLibros.php">Registrar libros</a>';
+    echo '<a class="empleadoslink" href="importar.php">Importar XML</a>';
+    echo '<a class="empleadoslink" href="exportar.php">Exportar XML</a>';
+    echo '<a class="empleadoslink" href="libros.xml">Ver XML</a>';
+    echo '</div>';
+}
+?>
+
+
     </div>
   <div class="cajadatos">
     <?php
