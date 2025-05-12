@@ -13,7 +13,8 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 
     <?php
     try {
-        $resultado = mysqli_query($conexion, "SELECT titulo, genero, imagen_url, fecha_agregado FROM libros ORDER BY fecha_agregado DESC LIMIT 10");
+        $resultado = mysqli_query($conexion, "SELECT titulo, genero, 
+        imagen_url, fecha_agregado FROM libros ORDER BY fecha_agregado DESC LIMIT 10");
 
         while ($row = mysqli_fetch_assoc($resultado)) {        
             $titulo = htmlspecialchars($row['titulo'], ENT_XML1, 'UTF-8');
