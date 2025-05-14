@@ -91,7 +91,11 @@ if ($_SESSION['empleado']) {
     echo '<div style="display: flex; gap: 10px; align-items: center;">';
     echo '<a class="empleadoslink" href="devolver_prestamos.php">Devolver Prestamos</a>';
     echo '<a class="empleadoslink" href="RegistroLibros.php">Registrar libros</a>';
-    echo '<a class="empleadoslink" href="importar.php">Importar XML</a>';
+    echo ' <form class="empleadoslink" action="importar.php" method="post" enctype="multipart/form-data">
+          <label for="archivo">Selecciona un archivo XML:</label>
+            <input type="file" name="archivo" id="archivo" required>
+            <button type="submit">Importar XML</button>
+          </form>';
     echo '<a class="empleadoslink" href="exportar.php">Exportar XML</a>';
     echo '<a class="empleadoslink" href="libros.xml">Ver XML</a>';
     echo '</div>';
