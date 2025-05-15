@@ -143,7 +143,7 @@ if ($_SESSION['empleado']) {
           }
 
           // Consulta para obtener los datos de los préstamos
-          $query = "SELECT p.ID_prestamo, l.titulo, p.fecha_prestamo, p.fecha_limite FROM prestamos p INNER JOIN ejemplares e ON e.ID_ejemplar = p.ID_ejemplar INNER JOIN libros l ON l.ID_libro = e.ID_libro WHERE p.ID_usuario = '$ID_usuario' ORDER BY p.ID_prestamo ASC";
+          $query = "SELECT p.ID_prestamo, l.titulo, p.fecha_prestamo, p.fecha_limite FROM prestamos p INNER JOIN ejemplares e ON e.ID_ejemplar = p.ID_ejemplar INNER JOIN libros l ON l.ID_libro = e.ID_libro WHERE p.ID_usuario = '$ID_usuario' AND p.fecha_devolucion IS NULL ORDER BY p.ID_prestamo ASC";
 
 
           $result = mysqli_query($conexion, $query);
