@@ -1,0 +1,184 @@
+<catalogo>
+  <libro>
+    <titulo>1984</titulo>
+    <isbn>978-1443434973</isbn>
+    <numero_copias>30,000,000</numero_copias>
+    <genero>Distopía</genero>
+    <imagen_url>https://m.media-amazon.com/images/I/71kxa1-0mfL.jpg</imagen_url>
+  </libro>
+  <libro>
+    <titulo>Cien años de soledad</titulo>
+    <isbn>978-8437604947</isbn>
+    <numero_copias>50,000,000</numero_copias>
+    <genero>Realismo mágico</genero>
+    <imagen_url>https://m.media-amazon.com/images/I/91kr6Kx+9LL.jpg</imagen_url>
+  </libro>
+  <libro>
+    <titulo>Crimen y castigo</titulo>
+    <isbn>978-8471662606</isbn>
+    <numero_copias>15,000,000</numero_copias>
+    <genero>Psicológico</genero>
+    <imagen_url>https://upload.wikimedia.org/wikipedia/commons/4/4b/Crime_and_Punishment_cover_-_Project_Gutenberg_eText_1533.jpg</imagen_url>
+  </libro>
+  <libro>
+    <titulo>Doña Perfecta</titulo>
+    <isbn>978-8437603728</isbn>
+    <numero_copias>2,000,000</numero_copias>
+    <genero>Realismo</genero>
+    <imagen_url>https://upload.wikimedia.org/wikipedia/commons/4/4f/Do%C3%B1a_Perfecta_%28Gald%C3%B3s%29.jpg</imagen_url>
+  </libro>
+  <libro>
+    <titulo>Don Quijote de la Mancha</titulo>
+    <isbn>978-8430598670</isbn>
+    <numero_copias>500,000,000</numero_copias>
+    <genero>Aventura</genero>
+    <imagen_url>https://upload.wikimedia.org/wikipedia/commons/8/8f/Cervantes_Don_Quixote_1605.jpg</imagen_url>
+  </libro>
+  <libro>
+    <titulo>El árbol de la ciencia</titulo>
+    <isbn>978-8437646084</isbn>
+    <numero_copias>2,000,000</numero_copias>
+    <genero>Existencialismo</genero>
+    <imagen_url>https://upload.wikimedia.org/wikipedia/commons/1/1a/El_%C3%A1rbol_de_la_ciencia_%28P%C3%ADo_Baroja%29.jpg</imagen_url>
+  </libro>
+  <libro>
+    <titulo>El gran Gatsby</titulo>
+    <isbn>978-8497936606</isbn>
+    <numero_copias>30,000,000</numero_copias>
+    <genero>Novela</genero>
+    <imagen_url>https://m.media-amazon.com/images/I/81af+MCATTL.jpg</imagen_url>
+  </libro>
+  <libro>
+    <titulo>El retrato de Dorian Gray</titulo>
+    <isbn>978-8467033939</isbn>
+    <numero_copias>10,000,000</numero_copias>
+    <genero>Gótico</genero>
+    <imagen_url>https://upload.wikimedia.org/wikipedia/commons/0/0e/The_Picture_of_Dorian_Gray_%281st_edition%29.jpg</imagen_url>
+  </libro>
+  <libro>
+    <titulo>En busca del tiempo perdido</titulo>
+    <isbn>978-8491045212</isbn>
+    <numero_copias>8,000,000</numero_copias>
+    <genero>Modernismo</genero>
+    <imagen_url>https://upload.wikimedia.org/wikipedia/commons/7/7c/Proust_-_Du_c%C3%B4t%C3%A9_de_chez_Swann_%281913%29.jpg</imagen_url>
+  </libro>
+  <libro>
+    <titulo>Fausto</titulo>
+    <isbn>978-8437606774</isbn>
+    <numero_copias>15,000,000</numero_copias>
+    <genero>Tragedia</genero>
+    <imagen_url>https://upload.wikimedia.org/wikipedia/commons/8/8e/Goethe%27s_Faust_First_Edition_Title_Page_1808.jpg</imagen_url>
+  </libro>
+  <libro>
+    <titulo>Fortunata y Jacinta</titulo>
+    <isbn>978-8437604398</isbn>
+    <numero_copias>3,000,000</numero_copias>
+    <genero>Realismo</genero>
+    <imagen_url>https://upload.wikimedia.org/wikipedia/commons/2/2b/Fortunata_y_Jacinta_%28Primera_parte%2C_primera_edici%C3%B3n%29.jpg</imagen_url>
+  </libro>
+  <libro>
+    <titulo>Harry Potter y la piedra filosofal</titulo>
+    <isbn>978-8478884452</isbn>
+    <numero_copias>120,000,000</numero_copias>
+    <genero>Fantasía</genero>
+    <imagen_url>https://m.media-amazon.com/images/I/81YOuOGFCJL.jpg</imagen_url>
+  </libro>
+  <libro>
+    <titulo>La colmena</titulo>
+    <isbn>978-1934768563</isbn>
+    <numero_copias>6,000,000</numero_copias>
+    <genero>Realismo social</genero>
+    <imagen_url>https://upload.wikimedia.org/wikipedia/commons/7/7e/La_colmena_%28Cela%29.jpg</imagen_url>
+  </libro>
+  <libro>
+    <titulo>La divina comedia</titulo>
+    <isbn>978-8497945882</isbn>
+    <numero_copias>100,000,000</numero_copias>
+    <genero>Poesía</genero>
+    <imagen_url>https://upload.wikimedia.org/wikipedia/commons/3/3b/Divina_Commedia_1.jpg</imagen_url>
+  </libro>
+  <libro>
+    <titulo>La familia de Pascual Duarte</titulo>
+    <isbn>978-8423342785</isbn>
+    <numero_copias>5,000,000</numero_copias>
+    <genero>Tremendismo</genero>
+    <imagen_url>https://upload.wikimedia.org/wikipedia/commons/6/6b/La_familia_de_Pascual_Duarte_%28Cela%29.jpg</imagen_url>
+  </libro>
+  <libro>
+    <titulo>La Regenta</titulo>
+    <isbn>978-8437603728</isbn>
+    <numero_copias>5,000,000</numero_copias>
+    <genero>Realismo</genero>
+    <imagen_url>https://upload.wikimedia.org/wikipedia/commons/3/3b/La_Regenta_%28Alas%29_tomo_I.jpg</imagen_url>
+  </libro>
+  <libro>
+    <titulo>Los miserables</titulo>
+    <isbn>978-8491050292</isbn>
+    <numero_copias>30,000,000</numero_copias>
+    <genero>Drama</genero>
+    <imagen_url>https://upload.wikimedia.org/wikipedia/commons/6/6b/Hugo_-_Les_Mis%C3%A9rables_Tome_I.jpg</imagen_url>
+  </libro>
+  <libro>
+    <titulo>Madame Bovary</titulo>
+    <isbn>978-8491050490</isbn>
+    <numero_copias>20,000,000</numero_copias>
+    <genero>Realismo</genero>
+    <imagen_url>https://upload.wikimedia.org/wikipedia/commons/7/7f/Madame_Bovary_1857_%28hi-res%29.jpg</imagen_url>
+  </libro>
+  <libro>
+    <titulo>Marianela</titulo>
+    <isbn>978-8437603728</isbn>
+    <numero_copias>2,000,000</numero_copias>
+    <genero>Realismo</genero>
+    <imagen_url>https://upload.wikimedia.org/wikipedia/commons/3/3f/Marianela_%28Gald%C3%B3s%29.jpg</imagen_url>
+  </libro>
+  <libro>
+    <titulo>Moby-Dick</titulo>
+    <isbn>978-8491050506</isbn>
+    <numero_copias>10,000,000</numero_copias>
+    <genero>Aventura</genero>
+    <imagen_url>https://upload.wikimedia.org/wikipedia/commons/0/0b/Moby-Dick_FE_title_page.jpg</imagen_url>
+  </libro>
+  <libro>
+    <titulo>Orgullo y prejuicio</titulo>
+    <isbn>978-8491050513</isbn>
+    <numero_copias>20,000,000</numero_copias>
+    <genero>Romance</genero>
+    <imagen_url>https://m.media-amazon.com/images/I/81OxWQi4VbL.jpg</imagen_url>
+  </libro>
+  <libro>
+    <titulo>Pepita Jiménez</titulo>
+    <isbn>978-8437603728</isbn>
+    <numero_copias>2,500,000</numero_copias>
+    <genero>Realismo</genero>
+    <imagen_url>https://upload.wikimedia.org/wikipedia/commons/8/8b/Pepita_Jim%C3%A9nez_%28Valera%29.jpg</imagen_url>
+  </libro>
+    <libro>
+    <titulo>Tiempo de silencio</titulo>
+    <isbn>978-8437602738</isbn>
+    <numero_copias>2,000,000</numero_copias>
+    <genero>Existencialismo</genero>
+    <imagen_url>https://upload.wikimedia.org/wikipedia/commons/f/fb/Tiempo_de_silencio_%28Luis_Mart%C3%ADn-Santos%29.jpg</imagen_url>
+  </libro>
+  <libro>
+    <titulo>Rayuela</titulo>
+    <isbn>978-8437601588</isbn>
+    <numero_copias>5,000,000</numero_copias>
+    <genero>Vanguardismo</genero>
+    <imagen_url>https://upload.wikimedia.org/wikipedia/commons/2/2f/Rayuela_%28Julio_Cort%C3%A1zar%29.jpg</imagen_url>
+  </libro>
+  <libro>
+    <titulo>Rebelión en la granja</titulo>
+    <isbn>978-8467031201</isbn>
+    <numero_copias>20,000,000</numero_copias>
+    <genero>Fábula política</genero>
+    <imagen_url>https://m.media-amazon.com/images/I/81FdnIcfb1L.jpg</imagen_url>
+  </libro>
+  <libro>
+    <titulo>Ulises</titulo>
+    <isbn>978-8491053064</isbn>
+    <numero_copias>7,000,000</numero_copias>
+    <genero>Modernismo</genero>
+    <imagen_url>https://upload.wikimedia.org/wikipedia/commons/3/31/JoyceUlysses2.jpg</imagen_url>  
+  </libro>
+</catalogo>

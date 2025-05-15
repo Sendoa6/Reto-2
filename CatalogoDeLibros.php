@@ -57,7 +57,7 @@ if (isset($_SESSION['ID_usuario'])) {
       echo '<a class="ventana" href="Formulario1.php">Iniciar Sesión</a>';
       }
       ?>
-            <?php
+            <?php //Codigo PHP
             if ($_SESSION==TRUE) {
         
         echo '<form action="bienvenida.php" method="post">';

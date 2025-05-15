@@ -1,111 +1,120 @@
-<form action="cambiofoto.php" method="POST">
-   <style>
-    h3{
-        font-size: 2em;
-    }
-
-    @media (min-width: 2000px){
-        img{
-            width: 500px;
-        }
-        .jonander{
-            width: 400px;
-        }
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de imagenes</title>
+    <style>
         h3{
-            font-size: 80px;
+            font-size: 2em;
         }
-        button{
-            font-size: 80px;
-            margin: 15px;
+        @media (min-width: 2000px){
+            img{
+                width: 500px;
+            }
+            .jonander{
+                width: 400px;
+            }
+            h3{
+                font-size: 80px;
+            }
+            button{
+                font-size: 80px;
+                margin: 15px;
+            }
         }
-    }
-   </style>
-    <div class="Guardar">
-        <h3>Selecciona tu nueva foto de perfil:  </h3>
-        <button type="submit">Guardar</button>
-    </div>
-
-    <label>
-        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1330850745972686879/image.png?ex=679ca9d7&is=679b5857&hm=00b4140b4159570715b2de8b4e5203a20d9e26d55d8a80ccb5e40230c60772ce&">
-        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1330850745972686879/image.png?ex=679ca9d7&is=679b5857&hm=00b4140b4159570715b2de8b4e5203a20d9e26d55d8a80ccb5e40230c60772ce&" alt="Opción 25" width="200">
-    </label>
-    <label>
-        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1330850880731217961/image.png?ex=679ca9f7&is=679b5877&hm=a839fd6d84458fce65b4ed24d83864d70f6e33ceeaffce20ad20dce7c7b36662&">
-        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1330850880731217961/image.png?ex=679ca9f7&is=679b5877&hm=a839fd6d84458fce65b4ed24d83864d70f6e33ceeaffce20ad20dce7c7b36662&" alt="Opción 25" width="200">
-    </label>
-    <label>
-        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1330851053154992258/image.png?ex=679caa21&is=679b58a1&hm=d74d4ec0b82d8996e1b9c6423fd49f0e57249d14c7a21bc66283582c1b81876a&">
-        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1330851053154992258/image.png?ex=679caa21&is=679b58a1&hm=d74d4ec0b82d8996e1b9c6423fd49f0e57249d14c7a21bc66283582c1b81876a&" alt="Opción 25" width="200">
-    </label>
-    <label>
-        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1330851364657692745/image.png?ex=679caa6b&is=679b58eb&hm=ebe9c7c3e8705473870e7821b629f501b52f7588b670984e942d6e8ccc5c7321&">
-        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1330851364657692745/image.png?ex=679caa6b&is=679b58eb&hm=ebe9c7c3e8705473870e7821b629f501b52f7588b670984e942d6e8ccc5c7321&" alt="Opción 25" width="200">
-    </label>
-    <label>
-        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1330851568123248752/image.png?ex=679caa9b&is=679b591b&hm=e3d2867559b7103e7d60a595f10f2af677caa6406e9798604b4cbd204eca9570&">
-        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1330851568123248752/image.png?ex=679caa9b&is=679b591b&hm=e3d2867559b7103e7d60a595f10f2af677caa6406e9798604b4cbd204eca9570&" alt="Opción 25" width="200">
-    </label>
-    <label>
-        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1334559656361852978/image.png?ex=679cf908&is=679ba788&hm=0c114b45db8c1e06103ef571283c7e28e6733273fbf6d0eea76ea5430f327889&">
-        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1334559656361852978/image.png?ex=679cf908&is=679ba788&hm=0c114b45db8c1e06103ef571283c7e28e6733273fbf6d0eea76ea5430f327889&" alt="Opción 25" width="200">
-    </label>
-    <label>
-        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1330901654547206196/image.png?ex=679cd941&is=679b87c1&hm=47c8a121ebb537a4532cf7144bcfb62e614aee8e8b95b1873c66847855d233f0&">
-        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1330901654547206196/image.png?ex=679cd941&is=679b87c1&hm=47c8a121ebb537a4532cf7144bcfb62e614aee8e8b95b1873c66847855d233f0&" alt="Opción 25" width="200">
-    </label>
-    <label>
-        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1330908482664267867/image.png?ex=679cdf9d&is=679b8e1d&hm=c5bbbc7afba9e6b6a5f012b571a0a3dfe0d5520c5aea8a6f7f490b28b225d35b&">
-        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1330908482664267867/image.png?ex=679cdf9d&is=679b8e1d&hm=c5bbbc7afba9e6b6a5f012b571a0a3dfe0d5520c5aea8a6f7f490b28b225d35b&" alt="Opción 25" width="200">
-    </label>
-    <label>
-        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1330905837400621128/image.png?ex=679cdd26&is=679b8ba6&hm=f53d7a9f393f0c152f3bfcdf3c9bd9e9cc412f3550a0c07fec074b0258e9a483&">
-        <img class="jonander" src="https://cdn.discordapp.com/attachments/1306154829445468160/1330905837400621128/image.png?ex=679cdd26&is=679b8ba6&hm=f53d7a9f393f0c152f3bfcdf3c9bd9e9cc412f3550a0c07fec074b0258e9a483&" alt="Opción 25" width="150">
-    </label>
-    
-    <label>
-        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1330908240602730516/image.png?ex=679cdf63&is=679b8de3&hm=a55425e3cd2966bd08dc15b412d0563cce13be654a446620d90d439620df2fb2&">
-        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1330908240602730516/image.png?ex=679cdf63&is=679b8de3&hm=a55425e3cd2966bd08dc15b412d0563cce13be654a446620d90d439620df2fb2&" alt="Opción 25" width="200">
-    </label>
-
-    <label>
-        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1331162242481393738/image.png?ex=679c7a72&is=679b28f2&hm=efcdcafbd7ef6f8575e17d5fb7ce918af7f32817360d88b399891da6d699d51a&">
-        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1331162242481393738/image.png?ex=679c7a72&is=679b28f2&hm=efcdcafbd7ef6f8575e17d5fb7ce918af7f32817360d88b399891da6d699d51a&" alt="Opción 25" width="200">
-    </label>
-    <label>
-        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1334108537617645668/image.png?ex=679ca665&is=679b54e5&hm=144766f97fec8252ca0b4724e7dd8c7f3fd894aa7333438f7a55d3c2d35c5111&">
-        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1334108537617645668/image.png?ex=679ca665&is=679b54e5&hm=144766f97fec8252ca0b4724e7dd8c7f3fd894aa7333438f7a55d3c2d35c5111&" alt="Opción 25" width="200">
-    </label>
-    <label>
-        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1334112560206839891/image.png?ex=679caa24&is=679b58a4&hm=ed36fc018101c39863efe1afc552bc3f66acc2db097fc6f31551e99acfdd20ec&">
-        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1334112560206839891/image.png?ex=679caa24&is=679b58a4&hm=ed36fc018101c39863efe1afc552bc3f66acc2db097fc6f31551e99acfdd20ec&" alt="Opción 25" width="200">
-    </label>
-    <label>
-        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1334112619392536626/image.png?ex=679caa33&is=679b58b3&hm=e0ce2c7dcc7b22a9c8c067ad7d4c46e66ed8b451dbb0ec723d4f2c2ed674da63&">
-        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1334112619392536626/image.png?ex=679caa33&is=679b58b3&hm=e0ce2c7dcc7b22a9c8c067ad7d4c46e66ed8b451dbb0ec723d4f2c2ed674da63&" alt="Opción 25" width="200">
-    </label>
-    <label>
-        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1334112703782064139/image.png?ex=679caa47&is=679b58c7&hm=7cb8c63f91c414a909ee893a8827c3a1bddfc7a6782540237ec18618a47dd822&">
-        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1334112703782064139/image.png?ex=679caa47&is=679b58c7&hm=7cb8c63f91c414a909ee893a8827c3a1bddfc7a6782540237ec18618a47dd822&" alt="Opción 25" width="200">
-    </label>
-    <label>
-        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1334112780353277952/image.png?ex=679caa59&is=679b58d9&hm=60e364313b4bf313ffd5e82d39c3fcea6d347b98301951386ae29bdd8d5ef012&">
-        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1334112780353277952/image.png?ex=679caa59&is=679b58d9&hm=60e364313b4bf313ffd5e82d39c3fcea6d347b98301951386ae29bdd8d5ef012&" alt="Opción 25" width="200">
-    </label>
-    <label>
-        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1334112843624087612/image.png?ex=679caa68&is=679b58e8&hm=28e5c4db02b25929e2a882f0491fd0fa80e7513fd95bda87d45687f65eb2213a&">
-        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1334112843624087612/image.png?ex=679caa68&is=679b58e8&hm=28e5c4db02b25929e2a882f0491fd0fa80e7513fd95bda87d45687f65eb2213a&" alt="Opción 25" width="200">
-    </label>
-    <label>
-        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1334589956974313623/image.png?ex=679d1541&is=679bc3c1&hm=cb198f900521e918f3fdb11d63b6c20ff23d837a51be0d0d34906c995d4ee7ce&">
-        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1334589956974313623/image.png?ex=679d1541&is=679bc3c1&hm=cb198f900521e918f3fdb11d63b6c20ff23d837a51be0d0d34906c995d4ee7ce&" alt="Opción 25" width="200">
-    </label>
-    <label>
-        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1330849968822423582/image.png?ex=679ca91e&is=679b579e&hm=93408afb49f3c4c8791eef1e505ca699947e307470e9289fc0d755ac7fb156ca&">
-        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1330849968822423582/image.png?ex=679ca91e&is=679b579e&hm=93408afb49f3c4c8791eef1e505ca699947e307470e9289fc0d755ac7fb156ca&" alt="Opción 3" width="200">
-    </label>
-    <label>
-        <input type="radio" name="foto" value="https://cdn.discordapp.com/attachments/1306154829445468160/1330906986224554126/image.png?ex=679cde38&is=679b8cb8&hm=4485626909fecd030a6ca8491702fc2daa0fda78833ecc00b4eef5e42f28d3b9&">
-        <img src="https://cdn.discordapp.com/attachments/1306154829445468160/1330906986224554126/image.png?ex=679cde38&is=679b8cb8&hm=4485626909fecd030a6ca8491702fc2daa0fda78833ecc00b4eef5e42f28d3b9&" alt="Opción 25" width="200">
-    </label>
-</form>
+       </style>
+</head>
+<body>
+    <form action="cambiofoto.php" method="POST">
+         <div class="Guardar">
+             <h3>Selecciona tu nueva foto de perfil:  </h3>
+             <button type="submit">Guardar</button>
+         </div>
+         <label>
+             <input type="radio" name="foto" value="Mii\nico.png">
+             <img src="Mii\nico.png" alt="Opción 25" width="200">
+         </label>
+         <label>
+             <input type="radio" name="foto" value="Mii\image.png">
+             <img src="Mii\image.png" alt="Opción 25" width="200">
+         </label>
+         <label>
+             <input type="radio" name="foto" value="Mii\image1.png">
+             <img src="Mii\image1.png" alt="Opción 25" width="200">
+         </label>
+         <label>
+             <input type="radio" name="foto" value="Mii\image2.png">
+             <img src="Mii\image2.png" alt="Opción 25" width="200">
+         </label>
+         <label>
+             <input type="radio" name="foto" value="Mii\image3.png">
+             <img src="Mii\image3.png" alt="Opción 25" width="200">
+         </label>
+         <label>
+             <input type="radio" name="foto" value="Mii\image4.png">
+             <img src="Mii\image4.png" alt="Opción 25" width="200">
+         </label>
+         <label>
+             <input type="radio" name="foto" value="Mii\image5.png">
+             <img src="Mii\image5.png" alt="Opción 25" width="200">
+         </label>
+         <label>
+             <input type="radio" name="foto" value="Mii\image6.png">
+             <img src="Mii\image6.png" alt="Opción 25" width="200">
+         </label>
+         <label>
+             <input type="radio" name="foto" value="Mii\image7.png">
+             <img src="Mii\image7.png" alt="Opción 25" width="200">
+         </label>
+         <label>
+             <input type="radio" name="foto" value="Mii\image8.png">
+             <img src="Mii\image8.png" alt="Opción 25" width="200">
+         </label>
+         <label>
+             <input type="radio" name="foto" value="Mii\image9.png">
+             <img src="Mii\image9.png" alt="Opción 25" width="200">
+         </label>
+         <label>
+             <input type="radio" name="foto" value="Mii\image10.png">
+             <img src="Mii\image10.png" alt="Opción 25" width="200">
+         </label>
+         <label>
+             <input type="radio" name="foto" value="Mii\image11.png">
+             <img src="Mii\image11.png" alt="Opción 25" width="200">
+         </label>
+         <label>
+             <input type="radio" name="foto" value="Mii\image12.png">
+             <img src="Mii\image12.png" alt="Opción 25" width="150">
+         </label>
+         <label>
+             <input type="radio" name="foto" value="Mii\image13.png">
+             <img src="Mii\image13.png" alt="Opción 25" width="200">
+         </label>
+         <label>
+             <input type="radio" name="foto" value="Mii\image14.png">
+             <img src="Mii\image14.png" alt="Opción 25" width="200">
+         </label>
+         <label>
+             <input type="radio" name="foto" value="Mii\image15.png">
+             <img src="Mii\image15.png" alt="Opción 25" width="200">
+         </label>
+         <label>
+             <input type="radio" name="foto" value="Mii\image16.png">
+             <img src="Mii\image16.png" alt="Opción 25" width="200">
+         </label>
+          <label>
+             <input type="radio" name="foto" value="Mii\image17.png">
+             <img src="Mii\image17.png" alt="Opción 25" width="200">
+         </label>
+          <label>
+             <input type="radio" name="foto" value="Mii\image18.png">
+             <img src="Mii\image18.png" alt="Opción 25" width="200">
+         </label>
+         <label>
+             <input type="radio" name="foto" value="Mii\image19.png">
+             <img src="Mii\image19.png" alt="Opción 3" width="200">
+         </label>
+     </form>
+</body>
+</html>

@@ -86,12 +86,23 @@ if (isset($_SESSION['ID_usuario'])) {
     <a href="CambioFoto.html">Cambiar foto</a><br><br><br><br>
   </div>
   <div class="botonesempleados">
-    <?php
-      if ($_SESSION['empleado']){
-        echo'<a class="empleadoslink" href="devolver_prestamos.php">Devolver Prestamos</a>';
-        echo'<a class="empleadoslink" href="RegistroLibros.php">Registrar libros</a>';
-      }
-      ?>
+  <?php
+if ($_SESSION['empleado']) {
+    echo '<div style="display: flex; gap: 10px; align-items: center;">';
+    echo '<a class="empleadoslink" href="devolver_prestamos.php">Devolver Prestamos</a>';
+    echo '<a class="empleadoslink" href="RegistroLibros.php">Registrar libros</a>';
+    echo ' <form class="empleadoslink" action="importar.php" method="post" enctype="multipart/form-data">
+          <label for="archivo">Selecciona un archivo XML:</label>
+            <input type="file" name="archivo" id="archivo" required>
+            <button type="submit">Importar XML</button>
+          </form>';
+    echo '<a class="empleadoslink" href="exportar.php">Exportar XML</a>';
+    echo '<a class="empleadoslink" href="libros.xml">Ver XML</a>';
+    echo '</div>';
+}
+?>
+
+
     </div>
   <div class="cajadatos">
     <?php
@@ -132,7 +143,7 @@ if (isset($_SESSION['ID_usuario'])) {
           }
 
           // Consulta para obtener los datos de los préstamos
-          $query = "SELECT p.ID_prestamo, l.titulo, p.fecha_prestamo, p.fecha_limite FROM prestamos p INNER JOIN ejemplares e ON e.ID_ejemplar = p.ID_ejemplar INNER JOIN libros l ON l.ID_libro = e.ID_libro WHERE p.ID_usuario = '$ID_usuario' ORDER BY p.ID_prestamo ASC";
+          $query = "SELECT p.ID_prestamo, l.titulo, p.fecha_prestamo, p.fecha_limite FROM prestamos p INNER JOIN ejemplares e ON e.ID_ejemplar = p.ID_ejemplar INNER JOIN libros l ON l.ID_libro = e.ID_libro WHERE p.ID_usuario = '$ID_usuario' AND p.fecha_devolucion IS NULL ORDER BY p.ID_prestamo ASC";
 
 
           $result = mysqli_query($conexion, $query);
