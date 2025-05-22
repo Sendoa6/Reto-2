@@ -16,13 +16,24 @@ if ($resultado->num_rows > 0) {
     $xml = new SimpleXMLElement('<catalogo></catalogo>');
 
     while($libro = $resultado->fetch_assoc()) {
-        $nodo = $xml->addChild('libro');
-        $nodo->addChild('titulo', isset($libro['titulo']) ? $libro['titulo'] : '');
-        $nodo->addChild('ISBN', isset($libro['ISBN']) ? $libro['ISBN'] : '');
-        $nodo->addChild('numero_copias', isset($libro['numero_copias']) ? $libro['numero_copias'] : '');
-        $nodo->addChild('genero', isset($libro['genero']) ? $libro['genero'] : '');
-        $nodo->addChild('imagen_url', isset($libro['imagen_url']) ? $libro['imagen_url'] : '');
-    }
+    // Crea un nuevo nodo <libro> dentro del XML <catalogo>
+    $nodo = $xml->addChild('libro');
+    
+    // Agrega el título del libro como subnodo <titulo>
+    $nodo->addChild('titulo', isset($libro['titulo']) ? $libro['titulo'] : '');
+    
+    // Agrega el ISBN del libro como subnodo <ISBN>
+    $nodo->addChild('ISBN', isset($libro['ISBN']) ? $libro['ISBN'] : '');
+    
+    // Agrega el número de copias disponibles como subnodo <numero_copias>
+    $nodo->addChild('numero_copias', isset($libro['numero_copias']) ? $libro['numero_copias'] : '');
+    
+    // Agrega el género del libro como subnodo <genero>
+    $nodo->addChild('genero', isset($libro['genero']) ? $libro['genero'] : '');
+    
+    // Agrega la URL de la imagen del libro como subnodo <imagen_url>
+    $nodo->addChild('imagen_url', isset($libro['imagen_url']) ? $libro['imagen_url'] : '');
+}
 
     // Configura las cabeceras para descargar el XML
     header('Content-Type: application/xml');
