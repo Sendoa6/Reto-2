@@ -7,7 +7,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>';
 <rss version="2.0">
   <channel>
     <title>Novedades – Biblioteca</title>
-    <link>https://www.tubiblioteca.com</link>
+    <link>https://www.localhost.com</link>
     <description>Últimos libros añadidos a la colección</description>
     <language>es-ES</language>
 
